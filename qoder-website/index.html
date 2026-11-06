@@ -165,10 +165,10 @@
               <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
             </svg>
           </a>
-          <a target="_blank" rel="noopener noreferrer" class="LinkV2_link__6_aZv LinkV2_default__dDTLp Button_btn__QM9fy Button_outline___PVmw Button_medium__ZAFXW Button_round__RSZuj" href="https://youtu.be/SsyNbw1Czk0" style="display:inline-flex;align-items:center;gap:8px;border-color:rgba(239,68,68,0.4);color:var(--q-text, #0F0D0C);" title="Watch Official Video Demo on YouTube">
+          <button type="button" id="watchVideoDemoBtn" class="LinkV2_link__6_aZv LinkV2_default__dDTLp Button_btn__QM9fy Button_outline___PVmw Button_medium__ZAFXW Button_round__RSZuj" style="display:inline-flex;align-items:center;gap:8px;border-color:rgba(239,68,68,0.4);color:var(--q-text, #0F0D0C);cursor:pointer;background:transparent;font-family:inherit;" title="Watch Official Video Demo">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="#FF0000"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
             <span data-i18n="hero_video_btn">Watch Video Demo</span>
-          </a>
+          </button>
         </div>
       </div>
     </div>
@@ -892,5 +892,76 @@
     </div>
   </div>
 </footer>
-<!-- removed external tracking/chunk script --><!-- removed next_f payload --><!-- removed next_f payload --><!-- removed next_f payload --><!-- removed next_f payload --><!-- removed next_f payload --><!-- removed next_f payload --><!-- removed next_f payload --><!-- removed next_f payload --><!-- removed next_f payload --><!-- removed next_f payload --><!-- removed next_f payload --><!-- removed next_f payload --><!-- removed next_f payload --><!-- removed next_f payload --><!-- removed next_f payload --><!-- removed next_f payload --><!-- removed next_f payload --><!-- removed next_f payload --><!-- removed next_f payload --><!-- removed next_f payload --><!-- removed next_f payload --><!-- removed next_f payload --><!-- removed next_f payload --><!-- removed next_f payload --><next-route-announcer style="position: absolute;"></next-route-announcer>  <script src="assets/js/main.js"></script>
+<!-- removed external tracking/chunk script --><!-- removed next_f payload --><!-- removed next_f payload --><!-- removed next_f payload --><!-- removed next_f payload --><!-- removed next_f payload --><!-- removed next_f payload --><!-- removed next_f payload --><!-- removed next_f payload --><!-- removed next_f payload --><!-- removed next_f payload --><!-- removed next_f payload --><!-- removed next_f payload --><!-- removed next_f payload --><!-- removed next_f payload --><!-- removed next_f payload --><!-- removed next_f payload --><!-- removed next_f payload --><!-- removed next_f payload --><!-- removed next_f payload --><!-- removed next_f payload --><!-- removed next_f payload --><!-- removed next_f payload --><!-- removed next_f payload --><!-- removed next_f payload --><!-- YouTube In-Page Video Modal -->
+<div id="videoModal" style="display:none;position:fixed;inset:0;z-index:99999;background:rgba(0,0,0,0.85);backdrop-filter:blur(8px);align-items:center;justify-content:center;padding:20px;box-sizing:border-box;">
+  <div style="position:relative;width:100%;max-width:960px;background:#0F0D0C;border:1px solid rgba(255,255,255,0.15);border-radius:12px;overflow:hidden;box-shadow:0 25px 60px rgba(0,0,0,0.7);">
+    <!-- Modal Header -->
+    <div style="display:flex;align-items:center;justify-content:space-between;padding:12px 20px;background:rgba(255,255,255,0.05);border-bottom:1px solid rgba(255,255,255,0.1);">
+      <div style="display:flex;align-items:center;gap:10px;">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="#FF0000"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+        <span style="font-size:14px;font-weight:700;color:#FFFFFF;">DEEDOX AI Dev Workspace — Official Walkthrough Demo</span>
+      </div>
+      <div style="display:flex;align-items:center;gap:14px;">
+        <a href="https://youtu.be/SsyNbw1Czk0" target="_blank" rel="noopener" style="font-size:12.5px;color:#9CA3AF;text-decoration:none;display:inline-flex;align-items:center;gap:4px;">
+          <span>Open in YouTube</span>
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+        </a>
+        <button id="closeVideoModalBtn" type="button" aria-label="Close Modal" style="background:rgba(255,255,255,0.1);border:none;color:#FFFFFF;width:28px;height:28px;border-radius:50%;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:15px;line-height:1;transition:background 0.2s;">✕</button>
+      </div>
+    </div>
+    <!-- Video Container with 16:9 Aspect Ratio -->
+    <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;">
+      <iframe id="videoIframe" style="position:absolute;top:0;left:0;width:100%;height:100%;" src="" title="Ai Dev Workspace" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+  </div>
+</div>
+
+<script>
+  (function() {
+    const openBtn = document.getElementById('watchVideoDemoBtn');
+    const modal = document.getElementById('videoModal');
+    const closeBtn = document.getElementById('closeVideoModalBtn');
+    const iframe = document.getElementById('videoIframe');
+    const videoSrc = "https://www.youtube.com/embed/SsyNbw1Czk0?autoplay=1";
+
+    function openModal() {
+      if (!modal || !iframe) return;
+      iframe.src = videoSrc;
+      modal.style.display = 'flex';
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal() {
+      if (!modal || !iframe) return;
+      iframe.src = '';
+      modal.style.display = 'none';
+      document.body.style.overflow = '';
+    }
+
+    if (openBtn) {
+      openBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        openModal();
+      });
+    }
+
+    if (closeBtn) {
+      closeBtn.addEventListener('click', closeModal);
+    }
+
+    if (modal) {
+      modal.addEventListener('click', function(e) {
+        if (e.target === modal) closeModal();
+      });
+    }
+
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape' && modal && modal.style.display === 'flex') {
+        closeModal();
+      }
+    });
+  })();
+</script>
+
+<next-route-announcer style="position: absolute;"></next-route-announcer>  <script src="assets/js/main.js"></script>
 </body></html>
