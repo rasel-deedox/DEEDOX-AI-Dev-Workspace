@@ -1,11 +1,42 @@
 const http = require('http');
+const https = require('https');
 const fs = require('fs');
 const path = require('path');
 
 const PORT = 3009;
 const ROOT = path.resolve(__dirname);
 const CONFIG_FILE = path.join(ROOT, 'assets', 'config', 'site_content.json');
+const SECRETS_FILE = path.join(ROOT, 'assets', 'config', 'api_keys.local.json');
 const ANNOUNCEMENT_FILE = path.join(ROOT, 'assets', 'config', 'announcement_config.json');
+
+function getOpenRouterApiKey() {
+  try {
+    if (fs.existsSync(SECRETS_FILE)) {
+      const data = JSON.parse(fs.readFileSync(SECRETS_FILE, 'utf-8'));
+      if (data && data.openrouter_api_key) return data.openrouter_api_key.trim();
+    }
+  } catch (_) {}
+  if (process.env.OPENROUTER_API_KEY) return process.env.OPENROUTER_API_KEY.trim();
+  return '';
+}
+
+function saveOpenRouterApiKey(key, defaultModel, maskInDemo) {
+  try {
+    const existing = fs.existsSync(SECRETS_FILE) ? JSON.parse(fs.readFileSync(SECRETS_FILE, 'utf-8')) : {};
+    const data = {
+      ...existing,
+      openrouter_api_key: (key !== undefined ? key : existing.openrouter_api_key || '').trim(),
+      default_model: defaultModel || existing.default_model || 'openrouter/free',
+      mask_in_demo: maskInDemo !== undefined ? maskInDemo : true,
+      updated_at: new Date().toISOString()
+    };
+    fs.writeFileSync(SECRETS_FILE, JSON.stringify(data, null, 2), 'utf-8');
+    return true;
+  } catch (err) {
+    console.error('Failed to save API key to local secrets vault:', err);
+    return false;
+  }
+}
 
 const MIME_TYPES = {
   '.html': 'text/html; charset=utf-8',
@@ -30,7 +61,7 @@ function sendJson(res, statusCode, data) {
   res.setHeader('Content-Type', 'application/json; charset=utf-8');
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
-  res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
+  res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization, X-Title, HTTP-Referer');
   res.end(JSON.stringify(data));
 }
 
@@ -38,7 +69,7 @@ const server = http.createServer((req, res) => {
   // CORS & Iframe allow
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
-  res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
+  res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization, X-Title, HTTP-Referer');
   res.setHeader('X-Frame-Options', 'SAMEORIGIN');
 
   if (req.method === 'OPTIONS') {
@@ -56,7 +87,11 @@ const server = http.createServer((req, res) => {
     if (fs.existsSync(CONFIG_FILE)) {
       try {
         const raw = fs.readFileSync(CONFIG_FILE, 'utf-8');
-        return sendJson(res, 200, JSON.parse(raw));
+        const data = JSON.parse(raw);
+        data.api_security = data.api_security || {};
+        // Attach active key for admin display and control
+        data.api_security.openrouter_api_key = getOpenRouterApiKey();
+        return sendJson(res, 200, data);
       } catch (err) {
         return sendJson(res, 500, { error: 'Failed to read config file: ' + err.message });
       }
@@ -75,6 +110,19 @@ const server = http.createServer((req, res) => {
         updatedData.meta = updatedData.meta || {};
         updatedData.meta.last_updated = new Date().toISOString();
         updatedData.meta.updated_by = 'DEEDOX Live Admin';
+
+        // Extract and securely persist OpenRouter API key in local vault
+        if (updatedData.api_security) {
+          if (updatedData.api_security.openrouter_api_key !== undefined) {
+            saveOpenRouterApiKey(
+              updatedData.api_security.openrouter_api_key,
+              updatedData.api_security.default_model,
+              updatedData.api_security.mask_in_demo
+            );
+            // Don't store plain secret in git-tracked site_content.json
+            delete updatedData.api_security.openrouter_api_key;
+          }
+        }
 
         fs.writeFileSync(CONFIG_FILE, JSON.stringify(updatedData, null, 2), 'utf-8');
 
@@ -95,6 +143,139 @@ const server = http.createServer((req, res) => {
       } catch (err) {
         return sendJson(res, 400, { error: 'Invalid JSON payload: ' + err.message });
       }
+    });
+    return;
+  }
+
+  // 2b. POST /api/admin/test-openrouter (Admin API Key Health Check)
+  if (req.method === 'POST' && pathname === '/api/admin/test-openrouter') {
+    let body = '';
+    req.on('data', chunk => { body += chunk; });
+    req.on('end', () => {
+      try {
+        const payload = body ? JSON.parse(body) : {};
+        const keyToTest = (payload.api_key || getOpenRouterApiKey() || '').trim();
+        if (!keyToTest) {
+          return sendJson(res, 400, { success: false, error: 'No API key provided or found in vault.' });
+        }
+
+        const options = {
+          hostname: 'openrouter.ai',
+          port: 443,
+          path: '/api/v1/auth/key',
+          method: 'GET',
+          headers: {
+            'Authorization': `Bearer ${keyToTest}`,
+            'HTTP-Referer': 'https://deedoxstudio.com',
+            'X-Title': 'DEEDOX AI Dev Workspace'
+          }
+        };
+
+        const testReq = https.request(options, (testRes) => {
+          let testBody = '';
+          testRes.on('data', d => testBody += d);
+          testRes.on('end', () => {
+            try {
+              const parsed = JSON.parse(testBody);
+              if (testRes.statusCode >= 200 && testRes.statusCode < 300) {
+                return sendJson(res, 200, {
+                  success: true,
+                  status: testRes.statusCode,
+                  data: parsed.data || parsed
+                });
+              } else {
+                return sendJson(res, testRes.statusCode, {
+                  success: false,
+                  status: testRes.statusCode,
+                  error: (parsed.error && parsed.error.message) || parsed.message || 'API key rejected by OpenRouter'
+                });
+              }
+            } catch (_) {
+              return sendJson(res, testRes.statusCode, { success: false, error: testBody });
+            }
+          });
+        });
+
+        testReq.on('error', (err) => {
+          return sendJson(res, 502, { success: false, error: 'Failed to reach OpenRouter: ' + err.message });
+        });
+
+        testReq.end();
+      } catch (err) {
+        return sendJson(res, 400, { success: false, error: err.message });
+      }
+    });
+    return;
+  }
+
+  // 2c. ALL /api/openrouter-proxy/* (Secure Transparent Proxy for App Demo Sandbox)
+  if (pathname.startsWith('/api/openrouter-proxy')) {
+    const subpath = pathname.replace(/^\/api\/openrouter-proxy/, '') || '/auth/key';
+    const targetPath = '/api/v1' + subpath + (parsedUrl.search || '');
+    const activeKey = getOpenRouterApiKey();
+
+    if (!activeKey) {
+      return sendJson(res, 503, {
+        error: {
+          message: 'DEEDOX Security Proxy: No OpenRouter API key configured in Admin Panel.',
+          code: 'NO_API_KEY'
+        }
+      });
+    }
+
+    let reqBodyChunks = [];
+    req.on('data', chunk => reqBodyChunks.push(chunk));
+    req.on('end', () => {
+      const fullReqBody = Buffer.concat(reqBodyChunks);
+
+      const proxyHeaders = {
+        'Authorization': `Bearer ${activeKey}`,
+        'HTTP-Referer': 'https://deedoxstudio.com',
+        'X-Title': 'DEEDOX AI Dev Workspace'
+      };
+
+      if (req.headers['content-type']) {
+        proxyHeaders['Content-Type'] = req.headers['content-type'];
+      }
+      if (req.headers['accept']) {
+        proxyHeaders['Accept'] = req.headers['accept'];
+      }
+      if (fullReqBody.length > 0) {
+        proxyHeaders['Content-Length'] = fullReqBody.length;
+      }
+
+      const proxyOptions = {
+        hostname: 'openrouter.ai',
+        port: 443,
+        path: targetPath,
+        method: req.method,
+        headers: proxyHeaders
+      };
+
+      const proxyReq = https.request(proxyOptions, (proxyRes) => {
+        res.statusCode = proxyRes.statusCode;
+        res.setHeader('Access-Control-Allow-Origin', '*');
+        res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
+        res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization, X-Title, HTTP-Referer');
+        if (proxyRes.headers['content-type']) {
+          res.setHeader('Content-Type', proxyRes.headers['content-type']);
+        }
+        proxyRes.pipe(res);
+      });
+
+      proxyReq.on('error', (err) => {
+        sendJson(res, 502, {
+          error: {
+            message: 'DEEDOX Security Proxy Error: ' + err.message,
+            code: 'PROXY_NETWORK_ERROR'
+          }
+        });
+      });
+
+      if (fullReqBody.length > 0) {
+        proxyReq.write(fullReqBody);
+      }
+      proxyReq.end();
     });
     return;
   }

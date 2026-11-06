@@ -1,7 +1,7 @@
 {
   "meta": {
     "version": "1.0.0",
-    "last_updated": "2026-11-04T20:47:59.371Z",
+    "last_updated": "2026-11-06T17:56:47.157Z",
     "updated_by": "DEEDOX Live Admin"
   },
   "branding": {
@@ -323,5 +323,11 @@
       "avatar": "assets/images/testimonials/avatar_chloe.svg",
       "quote": "The 3D miniature avatars in the Roundtable Studio make autonomous engineering intuitive and visually alive. DEEDOX feels like the future of developer tools."
     }
-  ]
+  ],
+  "api_security": {
+    "default_model": "openrouter/free",
+    "mask_in_demo": true,
+    "status": "active",
+    "proxy_enabled": true
+  }
 }

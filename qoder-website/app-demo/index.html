@@ -88,6 +88,114 @@
       })();
     </script>
 
+    <!-- DEEDOX Security Bridge: Proxy API calls and protect Admin API Key from visitors -->
+    <script>
+      (function() {
+        const MASKED_PLACEHOLDER = 'sk-or-v1-********************************';
+        
+        // 1. Sanitize local storage settings so raw secret is never stored client-side
+        try {
+          const raw = localStorage.getItem('devworkspace_settings');
+          let settings = raw ? JSON.parse(raw) : {};
+          settings.openRouterApiKey = MASKED_PLACEHOLDER;
+          localStorage.setItem('devworkspace_settings', JSON.stringify(settings));
+        } catch (_) {}
+
+        // Wrap localStorage.getItem to always return masked key for openRouterApiKey
+        const originalGetItem = localStorage.getItem.bind(localStorage);
+        localStorage.getItem = function(key) {
+          const val = originalGetItem(key);
+          if (key === 'devworkspace_settings' && val) {
+            try {
+              const parsed = JSON.parse(val);
+              if (parsed.openRouterApiKey && (!parsed.openRouterApiKey.includes('****') || parsed.openRouterApiKey.includes('••••'))) {
+                parsed.openRouterApiKey = MASKED_PLACEHOLDER;
+                return JSON.stringify(parsed);
+              }
+            } catch (_) {}
+          }
+          return val;
+        };
+
+        // 2. Intercept window.fetch so all OpenRouter requests are routed through DEEDOX proxy
+        const originalFetch = window.fetch.bind(window);
+        window.fetch = function(resource, init) {
+          let url = (typeof resource === 'string') ? resource : (resource && resource.url ? resource.url : '');
+          
+          if (url.includes('openrouter.ai/api/v1/')) {
+            const subpath = url.split('openrouter.ai/api/v1/')[1] || '';
+            const proxyUrl = '/api/openrouter-proxy/' + subpath;
+
+            const newInit = Object.assign({}, init);
+            let headers = {};
+            if (newInit.headers) {
+              if (typeof newInit.headers.forEach === 'function') {
+                newInit.headers.forEach((v, k) => {
+                  if (k.toLowerCase() !== 'authorization') headers[k] = v;
+                });
+              } else if (typeof newInit.headers === 'object') {
+                for (const [k, v] of Object.entries(newInit.headers)) {
+                  if (k.toLowerCase() !== 'authorization') headers[k] = v;
+                }
+              }
+            }
+            headers['X-DEEDOX-Client'] = 'Web-Demo-Sandbox';
+            newInit.headers = headers;
+
+            if (typeof resource === 'object' && resource !== null && !(resource instanceof URL)) {
+              resource = new Request(proxyUrl, newInit);
+              return originalFetch(resource);
+            }
+            return originalFetch(proxyUrl, newInit);
+          }
+          
+          return originalFetch(resource, init);
+        };
+
+        // 3. Observer to lock the settings modal input & display security badge
+        function enforceKeyMaskingUI() {
+          const inputs = document.querySelectorAll('input');
+          inputs.forEach(inp => {
+            const val = inp.value || '';
+            const placeholder = inp.placeholder || '';
+            if (
+              val.includes('sk-or-v1') || 
+              placeholder.includes('sk-or-v1') || 
+              (inp.closest && inp.closest('[class*="modal"], [role="dialog"], div') && inp.previousElementSibling && inp.previousElementSibling.textContent && inp.previousElementSibling.textContent.includes('API Key'))
+            ) {
+              if (val !== MASKED_PLACEHOLDER) {
+                inp.value = MASKED_PLACEHOLDER;
+              }
+              inp.setAttribute('readonly', 'true');
+              inp.setAttribute('type', 'password');
+              inp.style.backgroundColor = 'rgba(0,0,0,0.06)';
+              inp.style.cursor = 'not-allowed';
+              inp.style.color = '#80C776';
+              inp.style.fontFamily = 'monospace';
+
+              // Ensure badge is displayed once below the input container
+              const parent = inp.parentElement;
+              if (parent && !parent.querySelector('.deedox-proxy-badge')) {
+                const badge = document.createElement('div');
+                badge.className = 'deedox-proxy-badge';
+                badge.style.cssText = 'display:flex;align-items:center;gap:6px;font-size:11px;color:#10B981;font-weight:600;margin-top:6px;padding:3px 8px;background:rgba(16,185,129,0.1);border-radius:4px;';
+                badge.innerHTML = '<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg><span>🔒 Managed &amp; Protected by DEEDOX Admin Console</span>';
+                parent.appendChild(badge);
+              }
+            }
+          });
+        }
+
+        const observer = new MutationObserver(() => {
+          enforceKeyMaskingUI();
+        });
+        document.addEventListener('DOMContentLoaded', () => {
+          observer.observe(document.body, { childList: true, subtree: true });
+          setInterval(enforceKeyMaskingUI, 600);
+        });
+      })();
+    </script>
+
     <script type="module" crossorigin src="./assets/index-D4vuTpNc.js"></script>
     <link rel="stylesheet" crossorigin href="./assets/index-BRSC94bi.css">
   </head>
