@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="./png.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="referrer" content="no-referrer" />
+    <title>DevWorkspace - Custom App Launcher & Manager</title>
+    <!-- Modern Apple-style typography font stack -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <script>
+      (function() {
+        // Read URL param or parent setting or default to Day Mode (soft-light)
+        const params = new URLSearchParams(window.location.search);
+        const themeParam = params.get('theme');
+        let isDayMode = true;
+
+        if (themeParam === 'dark' || themeParam === 'nova-dark') {
+          isDayMode = false;
+        } else if (themeParam === 'light' || themeParam === 'soft-light') {
+          isDayMode = true;
+        } else {
+          // Check localStorage or default to Day Mode
+          try {
+            const saved = localStorage.getItem('devworkspace_settings');
+            if (saved) {
+              const parsed = JSON.parse(saved);
+              if (parsed.theme === 'nova-dark') isDayMode = false;
+              else if (parsed.theme === 'soft-light') isDayMode = true;
+            }
+          } catch (_) {}
+        }
+
+        // Write to localStorage before React initializes so it loads the correct theme
+        try {
+          let saved = localStorage.getItem('devworkspace_settings');
+          let settings = saved ? JSON.parse(saved) : {};
+          settings.theme = isDayMode ? 'soft-light' : 'nova-dark';
+          localStorage.setItem('devworkspace_settings', JSON.stringify(settings));
+        } catch (_) {}
+
+        // Set immediate html and body classes
+        const root = document.documentElement;
+        if (isDayMode) {
+          root.classList.remove('dark', 'theme-nova-dark');
+          root.classList.add('light', 'theme-soft-light');
+        } else {
+          root.classList.remove('light', 'theme-soft-light');
+          root.classList.add('dark', 'theme-nova-dark');
+        }
+
+        // Dynamic theme synchronization from parent window
+        window.addEventListener('message', function(event) {
+          if (event.data && event.data.type === 'SET_THEME') {
+            const wantsLight = (event.data.theme === 'light' || event.data.theme === 'soft-light');
+            
+            // Try to trigger the internal React toggle button if available
+            const lightBtn = document.querySelector('button[title*="Light"]');
+            const darkBtn = document.querySelector('button[title*="Dark"]');
+
+            if (wantsLight && lightBtn) {
+              lightBtn.click();
+            } else if (!wantsLight && darkBtn) {
+              darkBtn.click();
+            } else {
+              // Direct fallback class sync
+              if (wantsLight) {
+                root.classList.remove('dark', 'theme-nova-dark');
+                root.classList.add('light', 'theme-soft-light');
+                document.body.className = 'theme-soft-light bg-white text-zinc-900 overflow-hidden select-none font-sans antialiased';
+              } else {
+                root.classList.remove('light', 'theme-soft-light');
+                root.classList.add('dark', 'theme-nova-dark');
+                document.body.className = 'theme-nova-dark bg-[#080809] text-[#EDEDED] overflow-hidden select-none font-sans antialiased';
+              }
+              try {
+                let saved = localStorage.getItem('devworkspace_settings');
+                let settings = saved ? JSON.parse(saved) : {};
+                settings.theme = wantsLight ? 'soft-light' : 'nova-dark';
+                localStorage.setItem('devworkspace_settings', JSON.stringify(settings));
+              } catch (_) {}
+            }
+          }
+        });
+      })();
+    </script>
+
+    <script type="module" crossorigin src="./assets/index-D4vuTpNc.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-BRSC94bi.css">
+  </head>
+  <body class="overflow-hidden select-none font-sans antialiased">
+    <div id="root"></div>
+  </body>
+</html>

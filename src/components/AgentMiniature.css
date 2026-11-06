@@ -1,0 +1,283 @@
+/* =========================================================================
+   DEEDOX Miniature Agent Avatar Styles & Keyframes
+   Exact implementation of reference HTML/CSS animations and 40+ shapes
+   ========================================================================= */
+
+@keyframes miniatureFloat {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-7px); }
+}
+
+@keyframes miniatureFloatFast {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-4px); }
+}
+
+@keyframes miniatureBreathe {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05) scaleX(1.02); }
+}
+
+@keyframes miniatureWobble {
+  0%, 100% { transform: rotate(-3deg); }
+  50% { transform: rotate(3deg); }
+}
+
+@keyframes miniaturePulseSoft {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.06); }
+}
+
+@keyframes miniatureBlink {
+  0%, 46%, 48%, 96%, 98%, 100% { transform: scaleY(1); }
+  47%, 97% { transform: scaleY(0.1); }
+}
+
+@keyframes miniatureFastBlink {
+  0%, 26%, 28%, 76%, 78%, 100% { transform: scaleY(1); }
+  27%, 77% { transform: scaleY(0.1); }
+}
+
+@keyframes miniatureLookAround {
+  0%, 100% { transform: translate(0, 0) rotate(-15deg); }
+  10% { transform: translate(3px, -2px) rotate(-15deg); }
+  25% { transform: translate(3px, -2px) rotate(-15deg); }
+  35% { transform: translate(-3px, 1px) rotate(-15deg); }
+  50% { transform: translate(-3px, 1px) rotate(-15deg); }
+  60% { transform: translate(0, -3px) rotate(-15deg); }
+  75% { transform: translate(0, -3px) rotate(-15deg); }
+}
+
+@keyframes miniatureSpeakingPulse {
+  0%, 100% { filter: drop-shadow(0 0 6px rgba(94, 106, 210, 0.4)); }
+  50% { filter: drop-shadow(0 0 16px rgba(94, 106, 210, 0.95)) drop-shadow(0 0 20px rgba(255, 255, 255, 0.35)); }
+}
+
+@keyframes realisticLookAround {
+  0%, 100%, 15%, 85% { transform: translate(18%, -14%); }
+  25%, 35% { transform: translate(22%, -18%); }
+  50%, 60% { transform: translate(12%, -8%); }
+  70%, 75% { transform: translate(20%, -12%); }
+}
+
+/* Base Wrapper */
+.agent-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: miniatureFloat 4s ease-in-out infinite;
+  user-select: none;
+}
+
+.agent-wrapper.is-speaking {
+  animation: miniatureFloatFast 2s ease-in-out infinite, miniatureSpeakingPulse 1.5s ease-in-out infinite;
+}
+
+.agent-body-layer {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: var(--agent-anim, miniatureBreathe 4s infinite alternate);
+}
+
+.agent-body {
+  width: var(--agent-width, 100%);
+  height: var(--agent-height, 100%);
+  background: var(--agent-bg, #5E6AD2);
+  border-radius: var(--agent-radius, 0);
+  clip-path: var(--agent-clip, none);
+  transform: var(--agent-transform, none);
+  box-shadow: inset -4px -4px 10px rgba(0, 0, 0, 0.15), 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+/* Dark mode 3D styling when opted or requested */
+.dark-theme-spherical .agent-body:not(.shape-signature) {
+  background: radial-gradient(circle at 30% 30%, #ffffff, #d1d5db) !important;
+  box-shadow: inset -5px -5px 15px rgba(0, 0, 0, 0.3), 0 4px 16px rgba(0, 0, 0, 0.4) !important;
+  border: none !important;
+}
+
+/* Eyes Layer */
+.agent-eyes-layer {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.agent-eyes-container {
+  display: flex;
+  gap: var(--eye-gap, 8px);
+  transform: var(--eye-offset, translate(0, 0)) rotate(-15deg);
+  animation: miniatureLookAround 8s infinite cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.agent-eye {
+  width: var(--eye-width, 7px);
+  height: var(--eye-height, 16px);
+  background-color: var(--eye-color, #ffffff);
+  border-radius: 9999px;
+  animation: miniatureBlink 5s infinite;
+  box-shadow: 0 2px 4px var(--eye-shadow, rgba(0, 0, 0, 0.18));
+  transition: background-color 0.3s ease;
+}
+
+/* Dark mode eye color */
+.dark-theme-spherical .agent-eye {
+  --eye-color: #0f172a !important;
+  --eye-shadow: transparent !important;
+}
+
+/* Eye Variations */
+.fast-blink .agent-eye {
+  animation: miniatureFastBlink 3s infinite;
+}
+
+.no-look {
+  animation: none !important;
+  transform: var(--eye-offset, translate(0, 0)) rotate(-15deg) !important;
+}
+
+/* =========================================================================
+   40+ SHAPES FROM REFERENCE HTML
+   ========================================================================= */
+
+/* Realistic 3D Sphere Miniature (Exact HTML Reference) */
+.shape-realistic-sphere {
+  border-radius: 50% !important;
+  background: radial-gradient(circle at 30% 30%, #ffffff 0%, #e5e5e5 35%, #b3b3b3 70%, #666666 100%) !important;
+  box-shadow: inset -4px -4px 12px rgba(0, 0, 0, 0.4), 0 4px 14px rgba(0, 0, 0, 0.45) !important;
+  border: none !important;
+  --agent-anim: miniatureBreathe 5s ease-in-out infinite;
+}
+
+/* Light Mode: sleek dark obsidian chrome 3D sphere with luminous eyes for high contrast */
+.is-light .shape-realistic-sphere,
+.theme-soft-light .shape-realistic-sphere {
+  background: radial-gradient(circle at 30% 30%, #475569 0%, #334155 35%, #1e293b 70%, #090d16 100%) !important;
+  box-shadow: inset -4px -4px 10px rgba(0, 0, 0, 0.5), 0 4px 12px rgba(0, 0, 0, 0.2) !important;
+}
+
+/* Realistic Eyes Positioning & Layer */
+.realistic-eyes-container {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12%;
+  transform: translate(18%, -14%);
+  animation: realisticLookAround 12s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.realistic-eye-wrapper-left {
+  transform: rotate(-35deg) scale(0.95) translateY(2px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.realistic-eye-wrapper-right {
+  transform: rotate(-35deg) scale(1.05) translateY(-2px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.realistic-eye {
+  width: var(--eye-width, 10px);
+  height: var(--eye-height, 24px);
+  background-color: #141414;
+  border-radius: 999px;
+  animation: miniatureBlink 5s infinite;
+  box-shadow: inset 0 2px 4px rgba(0,0,0,0.6);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* In light mode on the dark obsidian sphere, eyes become crisp brilliant white */
+.is-light .realistic-eye,
+.theme-soft-light .realistic-eye {
+  background-color: #ffffff !important;
+  box-shadow: 0 0 4px rgba(255, 255, 255, 0.8), inset 0 1px 2px rgba(0,0,0,0.2) !important;
+}
+
+/* Interactive Hover state */
+.agent-wrapper:hover .realistic-eyes-container {
+  transform: translate(8%, -2%);
+  animation-play-state: paused;
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.agent-wrapper:hover .realistic-eye-wrapper-left,
+.agent-wrapper:hover .realistic-eye-wrapper-right {
+  transform: rotate(-25deg);
+  transition: transform 0.4s ease;
+}
+
+/* Star Shape Miniature */
+.shape-signature {
+  --agent-bg: linear-gradient(135deg, #6366f1, #818cf8, #a855f7);
+  --agent-clip: polygon(50% 0%, 65% 25%, 100% 20%, 75% 45%, 85% 80%, 50% 60%, 15% 80%, 25% 45%, 0% 20%, 35% 25%);
+  --agent-anim: miniaturePulseSoft 3s infinite alternate, miniatureWobble 10s infinite;
+}
+
+/* Core Administration */
+.shape-circle { --agent-bg: #8b5cf6; --agent-radius: 50%; --eye-offset: translate(3px, -3px); }
+.shape-drop { --agent-bg: #3b82f6; --agent-radius: 0 50% 50% 50%; --agent-transform: rotate(45deg); --eye-offset: translate(3px, 3px); }
+
+.shape-cloud { --agent-bg: #22c55e; --agent-radius: 30px; --agent-width: 100%; --agent-height: 60%; --agent-transform: translateY(12px); --eye-offset: translate(0px, 12px); }
+.shape-cloud::before { content: ''; position: absolute; width: 55%; height: 90%; background: inherit; border-radius: 50%; top: -35%; left: 10%; }
+.shape-cloud::after { content: ''; position: absolute; width: 45%; height: 75%; background: inherit; border-radius: 50%; top: -20%; right: 10%; }
+
+.shape-hex { --agent-bg: #14b8a6; --agent-clip: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%); --agent-anim: miniaturePulseSoft 3s infinite; }
+.shape-dome { --agent-bg: #92400e; --agent-radius: 50% 50% 10% 10%; --agent-anim: miniatureWobble 4s infinite ease-in-out; }
+.shape-egg { --agent-bg: #f97316; --agent-radius: 50% 50% 50% 50% / 60% 60% 40% 40%; --eye-offset: translate(3px, -2px); }
+.shape-pill { --agent-bg: #f43f5e; --agent-radius: 40px; --agent-width: 100%; --agent-height: 55%; --agent-transform: translateY(8px); --eye-offset: translate(0px, 8px); }
+.shape-triangle { --agent-bg: #d946ef; --agent-clip: polygon(50% 0%, 0% 100%, 100% 100%); --agent-radius: 15px; --eye-offset: translate(0px, 10px); }
+.shape-squircle { --agent-bg: #6366f1; --agent-radius: 25%; }
+
+/* Technology & Engineering */
+.shape-diamond { --agent-bg: #0ea5e9; --agent-radius: 18%; --agent-transform: rotate(45deg); --eye-offset: translate(0px, 0px); }
+.shape-gear { --agent-bg: #475569; --agent-clip: polygon(50% 0%, 61% 14%, 79% 14%, 86% 28%, 100% 39%, 91% 55%, 96% 72%, 80% 82%, 72% 98%, 55% 94%, 39% 100%, 25% 88%, 9% 82%, 4% 64%, -2% 48%, 10% 32%, 5% 15%, 22% 10%, 34% -1%); --agent-anim: miniatureWobble 5s infinite; }
+.shape-cylinder { --agent-bg: #059669; --agent-radius: 20px; --agent-width: 70%; --agent-height: 90%; }
+.shape-shield { --agent-bg: #dc2626; --agent-clip: polygon(50% 0%, 100% 15%, 100% 70%, 50% 100%, 0% 70%, 0% 15%); --eye-offset: translate(0px, -4px); }
+.shape-flask { --agent-bg: #7c3aed; --agent-clip: polygon(35% 0, 65% 0, 65% 30%, 100% 100%, 0 100%, 35% 30%); --agent-height: 90%; --agent-width: 80%; --eye-offset: translate(0px, 12px); }
+.shape-battery { --agent-bg: #ca8a04; --agent-radius: 10px; --agent-width: 60%; --agent-height: 90%; border-top: 8px solid #854d0e; }
+.shape-infinity { --agent-bg: #0284c7; --agent-radius: 40px; --agent-height: 50%; }
+.shape-cursor { --agent-bg: #e11d48; --agent-clip: polygon(0 0, 100% 40%, 60% 50%, 40% 100%); --agent-anim: miniatureFloatFast 2s infinite; --eye-offset: translate(-8px, -4px); }
+.shape-bracket { --agent-bg: #ea580c; --agent-clip: polygon(100% 0, 20% 0, 20% 100%, 100% 100%, 100% 80%, 40% 80%, 40% 20%, 100% 20%); --eye-offset: translate(-4px, 4px); }
+.shape-terminal { --agent-bg: #1f2937; --agent-radius: 12px; --agent-width: 90%; --agent-height: 70%; }
+
+/* Creative & Marketing */
+.shape-star { --agent-bg: #facc15; --agent-clip: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); --agent-anim: miniaturePulseSoft 2s infinite alternate; --eye-offset: translate(0px, 4px); }
+.shape-heart { --agent-bg: #f43f5e; --agent-clip: polygon(50% 30%, 100% 0, 100% 60%, 50% 100%, 0 60%, 0 0); --agent-radius: 20px; --eye-offset: translate(0px, -4px); }
+.shape-bulb { --agent-bg: #fbbf24; --agent-radius: 50% 50% 20% 20%; --agent-height: 80%; }
+.shape-chat { --agent-bg: #ec4899; --agent-radius: 25px 25px 25px 5px; --agent-height: 75%; --agent-anim: miniatureWobble 3s infinite; --eye-offset: translate(0px, -4px); }
+.shape-leaf { --agent-bg: #84cc16; --agent-radius: 0 60% 0 60%; --agent-transform: rotate(-45deg); --agent-anim: miniatureWobble 4s infinite ease-in-out; --eye-offset: translate(-4px, 4px); }
+.shape-eye { --agent-bg: #06b6d4; --agent-radius: 70% 0 70% 0; --agent-transform: rotate(45deg); }
+.shape-bow { --agent-bg: #c026d3; --agent-clip: polygon(0 0, 100% 100%, 100% 0, 0 100%); }
+.shape-speaker { --agent-bg: #f97316; --agent-clip: polygon(0 30%, 40% 30%, 100% 0, 100% 100%, 40% 70%, 0 70%); --eye-offset: translate(4px, 0); }
+.shape-play { --agent-bg: #ef4444; --agent-clip: polygon(10% 0, 100% 50%, 10% 100%); --agent-anim: miniatureFloatFast 3s infinite; --eye-offset: translate(-4px, 4px); }
+.shape-blob { --agent-bg: #a855f7; border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%; --agent-anim: miniatureWobble 6s infinite; }
+
+/* Operations & Finance */
+.shape-chart { --agent-bg: #3b82f6; --agent-clip: polygon(0 100%, 0 60%, 30% 60%, 30% 100%, 30% 40%, 65% 40%, 65% 100%, 65% 20%, 100% 20%, 100% 100%); --eye-offset: translate(4px, -4px); }
+.shape-tag { --agent-bg: #10b981; --agent-clip: polygon(0 0, 100% 0, 100% 70%, 50% 100%, 0 70%); --eye-offset: translate(0px, -4px); }
+.shape-wallet { --agent-bg: #8b5cf6; --agent-radius: 10px; --agent-height: 60%; border-bottom: 12px solid #6d28d9; }
+.shape-plus { --agent-bg: #059669; --agent-clip: polygon(35% 0, 65% 0, 65% 35%, 100% 35%, 100% 65%, 65% 65%, 65% 100%, 35% 100%, 35% 65%, 0 65%, 0 35%, 35% 35%); --agent-anim: miniaturePulseSoft 2s infinite; }
+.shape-safe { --agent-bg: #475569; --agent-radius: 15px; border: 6px solid #334155; }
+.shape-ticket { --agent-bg: #f59e0b; --agent-clip: polygon(0 0, 100% 0, 100% 30%, 90% 50%, 100% 70%, 100% 100%, 0 100%, 0 70%, 10% 50%, 0 30%); }
+.shape-doc { --agent-bg: #6366f1; --agent-clip: polygon(0 0, 70% 0, 100% 30%, 100% 100%, 0 100%); --eye-offset: translate(-4px, 4px); }
+.shape-balance { --agent-bg: #d946ef; --agent-clip: polygon(0 100%, 50% 0, 100% 100%, 80% 100%, 50% 30%, 20% 100%); --eye-offset: translate(0px, 12px); }
+.shape-coin { --agent-bg: #fbbf24; --agent-radius: 50%; --agent-height: 75%; border: 5px solid #d97706; }
+.shape-lock { --agent-bg: #dc2626; --agent-radius: 15px 15px 5px 5px; --agent-height: 70%; }

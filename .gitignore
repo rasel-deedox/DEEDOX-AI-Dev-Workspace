@@ -1,0 +1,38 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Production build outputs & installers
+dist/
+dist-electron/
+release/
+*.exe
+*.dmg
+*.app
+*.deb
+*.rpm
+*.asar
+
+# Local environment & stores
+.env
+.env.local
+.env.*.local
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor & OS files
+.DS_Store
+Thumbs.db
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.vscode/
+.idea/
+
+# Scratch & temporary verification files
+scratch/

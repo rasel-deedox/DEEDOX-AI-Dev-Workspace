@@ -1,0 +1,1586 @@
+[
+  {
+    "url": "https://qoder.com/",
+    "resource_type": "document",
+    "kind": "request",
+    "status": null
+  },
+  {
+    "url": "https://qoder.com/",
+    "resource_type": "document",
+    "kind": "response",
+    "status": 200
+  },
+  {
+    "url": "https://img.alicdn.com/imgextra/i1/O1CN010vyJYe95doH2V5OS_!!6000000001987-2-tps-1232-344.png",
+    "resource_type": "image",
+    "kind": "request",
+    "status": null
+  },
+  {
+    "url": "https://img.alicdn.com/imgextra/i2/O1CN01ujLij0k3MQH2V5OS_!!6000000000850-2-tps-1232-344.png",
+    "resource_type": "image",
+    "kind": "request",
+    "status": null
+  },
+  {
+    "url": "https://img.alicdn.com/imgextra/i3/O1CN01r1a1zKvnpOG0cGga_!!6000000005369-2-tps-304-304.png",
+    "resource_type": "image",
+    "kind": "request",
+    "status": null
+  },
+  {
+    "url": "https://img.alicdn.com/imgextra/i4/O1CN012JUQmkuk4LH0cGga_!!6000000004828-2-tps-304-304.png",
+    "resource_type": "image",
+    "kind": "request",
+    "status": null
+  },
+  {
+    "url": "https://img.alicdn.com/imgextra/i2/O1CN016fdrcQ26TiDCreYYo_!!6000000007663-55-tps-105-26.svg",
+    "resource_type": "image",
+    "kind": "request",
+    "status": null
+  },
+  {
+    "url": "https://img.alicdn.com/imgextra/i3/O1CN01VC83tu1qBMUdwnQ7y_!!6000000005457-55-tps-624-448.svg",
+    "resource_type": "image",
+    "kind": "request",
+    "status": null
+  },
+  {
+    "url": "https://img.alicdn.com/imgextra/i2/O1CN01rf48hD1VmoxJuaDoj_!!6000000002696-55-tps-624-448.svg",
+    "resource_type": "image",
+    "kind": "request",
+    "status": null
+  },
+  {
+    "url": "https://img.alicdn.com/imgextra/i2/O1CN01DMdf5z1fE97yvPU4d_!!6000000003974-55-tps-624-448.svg",
+    "resource_type": "image",
+    "kind": "request",
+    "status": null
+  },
+  {
+    "url": "https://img.alicdn.com/imgextra/i2/O1CN01c4GNITKnK3B0G71c_!!6000000002903-2-tps-128-128.png",
+    "resource_type": "image",
+    "kind": "request",
+    "status": null
+  },
+  {
+    "url": "https://img.alicdn.com/imgextra/i2/O1CN01s8jRX04wngG0FrPo_!!6000000004037-2-tps-126-126.png",
+    "resource_type": "image",
+    "kind": "request",
+    "status": null
+  },
+  {
+    "url": "https://g.alicdn.com/Qoder/qoder-web/0.0.331/_next/static/css/8f010e1b7757c007.css",
+    "resource_type": "stylesheet",
+    "kind": "request",
+    "status": null
+  },
+  {
+    "url": "https://g.alicdn.com/Qoder/qoder-web/0.0.331/_next/static/css/4b2ff5ff8ff5c412.css",
+    "resource_type": "stylesheet",
+    "kind": "request",
+    "status": null
+  },
+  {
+    "url": "https://g.alicdn.com/Qoder/qoder-web/0.0.331/_next/static/css/59c6159237633492.css",
+    "resource_type": "stylesheet",
+    "kind": "request",
+    "status": null
+  },
+  {
+    "url": "https://g.alicdn.com/Qoder/qoder-web/0.0.331/_next/static/css/824bda3407ddc3c6.css",
+    "resource_type": "stylesheet",
+    "kind": "request",
+    "status": null
+  },
+  {
+    "url": "https://g.alicdn.com/Qoder/qoder-web/0.0.331/_next/static/css/202d5a15b5b2857d.css",
+    "resource_type": "stylesheet",
+    "kind": "request",
+    "status": null
+  },
+  {
+    "url": "https://g.alicdn.com/Qoder/qoder-web/0.0.331/_next/static/css/6f903207c47c5f7e.css",
+    "resource_type": "stylesheet",
+    "kind": "request",
+    "status": null
+  },
+  {
+    "url": "https://g.alicdn.com/Qoder/qoder-web/0.0.331/_next/static/css/b9cdcdce1bc41622.css",
+    "resource_type": "stylesheet",
+    "kind": "request",
+    "status": null
+  },
+  {
+    "url": "https://g.alicdn.com/Qoder/qoder-web/0.0.331/_next/static/css/5426dc103ef002f7.css",
+    "resource_type": "stylesheet",
+    "kind": "request",
+    "status": null
+  },
+  {
+    "url": "https://g.alicdn.com/Qoder/qoder-web/0.0.331/_next/static/css/492b8b70b5396da1.css",
+    "resource_type": "stylesheet",
+    "kind": "request",
+    "status": null
+  },
+  {
+    "url": "https://g.alicdn.com/Qoder/qoder-web/0.0.331/_next/static/css/c0f7ee16ee978202.css",
+    "resource_type": "stylesheet",
+    "kind": "request",
+    "status": null
+  },
+  {
+    "url": "https://g.alicdn.com/Qoder/qoder-web/0.0.331/_next/static/chunks/webpack-b4ee6245ca089067.js",
+    "resource_type": "script",
+    "kind": "request",
+    "status": null
+  },
+  {
+    "url": "https://g.alicdn.com/Qoder/qoder-web/0.0.331/_next/static/chunks/4bd1b696-100b9d70ed4e49c1.js",
+    "resource_type": "script",
+    "kind": "request",
+    "status": null
+  },
+  {
+    "url": "https://g.alicdn.com/Qoder/qoder-web/0.0.331/_next/static/chunks/1255-c5d5c6915c51af1a.js",
+    "resource_type": "script",
+    "kind": "request",
+    "status": null
+  },
+  {
+    "url": "https://g.alicdn.com/Qoder/qoder-web/0.0.331/_next/static/chunks/main-app-31497fd83dc5a99b.js",
+    "resource_type": "script",
+    "kind": "request",
+    "status": null
+  },
+  {
+    "url": "https://g.alicdn.com/Qoder/qoder-web/0.0.331/_next/static/chunks/8437-d88b205ccf8a6662.js",
+    "resource_type": "script",
+    "kind": "request",
+    "status": null
+  },
+  {
+    "url": "https://g.alicdn.com/Qoder/qoder-web/0.0.331/_next/static/chunks/6785-5c8cdd17ee3f947f.js",
+    "resource_type": "script",
+    "kind": "request",
+    "status": null
+  },
+  {
+    "url": "https://g.alicdn.com/Qoder/qoder-web/0.0.331/_next/static/chunks/6648-3ed6311eb3a2f095.js",
+    "resource_type": "script",
+    "kind": "request",
+    "status": null
+  },
+  {
+    "url": "https://g.alicdn.com/Qoder/qoder-web/0.0.331/_next/static/chunks/6116-61745be2cb0d57e9.js",
+    "resource_type": "script",
+    "kind": "request",
+    "status": null
+  },
+  {
+    "url": "https://g.alicdn.com/Qoder/qoder-web/0.0.331/_next/static/chunks/4180-2de7ed654c05a803.js",
+    "resource_type": "script",
+    "kind": "request",
+    "status": null
+  },
+  {
+    "url": "https://g.alicdn.com/Qoder/qoder-web/0.0.331/_next/static/chunks/8750-a2b23a88ae8e30ac.js",
+    "resource_type": "script",
+    "kind": "request",
+    "status": null
+  },
+  {
+    "url": "https://g.alicdn.com/Qoder/qoder-web/0.0.331/_next/static/chunks/5614-0dab2bb3903b2c5d.js",
+    "resource_type": "script",
+    "kind": "request",
+    "status": null
+  },
+  {
+    "url": "https://g.alicdn.com/Qoder/qoder-web/0.0.331/_next/static/chunks/2957-36193e1968414e5d.js",
+    "resource_type": "script",
+    "kind": "request",
+    "status": null
+  },
+  {
+    "url": "https://g.alicdn.com/Qoder/qoder-web/0.0.331/_next/static/chunks/3723-a389cfe715a9a65b.js",
+    "resource_type": "script",
+    "kind": "request",
+    "status": null
+  },
+  {
+    "url": "https://g.alicdn.com/Qoder/qoder-web/0.0.331/_next/static/chunks/7611-3117659a27bc6365.js",
+    "resource_type": "script",
+    "kind": "request",
+    "status": null
+  },
+  {
+    "url": "https://g.alicdn.com/Qoder/qoder-web/0.0.331/_next/static/chunks/2216-1065ab7461edd49b.js",
+    "resource_type": "script",
+    "kind": "request",
+    "status": null
+  },
+  {
+    "url": "https://g.alicdn.com/Qoder/qoder-web/0.0.331/_next/static/chunks/9774-db4d810d08d9a9ab.js",
+    "resource_type": "script",
+    "kind": "request",
+    "status": null
+  },
+  {
+    "url": "https://g.alicdn.com/Qoder/qoder-web/0.0.331/_next/static/chunks/3712-3f86106e24ef5b8a.js",
+    "resource_type": "script",
+    "kind": "request",
+    "status": null
+  },
+  {
+    "url": "https://g.alicdn.com/Qoder/qoder-web/0.0.331/_next/static/chunks/app/layout-608aaa30013831d2.js",
+    "resource_type": "script",
+    "kind": "request",
+    "status": null
+  },
+  {
+    "url": "https://g.alicdn.com/Qoder/qoder-web/0.0.331/_next/static/chunks/app/page-2e4ddb71923cde22.js",
+    "resource_type": "script",
+    "kind": "request",
+    "status": null
+  },
+  {
+    "url": "https://img.alicdn.com/imgextra/i2/O1CN01kDP9QPoFJVJ0G71c_!!6000000003111-2-tps-128-128.png",
+    "resource_type": "image",
+    "kind": "request",
+    "status": null
+  },
+  {
+    "url": "https://img.alicdn.com/imgextra/i4/O1CN010D8tRivx7tH0G71c_!!6000000004664-2-tps-128-128.png",
+    "resource_type": "image",
+    "kind": "request",
+    "status": null
+  },
+  {
+    "url": "https://img.alicdn.com/imgextra/i4/O1CN01SgQ8dv1l4soOat3lE_!!6000000004766-55-tps-624-448.svg",
+    "resource_type": "image",
+    "kind": "request",
+    "status": null
+  },
+  {
+    "url": "https://img.alicdn.com/imgextra/i2/O1CN0147cqQ31lPUdPr7N69_!!6000000004811-55-tps-624-448.svg",
+    "resource_type": "image",
+    "kind": "request",
+    "status": null
+  },
+  {
+    "url": "https://g.alicdn.com/qoder/qodercn-web/0.0.181/InstrumentSans.woff2",
+    "resource_type": "font",
+    "kind": "request",
+    "status": null
+  },
+  {
+    "url": "https://www.googletagmanager.com/gtag/js?id=G-EELJT0HWX0",
+    "resource_type": "script",
+    "kind": "request",
+    "status": null
+  },
+  {
+    "url": "https://g.alicdn.com/Qoder/qoder-web/0.0.331/_next/static/css/4b2ff5ff8ff5c412.css",
+    "resource_type": "stylesheet",
+    "kind": "response",
+    "status": 200
+  },
+  {
+    "url": "https://g.alicdn.com/Qoder/qoder-web/0.0.331/_next/static/css/4b2ff5ff8ff5c412.css",
+    "resource_type": "stylesheet",
+    "kind": "request-finished",
+    "status": null
+  },
+  {
+    "url": "https://g.alicdn.com/Qoder/qoder-web/0.0.331/_next/static/css/824bda3407ddc3c6.css",
+    "resource_type": "stylesheet",
+    "kind": "response",
+    "status": 200
+  },
+  {
+    "url": "https://g.alicdn.com/Qoder/qoder-web/0.0.331/_next/static/css/c0f7ee16ee978202.css",
+    "resource_type": "stylesheet",
+    "kind": "response",
+    "status": 200
+  },
+  {
+    "url": "https://g.alicdn.com/Qoder/qoder-web/0.0.331/_next/static/css/492b8b70b5396da1.css",
+    "resource_type": "stylesheet",
+    "kind": "response",
+    "status": 200
+  },
+  {
+    "url": "https://g.alicdn.com/Qoder/qoder-web/0.0.331/_next/static/css/824bda3407ddc3c6.css",
+    "resource_type": "stylesheet",
+    "kind": "request-finished",
+    "status": null
+  },
+  {
+    "url": "https://g.alicdn.com/Qoder/qoder-web/0.0.331/_next/static/css/c0f7ee16ee978202.css",
+    "resource_type": "stylesheet",
+    "kind": "request-finished",
+    "status": null
+  },
+  {
+    "url": "https://g.alicdn.com/Qoder/qoder-web/0.0.331/_next/static/css/5426dc103ef002f7.css",
+    "resource_type": "stylesheet",
+    "kind": "response",
+    "status": 200
+  },
+  {
+    "url": "https://g.alicdn.com/Qoder/qoder-web/0.0.331/_next/static/css/5426dc103ef002f7.css",
+    "resource_type": "stylesheet",
+    "kind": "request-finished",
+    "status": null
+  },
+  {
+    "url": "https://g.alicdn.com/Qoder/qoder-web/0.0.331/_next/static/css/492b8b70b5396da1.css",
+    "resource_type": "stylesheet",
+    "kind": "request-finished",
+    "status": null
+  },
+  {
+    "url": "https://g.alicdn.com/Qoder/qoder-web/0.0.331/_next/static/css/b9cdcdce1bc41622.css",
+    "resource_type": "stylesheet",
+    "kind": "response",
+    "status": 200
+  },
+  {
+    "url": "https://g.alicdn.com/Qoder/qoder-web/0.0.331/_next/static/css/b9cdcdce1bc41622.css",
+    "resource_type": "stylesheet",
+    "kind": "request-finished",
+    "status": null
+  },
+  {
+    "url": "https://g.alicdn.com/Qoder/qoder-web/0.0.331/_next/static/css/202d5a15b5b2857d.css",
+    "resource_type": "stylesheet",
+    "kind": "response",
+    "status": 200
+  },
+  {
+    "url": "https://g.alicdn.com/Qoder/qoder-web/0.0.331/_next/static/css/202d5a15b5b2857d.css",
+    "resource_type": "stylesheet",
+    "kind": "request-finished",
+    "status": null
+  },
+  {
+    "url": "https://g.alicdn.com/Qoder/qoder-web/0.0.331/_next/static/css/6f903207c47c5f7e.css",
+    "resource_type": "stylesheet",
+    "kind": "response",
+    "status": 200
+  },
+  {
+    "url": "https://g.alicdn.com/Qoder/qoder-web/0.0.331/_next/static/css/6f903207c47c5f7e.css",
+    "resource_type": "stylesheet",
+    "kind": "request-finished",
+    "status": null
+  },
+  {
+    "url": "https://g.alicdn.com/Qoder/qoder-web/0.0.331/_next/static/css/8f010e1b7757c007.css",
+    "resource_type": "stylesheet",
+    "kind": "response",
+    "status": 200
+  },
+  {
+    "url": "https://g.alicdn.com/Qoder/qoder-web/0.0.331/_next/static/css/8f010e1b7757c007.css",
+    "resource_type": "stylesheet",
+    "kind": "request-finished",
+    "status": null
+  },
+  {
+    "url": "https://g.alicdn.com/Qoder/qoder-web/0.0.331/_next/static/css/59c6159237633492.css",
+    "resource_type": "stylesheet",
+    "kind": "response",
+    "status": 200
+  },
+  {
+    "url": "https://g.alicdn.com/Qoder/qoder-web/0.0.331/_next/static/css/59c6159237633492.css",
+    "resource_type": "stylesheet",
+    "kind": "request-finished",
+    "status": null
+  },
+  {
+    "url": "https://g.alicdn.com/qoder/qodercn-web/0.0.181/InstrumentSans.woff2",
+    "resource_type": "font",
+    "kind": "response",
+    "status": 200
+  },
+  {
+    "url": "https://g.alicdn.com/qoder/qodercn-web/0.0.181/InstrumentSans.woff2",
+    "resource_type": "font",
+    "kind": "request-finished",
+    "status": null
+  },
+  {
+    "url": "https://img.alicdn.com/imgextra/i3/O1CN01ttLoRRmSVCL24uCu_!!6000000006162-2-tps-1024-1024.png",
+    "resource_type": "image",
+    "kind": "request",
+    "status": null
+  },
+  {
+    "url": "https://img.alicdn.com/imgextra/i3/O1CN01iBaYP0N5LvJ24uCu_!!6000000004026-2-tps-1024-1024.png",
+    "resource_type": "image",
+    "kind": "request",
+    "status": null
+  },
+  {
+    "url": "https://img.alicdn.com/imgextra/i1/O1CN01X3R6cFdAd0C0yQLY_!!6000000004926-2-tps-480-480.png",
+    "resource_type": "image",
+    "kind": "request",
+    "status": null
+  },
+  {
+    "url": "https://g.alicdn.com/Qoder/qoder-web/0.0.331/_next/static/chunks/webpack-b4ee6245ca089067.js",
+    "resource_type": "script",
+    "kind": "response",
+    "status": 200
+  },
+  {
+    "url": "https://g.alicdn.com/Qoder/qoder-web/0.0.331/_next/static/chunks/webpack-b4ee6245ca089067.js",
+    "resource_type": "script",
+    "kind": "request-finished",
+    "status": null
+  },
+  {
+    "url": "https://g.alicdn.com/Qoder/qoder-web/0.0.331/_next/static/chunks/4bd1b696-100b9d70ed4e49c1.js",
+    "resource_type": "script",
+    "kind": "response",
+    "status": 200
+  },
+  {
+    "url": "https://g.alicdn.com/Qoder/qoder-web/0.0.331/_next/static/chunks/4bd1b696-100b9d70ed4e49c1.js",
+    "resource_type": "script",
+    "kind": "request-finished",
+    "status": null
+  },
+  {
+    "url": "https://g.alicdn.com/Qoder/qoder-web/0.0.331/_next/static/chunks/1255-c5d5c6915c51af1a.js",
+    "resource_type": "script",
+    "kind": "response",
+    "status": 200
+  },
+  {
+    "url": "https://g.alicdn.com/Qoder/qoder-web/0.0.331/_next/static/chunks/1255-c5d5c6915c51af1a.js",
+    "resource_type": "script",
+    "kind": "request-finished",
+    "status": null
+  },
+  {
+    "url": "https://g.alicdn.com/Qoder/qoder-web/0.0.331/_next/static/chunks/main-app-31497fd83dc5a99b.js",
+    "resource_type": "script",
+    "kind": "response",
+    "status": 200
+  },
+  {
+    "url": "https://g.alicdn.com/Qoder/qoder-web/0.0.331/_next/static/chunks/main-app-31497fd83dc5a99b.js",
+    "resource_type": "script",
+    "kind": "request-finished",
+    "status": null
+  },
+  {
+    "url": "https://g.alicdn.com/Qoder/qoder-web/0.0.331/_next/static/chunks/8437-d88b205ccf8a6662.js",
+    "resource_type": "script",
+    "kind": "response",
+    "status": 200
+  },
+  {
+    "url": "https://g.alicdn.com/Qoder/qoder-web/0.0.331/_next/static/chunks/8437-d88b205ccf8a6662.js",
+    "resource_type": "script",
+    "kind": "request-finished",
+    "status": null
+  },
+  {
+    "url": "https://g.alicdn.com/Qoder/qoder-web/0.0.331/_next/static/chunks/6648-3ed6311eb3a2f095.js",
+    "resource_type": "script",
+    "kind": "response",
+    "status": 200
+  },
+  {
+    "url": "https://g.alicdn.com/Qoder/qoder-web/0.0.331/_next/static/chunks/6648-3ed6311eb3a2f095.js",
+    "resource_type": "script",
+    "kind": "request-finished",
+    "status": null
+  },
+  {
+    "url": "https://g.alicdn.com/Qoder/qoder-web/0.0.331/_next/static/chunks/6785-5c8cdd17ee3f947f.js",
+    "resource_type": "script",
+    "kind": "response",
+    "status": 200
+  },
+  {
+    "url": "https://g.alicdn.com/Qoder/qoder-web/0.0.331/_next/static/chunks/6785-5c8cdd17ee3f947f.js",
+    "resource_type": "script",
+    "kind": "request-finished",
+    "status": null
+  },
+  {
+    "url": "https://g.alicdn.com/Qoder/qoder-web/0.0.331/_next/static/chunks/6116-61745be2cb0d57e9.js",
+    "resource_type": "script",
+    "kind": "response",
+    "status": 200
+  },
+  {
+    "url": "https://g.alicdn.com/Qoder/qoder-web/0.0.331/_next/static/chunks/6116-61745be2cb0d57e9.js",
+    "resource_type": "script",
+    "kind": "request-finished",
+    "status": null
+  },
+  {
+    "url": "https://g.alicdn.com/Qoder/qoder-web/0.0.331/_next/static/chunks/4180-2de7ed654c05a803.js",
+    "resource_type": "script",
+    "kind": "response",
+    "status": 200
+  },
+  {
+    "url": "https://g.alicdn.com/Qoder/qoder-web/0.0.331/_next/static/chunks/4180-2de7ed654c05a803.js",
+    "resource_type": "script",
+    "kind": "request-finished",
+    "status": null
+  },
+  {
+    "url": "https://g.alicdn.com/Qoder/qoder-web/0.0.331/_next/static/chunks/8750-a2b23a88ae8e30ac.js",
+    "resource_type": "script",
+    "kind": "response",
+    "status": 200
+  },
+  {
+    "url": "https://g.alicdn.com/Qoder/qoder-web/0.0.331/_next/static/chunks/8750-a2b23a88ae8e30ac.js",
+    "resource_type": "script",
+    "kind": "request-finished",
+    "status": null
+  },
+  {
+    "url": "https://g.alicdn.com/Qoder/qoder-web/0.0.331/_next/static/chunks/5614-0dab2bb3903b2c5d.js",
+    "resource_type": "script",
+    "kind": "response",
+    "status": 200
+  },
+  {
+    "url": "https://g.alicdn.com/Qoder/qoder-web/0.0.331/_next/static/chunks/5614-0dab2bb3903b2c5d.js",
+    "resource_type": "script",
+    "kind": "request-finished",
+    "status": null
+  },
+  {
+    "url": "https://g.alicdn.com/Qoder/qoder-web/0.0.331/_next/static/chunks/2957-36193e1968414e5d.js",
+    "resource_type": "script",
+    "kind": "response",
+    "status": 200
+  },
+  {
+    "url": "https://g.alicdn.com/Qoder/qoder-web/0.0.331/_next/static/chunks/2957-36193e1968414e5d.js",
+    "resource_type": "script",
+    "kind": "request-finished",
+    "status": null
+  },
+  {
+    "url": "https://g.alicdn.com/Qoder/qoder-web/0.0.331/_next/static/chunks/3723-a389cfe715a9a65b.js",
+    "resource_type": "script",
+    "kind": "response",
+    "status": 200
+  },
+  {
+    "url": "https://g.alicdn.com/Qoder/qoder-web/0.0.331/_next/static/chunks/3723-a389cfe715a9a65b.js",
+    "resource_type": "script",
+    "kind": "request-finished",
+    "status": null
+  },
+  {
+    "url": "https://g.alicdn.com/Qoder/qoder-web/0.0.331/_next/static/chunks/2216-1065ab7461edd49b.js",
+    "resource_type": "script",
+    "kind": "response",
+    "status": 200
+  },
+  {
+    "url": "https://g.alicdn.com/Qoder/qoder-web/0.0.331/_next/static/chunks/2216-1065ab7461edd49b.js",
+    "resource_type": "script",
+    "kind": "request-finished",
+    "status": null
+  },
+  {
+    "url": "https://g.alicdn.com/Qoder/qoder-web/0.0.331/_next/static/chunks/7611-3117659a27bc6365.js",
+    "resource_type": "script",
+    "kind": "response",
+    "status": 200
+  },
+  {
+    "url": "https://g.alicdn.com/Qoder/qoder-web/0.0.331/_next/static/chunks/7611-3117659a27bc6365.js",
+    "resource_type": "script",
+    "kind": "request-finished",
+    "status": null
+  },
+  {
+    "url": "https://img.alicdn.com/imgextra/i1/O1CN01L1kyJdAVwEK0CiGs_!!6000000002346-2-tps-101-17.png",
+    "resource_type": "image",
+    "kind": "request",
+    "status": null
+  },
+  {
+    "url": "https://img.alicdn.com/imgextra/i1/O1CN01JrroT620h65njJfu7_!!6000000006880-55-tps-42-42.svg",
+    "resource_type": "image",
+    "kind": "request",
+    "status": null
+  },
+  {
+    "url": "https://img.alicdn.com/imgextra/i2/O1CN01sRHsHaZvtSB06nSm_!!6000000003107-2-tps-54-54.png",
+    "resource_type": "image",
+    "kind": "request",
+    "status": null
+  },
+  {
+    "url": "https://g.alicdn.com/Qoder/qoder-web/0.0.331/_next/static/media/seti.ece4e6b9.woff",
+    "resource_type": "font",
+    "kind": "request",
+    "status": null
+  },
+  {
+    "url": "https://img.alicdn.com/imgextra/i2/O1CN01ujLij0k3MQH2V5OS_!!6000000000850-2-tps-1232-344.png",
+    "resource_type": "image",
+    "kind": "response",
+    "status": 200
+  },
+  {
+    "url": "https://img.alicdn.com/imgextra/i2/O1CN01ujLij0k3MQH2V5OS_!!6000000000850-2-tps-1232-344.png",
+    "resource_type": "image",
+    "kind": "request-finished",
+    "status": null
+  },
+  {
+    "url": "https://img.alicdn.com/imgextra/i3/O1CN01r1a1zKvnpOG0cGga_!!6000000005369-2-tps-304-304.png",
+    "resource_type": "image",
+    "kind": "response",
+    "status": 200
+  },
+  {
+    "url": "https://img.alicdn.com/imgextra/i3/O1CN01r1a1zKvnpOG0cGga_!!6000000005369-2-tps-304-304.png",
+    "resource_type": "image",
+    "kind": "request-finished",
+    "status": null
+  },
+  {
+    "url": "https://img.alicdn.com/imgextra/i4/O1CN012JUQmkuk4LH0cGga_!!6000000004828-2-tps-304-304.png",
+    "resource_type": "image",
+    "kind": "response",
+    "status": 200
+  },
+  {
+    "url": "https://img.alicdn.com/imgextra/i4/O1CN012JUQmkuk4LH0cGga_!!6000000004828-2-tps-304-304.png",
+    "resource_type": "image",
+    "kind": "request-finished",
+    "status": null
+  },
+  {
+    "url": "https://img.alicdn.com/imgextra/i2/O1CN016fdrcQ26TiDCreYYo_!!6000000007663-55-tps-105-26.svg",
+    "resource_type": "image",
+    "kind": "response",
+    "status": 200
+  },
+  {
+    "url": "https://img.alicdn.com/imgextra/i2/O1CN016fdrcQ26TiDCreYYo_!!6000000007663-55-tps-105-26.svg",
+    "resource_type": "image",
+    "kind": "request-finished",
+    "status": null
+  },
+  {
+    "url": "https://img.alicdn.com/imgextra/i3/O1CN01VC83tu1qBMUdwnQ7y_!!6000000005457-55-tps-624-448.svg",
+    "resource_type": "image",
+    "kind": "response",
+    "status": 200
+  },
+  {
+    "url": "https://img.alicdn.com/imgextra/i3/O1CN01VC83tu1qBMUdwnQ7y_!!6000000005457-55-tps-624-448.svg",
+    "resource_type": "image",
+    "kind": "request-finished",
+    "status": null
+  },
+  {
+    "url": "https://img.alicdn.com/imgextra/i1/O1CN010vyJYe95doH2V5OS_!!6000000001987-2-tps-1232-344.png",
+    "resource_type": "image",
+    "kind": "response",
+    "status": 200
+  },
+  {
+    "url": "https://img.alicdn.com/imgextra/i1/O1CN010vyJYe95doH2V5OS_!!6000000001987-2-tps-1232-344.png",
+    "resource_type": "image",
+    "kind": "request-finished",
+    "status": null
+  },
+  {
+    "url": "https://img.alicdn.com/imgextra/i2/O1CN01rf48hD1VmoxJuaDoj_!!6000000002696-55-tps-624-448.svg",
+    "resource_type": "image",
+    "kind": "response",
+    "status": 200
+  },
+  {
+    "url": "https://img.alicdn.com/imgextra/i2/O1CN01rf48hD1VmoxJuaDoj_!!6000000002696-55-tps-624-448.svg",
+    "resource_type": "image",
+    "kind": "request-finished",
+    "status": null
+  },
+  {
+    "url": "https://img.alicdn.com/imgextra/i2/O1CN01DMdf5z1fE97yvPU4d_!!6000000003974-55-tps-624-448.svg",
+    "resource_type": "image",
+    "kind": "response",
+    "status": 200
+  },
+  {
+    "url": "https://img.alicdn.com/imgextra/i2/O1CN01DMdf5z1fE97yvPU4d_!!6000000003974-55-tps-624-448.svg",
+    "resource_type": "image",
+    "kind": "request-finished",
+    "status": null
+  },
+  {
+    "url": "https://img.alicdn.com/imgextra/i2/O1CN0147cqQ31lPUdPr7N69_!!6000000004811-55-tps-624-448.svg",
+    "resource_type": "image",
+    "kind": "response",
+    "status": 200
+  },
+  {
+    "url": "https://img.alicdn.com/imgextra/i2/O1CN0147cqQ31lPUdPr7N69_!!6000000004811-55-tps-624-448.svg",
+    "resource_type": "image",
+    "kind": "request-finished",
+    "status": null
+  },
+  {
+    "url": "https://img.alicdn.com/imgextra/i2/O1CN01c4GNITKnK3B0G71c_!!6000000002903-2-tps-128-128.png",
+    "resource_type": "image",
+    "kind": "response",
+    "status": 200
+  },
+  {
+    "url": "https://img.alicdn.com/imgextra/i2/O1CN01c4GNITKnK3B0G71c_!!6000000002903-2-tps-128-128.png",
+    "resource_type": "image",
+    "kind": "request-finished",
+    "status": null
+  },
+  {
+    "url": "https://img.alicdn.com/imgextra/i2/O1CN01s8jRX04wngG0FrPo_!!6000000004037-2-tps-126-126.png",
+    "resource_type": "image",
+    "kind": "response",
+    "status": 200
+  },
+  {
+    "url": "https://img.alicdn.com/imgextra/i2/O1CN01s8jRX04wngG0FrPo_!!6000000004037-2-tps-126-126.png",
+    "resource_type": "image",
+    "kind": "request-finished",
+    "status": null
+  },
+  {
+    "url": "https://img.alicdn.com/imgextra/i2/O1CN01kDP9QPoFJVJ0G71c_!!6000000003111-2-tps-128-128.png",
+    "resource_type": "image",
+    "kind": "response",
+    "status": 200
+  },
+  {
+    "url": "https://img.alicdn.com/imgextra/i2/O1CN01kDP9QPoFJVJ0G71c_!!6000000003111-2-tps-128-128.png",
+    "resource_type": "image",
+    "kind": "request-finished",
+    "status": null
+  },
+  {
+    "url": "https://img.alicdn.com/imgextra/i4/O1CN010D8tRivx7tH0G71c_!!6000000004664-2-tps-128-128.png",
+    "resource_type": "image",
+    "kind": "response",
+    "status": 200
+  },
+  {
+    "url": "https://img.alicdn.com/imgextra/i4/O1CN010D8tRivx7tH0G71c_!!6000000004664-2-tps-128-128.png",
+    "resource_type": "image",
+    "kind": "request-finished",
+    "status": null
+  },
+  {
+    "url": "https://img.alicdn.com/imgextra/i3/O1CN01ttLoRRmSVCL24uCu_!!6000000006162-2-tps-1024-1024.png",
+    "resource_type": "image",
+    "kind": "response",
+    "status": 200
+  },
+  {
+    "url": "https://img.alicdn.com/imgextra/i3/O1CN01ttLoRRmSVCL24uCu_!!6000000006162-2-tps-1024-1024.png",
+    "resource_type": "image",
+    "kind": "request-finished",
+    "status": null
+  },
+  {
+    "url": "https://img.alicdn.com/imgextra/i1/O1CN01JrroT620h65njJfu7_!!6000000006880-55-tps-42-42.svg",
+    "resource_type": "image",
+    "kind": "response",
+    "status": 200
+  },
+  {
+    "url": "https://img.alicdn.com/imgextra/i1/O1CN01L1kyJdAVwEK0CiGs_!!6000000002346-2-tps-101-17.png",
+    "resource_type": "image",
+    "kind": "response",
+    "status": 200
+  },
+  {
+    "url": "https://img.alicdn.com/imgextra/i1/O1CN01L1kyJdAVwEK0CiGs_!!6000000002346-2-tps-101-17.png",
+    "resource_type": "image",
+    "kind": "request-finished",
+    "status": null
+  },
+  {
+    "url": "https://img.alicdn.com/imgextra/i1/O1CN014os8WKwXRyK15jBo_!!6000000007785-2-tps-538-1150.png",
+    "resource_type": "image",
+    "kind": "request",
+    "status": null
+  },
+  {
+    "url": "https://img.alicdn.com/imgextra/i1/O1CN01JrroT620h65njJfu7_!!6000000006880-55-tps-42-42.svg",
+    "resource_type": "image",
+    "kind": "request-finished",
+    "status": null
+  },
+  {
+    "url": "https://img.alicdn.com/imgextra/i4/O1CN01SgQ8dv1l4soOat3lE_!!6000000004766-55-tps-624-448.svg",
+    "resource_type": "image",
+    "kind": "response",
+    "status": 200
+  },
+  {
+    "url": "https://img.alicdn.com/imgextra/i4/O1CN01SgQ8dv1l4soOat3lE_!!6000000004766-55-tps-624-448.svg",
+    "resource_type": "image",
+    "kind": "request-finished",
+    "status": null
+  },
+  {
+    "url": "https://img.alicdn.com/imgextra/i1/O1CN01X3R6cFdAd0C0yQLY_!!6000000004926-2-tps-480-480.png",
+    "resource_type": "image",
+    "kind": "response",
+    "status": 200
+  },
+  {
+    "url": "https://img.alicdn.com/imgextra/i1/O1CN01X3R6cFdAd0C0yQLY_!!6000000004926-2-tps-480-480.png",
+    "resource_type": "image",
+    "kind": "request-finished",
+    "status": null
+  },
+  {
+    "url": "https://img.alicdn.com/imgextra/i3/O1CN01iBaYP0N5LvJ24uCu_!!6000000004026-2-tps-1024-1024.png",
+    "resource_type": "image",
+    "kind": "response",
+    "status": 200
+  },
+  {
+    "url": "https://img.alicdn.com/imgextra/i3/O1CN01iBaYP0N5LvJ24uCu_!!6000000004026-2-tps-1024-1024.png",
+    "resource_type": "image",
+    "kind": "request-finished",
+    "status": null
+  },
+  {
+    "url": "https://img.alicdn.com/imgextra/i2/O1CN01sRHsHaZvtSB06nSm_!!6000000003107-2-tps-54-54.png",
+    "resource_type": "image",
+    "kind": "response",
+    "status": 200
+  },
+  {
+    "url": "https://img.alicdn.com/imgextra/i2/O1CN01sRHsHaZvtSB06nSm_!!6000000003107-2-tps-54-54.png",
+    "resource_type": "image",
+    "kind": "request-finished",
+    "status": null
+  },
+  {
+    "url": "https://g.alicdn.com/Qoder/qoder-web/0.0.331/_next/static/media/seti.ece4e6b9.woff",
+    "resource_type": "font",
+    "kind": "response",
+    "status": 200
+  },
+  {
+    "url": "https://g.alicdn.com/Qoder/qoder-web/0.0.331/_next/static/media/seti.ece4e6b9.woff",
+    "resource_type": "font",
+    "kind": "request-finished",
+    "status": null
+  },
+  {
+    "url": "https://g.alicdn.com/Qoder/qoder-web/0.0.331/_next/static/chunks/app/layout-608aaa30013831d2.js",
+    "resource_type": "script",
+    "kind": "response",
+    "status": 200
+  },
+  {
+    "url": "https://g.alicdn.com/Qoder/qoder-web/0.0.331/_next/static/chunks/app/layout-608aaa30013831d2.js",
+    "resource_type": "script",
+    "kind": "request-finished",
+    "status": null
+  },
+  {
+    "url": "https://g.alicdn.com/Qoder/qoder-web/0.0.331/_next/static/chunks/app/page-2e4ddb71923cde22.js",
+    "resource_type": "script",
+    "kind": "response",
+    "status": 200
+  },
+  {
+    "url": "https://g.alicdn.com/Qoder/qoder-web/0.0.331/_next/static/chunks/app/page-2e4ddb71923cde22.js",
+    "resource_type": "script",
+    "kind": "request-finished",
+    "status": null
+  },
+  {
+    "url": "https://g.alicdn.com/Qoder/qoder-web/0.0.331/_next/static/chunks/3712-3f86106e24ef5b8a.js",
+    "resource_type": "script",
+    "kind": "response",
+    "status": 200
+  },
+  {
+    "url": "https://g.alicdn.com/Qoder/qoder-web/0.0.331/_next/static/chunks/3712-3f86106e24ef5b8a.js",
+    "resource_type": "script",
+    "kind": "request-finished",
+    "status": null
+  },
+  {
+    "url": "https://g.alicdn.com/Qoder/qoder-web/0.0.331/_next/static/chunks/9774-db4d810d08d9a9ab.js",
+    "resource_type": "script",
+    "kind": "response",
+    "status": 200
+  },
+  {
+    "url": "https://g.alicdn.com/Qoder/qoder-web/0.0.331/_next/static/chunks/9774-db4d810d08d9a9ab.js",
+    "resource_type": "script",
+    "kind": "request-finished",
+    "status": null
+  },
+  {
+    "url": "https://img.alicdn.com/imgextra/i1/O1CN014os8WKwXRyK15jBo_!!6000000007785-2-tps-538-1150.png",
+    "resource_type": "image",
+    "kind": "response",
+    "status": 200
+  },
+  {
+    "url": "https://img.alicdn.com/imgextra/i1/O1CN014os8WKwXRyK15jBo_!!6000000007785-2-tps-538-1150.png",
+    "resource_type": "image",
+    "kind": "request-finished",
+    "status": null
+  },
+  {
+    "url": "https://qoder.com/",
+    "resource_type": "document",
+    "kind": "request-finished",
+    "status": null
+  },
+  {
+    "url": "https://www.googletagmanager.com/gtag/js?id=G-EELJT0HWX0",
+    "resource_type": "script",
+    "kind": "response",
+    "status": 200
+  },
+  {
+    "url": "https://www.googletagmanager.com/gtag/js?id=G-EELJT0HWX0",
+    "resource_type": "script",
+    "kind": "request-finished",
+    "status": null
+  },
+  {
+    "url": "https://img.alicdn.com/imgextra/i4/O1CN01QkSxiCocd3D0prc8_!!6000000008124-2-tps-412-412.png",
+    "resource_type": "other",
+    "kind": "request",
+    "status": null
+  },
+  {
+    "url": "https://img.alicdn.com/imgextra/i4/O1CN01QkSxiCocd3D0prc8_!!6000000008124-2-tps-412-412.png",
+    "resource_type": "other",
+    "kind": "response",
+    "status": 200
+  },
+  {
+    "url": "https://img.alicdn.com/imgextra/i4/O1CN01QkSxiCocd3D0prc8_!!6000000008124-2-tps-412-412.png",
+    "resource_type": "other",
+    "kind": "request-finished",
+    "status": null
+  },
+  {
+    "url": "https://qoder.com/favIcon.svg",
+    "resource_type": "other",
+    "kind": "request",
+    "status": null
+  },
+  {
+    "url": "https://qoder.com/api/v1/operation-slots?site=qoder-com&locale=en-US",
+    "resource_type": "fetch",
+    "kind": "request",
+    "status": null
+  },
+  {
+    "url": "https://qoder.com/api/v1/me",
+    "resource_type": "fetch",
+    "kind": "request",
+    "status": null
+  },
+  {
+    "url": "https://www.googletagmanager.com/gtm.js?id=GTM-PQZDSC7G",
+    "resource_type": "script",
+    "kind": "request",
+    "status": null
+  },
+  {
+    "url": "https://bat.bing.net/bat.js?ti=343278852",
+    "resource_type": "script",
+    "kind": "request",
+    "status": null
+  },
+  {
+    "url": "https://qoder.com/favIcon.svg",
+    "resource_type": "other",
+    "kind": "response",
+    "status": 200
+  },
+  {
+    "url": "https://qoder.com/favIcon.svg",
+    "resource_type": "other",
+    "kind": "request-finished",
+    "status": null
+  },
+  {
+    "url": "https://qoder.com/api/v1/operation-slots?site=qoder-com&locale=en-US",
+    "resource_type": "fetch",
+    "kind": "response",
+    "status": 200
+  },
+  {
+    "url": "https://qoder.com/download.txt?_rsc=1p-R_iEY6bj0jY31",
+    "resource_type": "fetch",
+    "kind": "request",
+    "status": null
+  },
+  {
+    "url": "https://qoder.com/api/v1/me",
+    "resource_type": "fetch",
+    "kind": "response",
+    "status": 401
+  },
+  {
+    "url": "https://www.googletagmanager.com/gtag/js?id=AW-17523085727&cx=c&gtm=4e6b21",
+    "resource_type": "script",
+    "kind": "request",
+    "status": null
+  },
+  {
+    "url": "https://analytics.google.com/g/collect?v=2&tid=G-EELJT0HWX0&gtm=45je6b21v9223154500za200zd9223154500xf1&_p=1793810630260&_gaz=1&gcd=13l3l3l3l1l1&npa=0&dma=0&ecid=1382002434&_eu=AAAAAGAC&are=1&cid=616025359.1793810630&ec_mode=a&frm=0&pscdl=noapi&rcb=9&sr=1440x900&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B147.0.7727.55%7CNot.A%252FBrand%3B8.0.0.0%7CChromium%3B147.0.7727.55&uam=&uamb=0&uap=Windows&uapv=19.0.0&uaw=0&ul=en-us&gaf=2&_s=1&tag_exp=115938466~115938469~118897920~118897930~119793972~120213116~120385422~120412528~120420416~120469145~120469153~121246026~121246034~123691370~123814946&dp=%2F&dl=https%3A%2F%2Fqoder.com%2F&dt=Qoder%20-%20AI%20Coding%20Assistant%20%7C%20Autonomous%20Development%20IDE&dr=&sid=1793810630&sct=1&seg=0&en=page_view&_fv=1&_nsi=1&_ss=1&_ee=1&tfd=2652",
+    "resource_type": "fetch",
+    "kind": "request",
+    "status": null
+  },
+  {
+    "url": "https://stats.g.doubleclick.net/g/collect?v=2&tid=G-EELJT0HWX0&cid=616025359.1793810630&gtm=45je6b21v9223154500za200zd9223154500xf1&rcb=9&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=115938466~115938469~118897920~118897930~119793972~120213116~120385422~120412528~120420416~120469145~120469153~121246026~121246034~123691370~123814946",
+    "resource_type": "ping",
+    "kind": "request",
+    "status": null
+  },
+  {
+    "url": "https://www.google.com.bd/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-EELJT0HWX0&cid=616025359.1793810630&gtm=45je6b21v9223154500za200zd9223154500xf1&rcb=9&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=115938466~115938469~118897920~118897930~119793972~120213116~120385422~120412528~120420416~120469145~120469153~121246026~121246034~123691370~123814946&z=1966811503",
+    "resource_type": "image",
+    "kind": "request",
+    "status": null
+  },
+  {
+    "url": "https://qoder.com/api/v1/operation-slots?site=qoder-com&locale=en-US",
+    "resource_type": "fetch",
+    "kind": "request-finished",
+    "status": null
+  },
+  {
+    "url": "https://qoder.com/api/v1/me",
+    "resource_type": "fetch",
+    "kind": "request-finished",
+    "status": null
+  },
+  {
+    "url": "https://qoder.com/download.txt?_rsc=1p-R_iEY6bj0jY31",
+    "resource_type": "fetch",
+    "kind": "response",
+    "status": 404
+  },
+  {
+    "url": "https://www.googletagmanager.com/gtm.js?id=GTM-PQZDSC7G",
+    "resource_type": "script",
+    "kind": "response",
+    "status": 200
+  },
+  {
+    "url": "https://www.googletagmanager.com/gtm.js?id=GTM-PQZDSC7G",
+    "resource_type": "script",
+    "kind": "request-finished",
+    "status": null
+  },
+  {
+    "url": "https://qoder.com/users/sign-up.txt?_rsc=1p-R_iEY6bj0jY31",
+    "resource_type": "fetch",
+    "kind": "request",
+    "status": null
+  },
+  {
+    "url": "https://bat.bing.net/bat.js?ti=343278852",
+    "resource_type": "script",
+    "kind": "response",
+    "status": 200
+  },
+  {
+    "url": "https://bat.bing.net/bat.js?ti=343278852",
+    "resource_type": "script",
+    "kind": "request-finished",
+    "status": null
+  },
+  {
+    "url": "https://qoder.com/download.txt?_rsc=1p-R_iEY6bj0jY31",
+    "resource_type": "fetch",
+    "kind": "request-finished",
+    "status": null
+  },
+  {
+    "url": "https://bat.bing.com/p/action/343278852.js",
+    "resource_type": "script",
+    "kind": "request",
+    "status": null
+  },
+  {
+    "url": "https://qoder.com/users/sign-up.txt?_rsc=1p-R_iEY6bj0jY31",
+    "resource_type": "fetch",
+    "kind": "response",
+    "status": 404
+  },
+  {
+    "url": "https://analytics.google.com/g/collect?v=2&tid=G-EELJT0HWX0&gtm=45je6b21v9223154500za200zd9223154500xf1&_p=1793810630260&_gaz=1&gcd=13l3l3l3l1l1&npa=0&dma=0&ecid=1382002434&_eu=AAAAAGAC&are=1&cid=616025359.1793810630&ec_mode=a&frm=0&pscdl=noapi&rcb=9&sr=1440x900&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B147.0.7727.55%7CNot.A%252FBrand%3B8.0.0.0%7CChromium%3B147.0.7727.55&uam=&uamb=0&uap=Windows&uapv=19.0.0&uaw=0&ul=en-us&gaf=2&_s=1&tag_exp=115938466~115938469~118897920~118897930~119793972~120213116~120385422~120412528~120420416~120469145~120469153~121246026~121246034~123691370~123814946&dp=%2F&dl=https%3A%2F%2Fqoder.com%2F&dt=Qoder%20-%20AI%20Coding%20Assistant%20%7C%20Autonomous%20Development%20IDE&dr=&sid=1793810630&sct=1&seg=0&en=page_view&_fv=1&_nsi=1&_ss=1&_ee=1&tfd=2652",
+    "resource_type": "fetch",
+    "kind": "response",
+    "status": 204
+  },
+  {
+    "url": "https://analytics.google.com/g/collect?v=2&tid=G-EELJT0HWX0&gtm=45je6b21v9223154500za200zd9223154500xf1&_p=1793810630260&_gaz=1&gcd=13l3l3l3l1l1&npa=0&dma=0&ecid=1382002434&_eu=AAAAAGAC&are=1&cid=616025359.1793810630&ec_mode=a&frm=0&pscdl=noapi&rcb=9&sr=1440x900&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B147.0.7727.55%7CNot.A%252FBrand%3B8.0.0.0%7CChromium%3B147.0.7727.55&uam=&uamb=0&uap=Windows&uapv=19.0.0&uaw=0&ul=en-us&gaf=2&_s=1&tag_exp=115938466~115938469~118897920~118897930~119793972~120213116~120385422~120412528~120420416~120469145~120469153~121246026~121246034~123691370~123814946&dp=%2F&dl=https%3A%2F%2Fqoder.com%2F&dt=Qoder%20-%20AI%20Coding%20Assistant%20%7C%20Autonomous%20Development%20IDE&dr=&sid=1793810630&sct=1&seg=0&en=page_view&_fv=1&_nsi=1&_ss=1&_ee=1&tfd=2652",
+    "resource_type": "fetch",
+    "kind": "request-failed",
+    "status": null
+  },
+  {
+    "url": "https://qoder.com/users/sign-up.txt?_rsc=1p-R_iEY6bj0jY31",
+    "resource_type": "fetch",
+    "kind": "request-finished",
+    "status": null
+  },
+  {
+    "url": "https://www.google.com.bd/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-EELJT0HWX0&cid=616025359.1793810630&gtm=45je6b21v9223154500za200zd9223154500xf1&rcb=9&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=115938466~115938469~118897920~118897930~119793972~120213116~120385422~120412528~120420416~120469145~120469153~121246026~121246034~123691370~123814946&z=1966811503",
+    "resource_type": "image",
+    "kind": "response",
+    "status": 200
+  },
+  {
+    "url": "https://www.google.com.bd/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-EELJT0HWX0&cid=616025359.1793810630&gtm=45je6b21v9223154500za200zd9223154500xf1&rcb=9&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=115938466~115938469~118897920~118897930~119793972~120213116~120385422~120412528~120420416~120469145~120469153~121246026~121246034~123691370~123814946&z=1966811503",
+    "resource_type": "image",
+    "kind": "request-finished",
+    "status": null
+  },
+  {
+    "url": "https://stats.g.doubleclick.net/g/collect?v=2&tid=G-EELJT0HWX0&cid=616025359.1793810630&gtm=45je6b21v9223154500za200zd9223154500xf1&rcb=9&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=115938466~115938469~118897920~118897930~119793972~120213116~120385422~120412528~120420416~120469145~120469153~121246026~121246034~123691370~123814946",
+    "resource_type": "ping",
+    "kind": "response",
+    "status": 204
+  },
+  {
+    "url": "https://stats.g.doubleclick.net/g/collect?v=2&tid=G-EELJT0HWX0&cid=616025359.1793810630&gtm=45je6b21v9223154500za200zd9223154500xf1&rcb=9&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=115938466~115938469~118897920~118897930~119793972~120213116~120385422~120412528~120420416~120469145~120469153~121246026~121246034~123691370~123814946",
+    "resource_type": "ping",
+    "kind": "request-finished",
+    "status": null
+  },
+  {
+    "url": "https://www.googletagmanager.com/gtag/js?id=AW-17523085727&cx=c&gtm=4e6b21",
+    "resource_type": "script",
+    "kind": "response",
+    "status": 200
+  },
+  {
+    "url": "https://www.googletagmanager.com/gtag/js?id=AW-17523085727&cx=c&gtm=4e6b21",
+    "resource_type": "script",
+    "kind": "request-finished",
+    "status": null
+  },
+  {
+    "url": "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/17523085727/?random=1793810630934&cv=11&fst=1793810630934&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be6b21v9235569778za208zb9223154500zd9223154500xecxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616986~115938466~115938469~118897920~118897930~120213116~120385422~120412528~120420416~120469145~120469153~121191155~121246026~121246034~123691370~123692834~123814946&u_w=1440&u_h=900&url=https%3A%2F%2Fqoder.com%2F&rcb=8&frm=0&tiba=Qoder%20-%20AI%20Coding%20Assistant%20%7C%20Autonomous%20Development%20IDE&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1857168879.1793810631&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B147.0.7727.55%7CNot.A%252FBrand%3B8.0.0.0%7CChromium%3B147.0.7727.55&uamb=0&uam=&uap=Windows&uapv=19.0.0&uaw=0&data=event%3Dgtag.config&ept=9&rfmt=3&fmt=4",
+    "resource_type": "script",
+    "kind": "request",
+    "status": null
+  },
+  {
+    "url": "https://www.google.com/rmkt/collect/17523085727/?random=1793810630934&cv=11&fst=1793810630934&fmt=8&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be6b21v9235569778za208zb9223154500zd9223154500xecxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616986~115938466~115938469~118897920~118897930~120213116~120385422~120412528~120420416~120469145~120469153~121191155~121246026~121246034~123691370~123692834~123814946&u_w=1440&u_h=900&url=https%3A%2F%2Fqoder.com%2F&rcb=8&frm=0&tiba=Qoder%20-%20AI%20Coding%20Assistant%20%7C%20Autonomous%20Development%20IDE&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1857168879.1793810631&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B147.0.7727.55%7CNot.A%252FBrand%3B8.0.0.0%7CChromium%3B147.0.7727.55&uamb=0&uam=&uap=Windows&uapv=19.0.0&uaw=0&data=event%3Dgtag.config&ept=68&gcp=5",
+    "resource_type": "fetch",
+    "kind": "request",
+    "status": null
+  },
+  {
+    "url": "https://analytics.google.com/g/collect?v=2&tid=G-B3XLHNXXF7&gtm=45be6b21v9235569778za208zb9223154500zd9223154500xf1&_p=1793810630260&_gaz=1&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAACAC&are=1&cid=616025359.1793810630&frm=0&ibt=1&ngs=1&pscdl=noapi&rcb=8&sr=1440x900&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B147.0.7727.55%7CNot.A%252FBrand%3B8.0.0.0%7CChromium%3B147.0.7727.55&uam=&uamb=0&uap=Windows&uapv=19.0.0&uaw=0&ul=en-us&_s=1&tag_exp=115616986~115938466~115938469~118897920~118897930~120213116~120385422~120412528~120420416~120469145~120469153~121191155~121246026~121246034~123691370~123692834~123814946&sid=1793810630&sct=1&seg=0&dl=https%3A%2F%2Fqoder.com%2F&dt=Qoder%20-%20AI%20Coding%20Assistant%20%7C%20Autonomous%20Development%20IDE&en=page_view&_fv=1&_ss=1&_ee=1&tfd=3121",
+    "resource_type": "fetch",
+    "kind": "request",
+    "status": null
+  },
+  {
+    "url": "https://stats.g.doubleclick.net/g/collect?v=2&ngs=1&ibt=1&tid=G-B3XLHNXXF7&cid=616025359.1793810630&gtm=45be6b21v9235569778za208zb9223154500zd9223154500xf1&rcb=8&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=115616986~115938466~115938469~118897920~118897930~120213116~120385422~120412528~120420416~120469145~120469153~121191155~121246026~121246034~123691370~123692834~123814946",
+    "resource_type": "ping",
+    "kind": "request",
+    "status": null
+  },
+  {
+    "url": "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/17523085727/?random=1793810630999&cv=11&fst=1793810630999&bg=ffffff&guid=ON&async=1&en=page_view&gtm=45be6b21v9235569778za200zb9223154500zd9223154500xecxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616986~115938466~115938469~118897920~118897930~120213116~120385422~120412528~120420416~120469145~120469153~121191155~121246026~121246034~123691370~123692834~123814946&u_w=1440&u_h=900&url=https%3A%2F%2Fqoder.com%2F&rcb=8&tiba=Qoder%20-%20AI%20Coding%20Assistant%20%7C%20Autonomous%20Development%20IDE&frm=0&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1857168879.1793810631&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B147.0.7727.55%7CNot.A%252FBrand%3B8.0.0.0%7CChromium%3B147.0.7727.55&uamb=0&uam=&uap=Windows&uapv=19.0.0&uaw=0&data=event%3Dpage_view%3Bpage_path%3D%2F&ept=9&rfmt=3&fmt=4",
+    "resource_type": "script",
+    "kind": "request",
+    "status": null
+  },
+  {
+    "url": "https://www.google.com/rmkt/collect/17523085727/?random=1793810630999&cv=11&fst=1793810630999&fmt=8&bg=ffffff&guid=ON&async=1&en=page_view&gtm=45be6b21v9235569778za200zb9223154500zd9223154500xecxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616986~115938466~115938469~118897920~118897930~120213116~120385422~120412528~120420416~120469145~120469153~121191155~121246026~121246034~123691370~123692834~123814946&u_w=1440&u_h=900&url=https%3A%2F%2Fqoder.com%2F&rcb=8&tiba=Qoder%20-%20AI%20Coding%20Assistant%20%7C%20Autonomous%20Development%20IDE&frm=0&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1857168879.1793810631&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B147.0.7727.55%7CNot.A%252FBrand%3B8.0.0.0%7CChromium%3B147.0.7727.55&uamb=0&uam=&uap=Windows&uapv=19.0.0&uaw=0&data=event%3Dpage_view%3Bpage_path%3D%2F&ept=68&gcp=5",
+    "resource_type": "fetch",
+    "kind": "request",
+    "status": null
+  },
+  {
+    "url": "https://www.google.com/ccm/collect?rcb=8&frm=0&apvc=1&auid=1857168879.1793810631&dt=Qoder%20-%20AI%20Coding%20Assistant%20%7C%20Autonomous%20Development%20IDE&tid=AW-17523085727&en=page_view&dl=https%3A%2F%2Fqoder.com%2F&scrsrc=www.googletagmanager.com&rnd=1055324392.1793810631&navt=n&npa=0&gtm=45be6b21v9235569778za208zb9223154500zd9223154500xecxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616986~115938466~115938469~118897920~118897930~120213116~120385422~120412528~120420416~120469145~120469153~121191155~121246026~121246034~123691370~123692834~123814946&tft=1793810631026&tfd=3152&tids=AW-17523085727&fmt=8",
+    "resource_type": "fetch",
+    "kind": "request",
+    "status": null
+  },
+  {
+    "url": "https://ad.doubleclick.net/ccm/s/collect?auid=1857168879.1793810631&gtm=45be6b21v9235569778za208zb9223154500zd9223154500xecxf1&fmt=8",
+    "resource_type": "fetch",
+    "kind": "request",
+    "status": null
+  },
+  {
+    "url": "https://www.google.com/ccm/collect?rcb=8&frm=0&apvc=0&auid=1857168879.1793810631&dt=Qoder%20-%20AI%20Coding%20Assistant%20%7C%20Autonomous%20Development%20IDE&tid=AW-17523085727&en=page_view&dl=https%3A%2F%2Fqoder.com%2F&scrsrc=www.googletagmanager.com&rnd=1055324392.1793810631&navt=n&npa=0&ep.page_path=%2F&gtm=45be6b21v9235569778za200zb9223154500zd9223154500xecxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616986~115938466~115938469~118897920~118897930~120213116~120385422~120412528~120420416~120469145~120469153~121191155~121246026~121246034~123691370~123692834~123814946&tft=1793810631030&tfd=3156&tids=AW-17523085727&fmt=8",
+    "resource_type": "fetch",
+    "kind": "request",
+    "status": null
+  },
+  {
+    "url": "https://www.google.com.bd/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&ngs=1&ibt=1&tid=G-B3XLHNXXF7&cid=616025359.1793810630&gtm=45be6b21v9235569778za208zb9223154500zd9223154500xf1&rcb=8&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=115616986~115938466~115938469~118897920~118897930~120213116~120385422~120412528~120420416~120469145~120469153~121191155~121246026~121246034~123691370~123692834~123814946&z=1942408615",
+    "resource_type": "image",
+    "kind": "request",
+    "status": null
+  },
+  {
+    "url": "https://bat.bing.com/p/action/343278852.js",
+    "resource_type": "script",
+    "kind": "response",
+    "status": 200
+  },
+  {
+    "url": "https://bat.bing.com/p/action/343278852.js",
+    "resource_type": "script",
+    "kind": "request-finished",
+    "status": null
+  },
+  {
+    "url": "https://www.clarity.ms/tag/uet/343278852",
+    "resource_type": "script",
+    "kind": "request",
+    "status": null
+  },
+  {
+    "url": "https://bat.bing.com/action/0?ti=343278852&Ver=2&mid=985c2edf-2650-4bec-a2a6-27c9af43f548&bo=1&sid=ea165b00d86e11f19f4cf72b02e36b50&vid=ea170cb0d86e11f1b24639f5925be2da&vids=1&msclkid=N&uach=pv%3D19.0.0&pi=918639831&lg=en-US&sw=1440&sh=900&sc=24&nwd=1&tl=Qoder%20-%20AI%20Coding%20Assistant%20%7C%20Autonomous%20Development%20IDE&kw=Qoder,AI%20coding%20assistant,developer%20tools,AI%20code%20generation,agentic%20coding&p=https%3A%2F%2Fqoder.com%2F&r=&lt=2118&evt=pageLoad&sv=2&cdb=AQAQ&rn=974903",
+    "resource_type": "image",
+    "kind": "request",
+    "status": null
+  },
+  {
+    "url": "https://analytics.google.com/g/collect?v=2&tid=G-B3XLHNXXF7&gtm=45be6b21v9235569778za208zb9223154500zd9223154500xf1&_p=1793810630260&_gaz=1&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAACAC&are=1&cid=616025359.1793810630&frm=0&ibt=1&ngs=1&pscdl=noapi&rcb=8&sr=1440x900&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B147.0.7727.55%7CNot.A%252FBrand%3B8.0.0.0%7CChromium%3B147.0.7727.55&uam=&uamb=0&uap=Windows&uapv=19.0.0&uaw=0&ul=en-us&_s=1&tag_exp=115616986~115938466~115938469~118897920~118897930~120213116~120385422~120412528~120420416~120469145~120469153~121191155~121246026~121246034~123691370~123692834~123814946&sid=1793810630&sct=1&seg=0&dl=https%3A%2F%2Fqoder.com%2F&dt=Qoder%20-%20AI%20Coding%20Assistant%20%7C%20Autonomous%20Development%20IDE&en=page_view&_fv=1&_ss=1&_ee=1&tfd=3121",
+    "resource_type": "fetch",
+    "kind": "response",
+    "status": 204
+  },
+  {
+    "url": "https://analytics.google.com/g/collect?v=2&tid=G-B3XLHNXXF7&gtm=45be6b21v9235569778za208zb9223154500zd9223154500xf1&_p=1793810630260&_gaz=1&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAACAC&are=1&cid=616025359.1793810630&frm=0&ibt=1&ngs=1&pscdl=noapi&rcb=8&sr=1440x900&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B147.0.7727.55%7CNot.A%252FBrand%3B8.0.0.0%7CChromium%3B147.0.7727.55&uam=&uamb=0&uap=Windows&uapv=19.0.0&uaw=0&ul=en-us&_s=1&tag_exp=115616986~115938466~115938469~118897920~118897930~120213116~120385422~120412528~120420416~120469145~120469153~121191155~121246026~121246034~123691370~123692834~123814946&sid=1793810630&sct=1&seg=0&dl=https%3A%2F%2Fqoder.com%2F&dt=Qoder%20-%20AI%20Coding%20Assistant%20%7C%20Autonomous%20Development%20IDE&en=page_view&_fv=1&_ss=1&_ee=1&tfd=3121",
+    "resource_type": "fetch",
+    "kind": "request-failed",
+    "status": null
+  },
+  {
+    "url": "https://stats.g.doubleclick.net/g/collect?v=2&ngs=1&ibt=1&tid=G-B3XLHNXXF7&cid=616025359.1793810630&gtm=45be6b21v9235569778za208zb9223154500zd9223154500xf1&rcb=8&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=115616986~115938466~115938469~118897920~118897930~120213116~120385422~120412528~120420416~120469145~120469153~121191155~121246026~121246034~123691370~123692834~123814946",
+    "resource_type": "ping",
+    "kind": "response",
+    "status": 204
+  },
+  {
+    "url": "https://stats.g.doubleclick.net/g/collect?v=2&ngs=1&ibt=1&tid=G-B3XLHNXXF7&cid=616025359.1793810630&gtm=45be6b21v9235569778za208zb9223154500zd9223154500xf1&rcb=8&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=115616986~115938466~115938469~118897920~118897930~120213116~120385422~120412528~120420416~120469145~120469153~121191155~121246026~121246034~123691370~123692834~123814946",
+    "resource_type": "ping",
+    "kind": "request-finished",
+    "status": null
+  },
+  {
+    "url": "https://www.google.com.bd/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&ngs=1&ibt=1&tid=G-B3XLHNXXF7&cid=616025359.1793810630&gtm=45be6b21v9235569778za208zb9223154500zd9223154500xf1&rcb=8&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=115616986~115938466~115938469~118897920~118897930~120213116~120385422~120412528~120420416~120469145~120469153~121191155~121246026~121246034~123691370~123692834~123814946&z=1942408615",
+    "resource_type": "image",
+    "kind": "response",
+    "status": 200
+  },
+  {
+    "url": "https://www.google.com.bd/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&ngs=1&ibt=1&tid=G-B3XLHNXXF7&cid=616025359.1793810630&gtm=45be6b21v9235569778za208zb9223154500zd9223154500xf1&rcb=8&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=115616986~115938466~115938469~118897920~118897930~120213116~120385422~120412528~120420416~120469145~120469153~121191155~121246026~121246034~123691370~123692834~123814946&z=1942408615",
+    "resource_type": "image",
+    "kind": "request-finished",
+    "status": null
+  },
+  {
+    "url": "https://www.google.com/rmkt/collect/17523085727/?random=1793810630999&cv=11&fst=1793810630999&fmt=8&bg=ffffff&guid=ON&async=1&en=page_view&gtm=45be6b21v9235569778za200zb9223154500zd9223154500xecxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616986~115938466~115938469~118897920~118897930~120213116~120385422~120412528~120420416~120469145~120469153~121191155~121246026~121246034~123691370~123692834~123814946&u_w=1440&u_h=900&url=https%3A%2F%2Fqoder.com%2F&rcb=8&tiba=Qoder%20-%20AI%20Coding%20Assistant%20%7C%20Autonomous%20Development%20IDE&frm=0&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1857168879.1793810631&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B147.0.7727.55%7CNot.A%252FBrand%3B8.0.0.0%7CChromium%3B147.0.7727.55&uamb=0&uam=&uap=Windows&uapv=19.0.0&uaw=0&data=event%3Dpage_view%3Bpage_path%3D%2F&ept=68&gcp=5",
+    "resource_type": "fetch",
+    "kind": "response",
+    "status": 200
+  },
+  {
+    "url": "https://www.google.com/rmkt/collect/17523085727/?random=1793810630999&cv=11&fst=1793810630999&fmt=8&bg=ffffff&guid=ON&async=1&en=page_view&gtm=45be6b21v9235569778za200zb9223154500zd9223154500xecxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616986~115938466~115938469~118897920~118897930~120213116~120385422~120412528~120420416~120469145~120469153~121191155~121246026~121246034~123691370~123692834~123814946&u_w=1440&u_h=900&url=https%3A%2F%2Fqoder.com%2F&rcb=8&tiba=Qoder%20-%20AI%20Coding%20Assistant%20%7C%20Autonomous%20Development%20IDE&frm=0&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1857168879.1793810631&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B147.0.7727.55%7CNot.A%252FBrand%3B8.0.0.0%7CChromium%3B147.0.7727.55&uamb=0&uam=&uap=Windows&uapv=19.0.0&uaw=0&data=event%3Dpage_view%3Bpage_path%3D%2F&ept=68&gcp=5",
+    "resource_type": "fetch",
+    "kind": "request-failed",
+    "status": null
+  },
+  {
+    "url": "https://www.google.com/rmkt/collect/17523085727/?random=1793810630934&cv=11&fst=1793810630934&fmt=8&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be6b21v9235569778za208zb9223154500zd9223154500xecxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616986~115938466~115938469~118897920~118897930~120213116~120385422~120412528~120420416~120469145~120469153~121191155~121246026~121246034~123691370~123692834~123814946&u_w=1440&u_h=900&url=https%3A%2F%2Fqoder.com%2F&rcb=8&frm=0&tiba=Qoder%20-%20AI%20Coding%20Assistant%20%7C%20Autonomous%20Development%20IDE&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1857168879.1793810631&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B147.0.7727.55%7CNot.A%252FBrand%3B8.0.0.0%7CChromium%3B147.0.7727.55&uamb=0&uam=&uap=Windows&uapv=19.0.0&uaw=0&data=event%3Dgtag.config&ept=68&gcp=5",
+    "resource_type": "fetch",
+    "kind": "response",
+    "status": 200
+  },
+  {
+    "url": "https://www.google.com/rmkt/collect/17523085727/?random=1793810630934&cv=11&fst=1793810630934&fmt=8&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be6b21v9235569778za208zb9223154500zd9223154500xecxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616986~115938466~115938469~118897920~118897930~120213116~120385422~120412528~120420416~120469145~120469153~121191155~121246026~121246034~123691370~123692834~123814946&u_w=1440&u_h=900&url=https%3A%2F%2Fqoder.com%2F&rcb=8&frm=0&tiba=Qoder%20-%20AI%20Coding%20Assistant%20%7C%20Autonomous%20Development%20IDE&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1857168879.1793810631&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B147.0.7727.55%7CNot.A%252FBrand%3B8.0.0.0%7CChromium%3B147.0.7727.55&uamb=0&uam=&uap=Windows&uapv=19.0.0&uaw=0&data=event%3Dgtag.config&ept=68&gcp=5",
+    "resource_type": "fetch",
+    "kind": "request-failed",
+    "status": null
+  },
+  {
+    "url": "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/17523085727/?random=1793810630934&cv=11&fst=1793810630934&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be6b21v9235569778za208zb9223154500zd9223154500xecxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616986~115938466~115938469~118897920~118897930~120213116~120385422~120412528~120420416~120469145~120469153~121191155~121246026~121246034~123691370~123692834~123814946&u_w=1440&u_h=900&url=https%3A%2F%2Fqoder.com%2F&rcb=8&frm=0&tiba=Qoder%20-%20AI%20Coding%20Assistant%20%7C%20Autonomous%20Development%20IDE&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1857168879.1793810631&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B147.0.7727.55%7CNot.A%252FBrand%3B8.0.0.0%7CChromium%3B147.0.7727.55&uamb=0&uam=&uap=Windows&uapv=19.0.0&uaw=0&data=event%3Dgtag.config&ept=9&rfmt=3&fmt=4",
+    "resource_type": "script",
+    "kind": "response",
+    "status": 200
+  },
+  {
+    "url": "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/17523085727/?random=1793810630934&cv=11&fst=1793810630934&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be6b21v9235569778za208zb9223154500zd9223154500xecxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616986~115938466~115938469~118897920~118897930~120213116~120385422~120412528~120420416~120469145~120469153~121191155~121246026~121246034~123691370~123692834~123814946&u_w=1440&u_h=900&url=https%3A%2F%2Fqoder.com%2F&rcb=8&frm=0&tiba=Qoder%20-%20AI%20Coding%20Assistant%20%7C%20Autonomous%20Development%20IDE&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1857168879.1793810631&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B147.0.7727.55%7CNot.A%252FBrand%3B8.0.0.0%7CChromium%3B147.0.7727.55&uamb=0&uam=&uap=Windows&uapv=19.0.0&uaw=0&data=event%3Dgtag.config&ept=9&rfmt=3&fmt=4",
+    "resource_type": "script",
+    "kind": "request-finished",
+    "status": null
+  },
+  {
+    "url": "https://www.google.com/pagead/1p-user-list/17523085727/?random=1793810630934&cv=11&fst=1793808000000&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be6b21v9235569778za208zb9223154500zd9223154500xecxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616986~115938466~115938469~118897920~118897930~120213116~120385422~120412528~120420416~120469145~120469153~121191155~121246026~121246034~123691370~123692834~123814946&u_w=1440&u_h=900&url=https%3A%2F%2Fqoder.com%2F&rcb=8&frm=0&tiba=Qoder%20-%20AI%20Coding%20Assistant%20%7C%20Autonomous%20Development%20IDE&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1857168879.1793810631&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B147.0.7727.55%7CNot.A%252FBrand%3B8.0.0.0%7CChromium%3B147.0.7727.55&uamb=0&uam=&uap=Windows&uapv=19.0.0&uaw=0&data=event%3Dgtag.config&ept=9&rfmt=3&fmt=3&is_vtc=1&cid=CAQS1AEAQM4h3G51ulj6a8GixagqztTzQaJOkJSDfNBZtFX0vcRwjnLGFlzmAIKH5S1tWh7NQ8Fa2aP_QToe2Vg4WgNimJdShM1trIAkSCzTLfDZOBtqB4d05zVdBZjVTDcJJBRj1-Tq-8Tq42Da-fCcQ5HFjsYZT3I9isUd298kARO-VeRajfAYfoJUNLPqSbmYmQhCM_g8wzdiBBhFfdGu_V_BU5GRXwoHkmOTon-ktd2KrcQ4WpDCtHBkuIGDOeYX4sXozUeuBCzd5z63rWaxEePBEUH37A&random=1028529750&rmt_tld=0&ipr=y",
+    "resource_type": "image",
+    "kind": "request",
+    "status": null
+  },
+  {
+    "url": "https://www.google.com.bd/pagead/1p-user-list/17523085727/?random=1793810630934&cv=11&fst=1793808000000&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be6b21v9235569778za208zb9223154500zd9223154500xecxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616986~115938466~115938469~118897920~118897930~120213116~120385422~120412528~120420416~120469145~120469153~121191155~121246026~121246034~123691370~123692834~123814946&u_w=1440&u_h=900&url=https%3A%2F%2Fqoder.com%2F&rcb=8&frm=0&tiba=Qoder%20-%20AI%20Coding%20Assistant%20%7C%20Autonomous%20Development%20IDE&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1857168879.1793810631&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B147.0.7727.55%7CNot.A%252FBrand%3B8.0.0.0%7CChromium%3B147.0.7727.55&uamb=0&uam=&uap=Windows&uapv=19.0.0&uaw=0&data=event%3Dgtag.config&ept=9&rfmt=3&fmt=3&is_vtc=1&cid=CAQS1AEAQM4h3G51ulj6a8GixagqztTzQaJOkJSDfNBZtFX0vcRwjnLGFlzmAIKH5S1tWh7NQ8Fa2aP_QToe2Vg4WgNimJdShM1trIAkSCzTLfDZOBtqB4d05zVdBZjVTDcJJBRj1-Tq-8Tq42Da-fCcQ5HFjsYZT3I9isUd298kARO-VeRajfAYfoJUNLPqSbmYmQhCM_g8wzdiBBhFfdGu_V_BU5GRXwoHkmOTon-ktd2KrcQ4WpDCtHBkuIGDOeYX4sXozUeuBCzd5z63rWaxEePBEUH37A&random=1028529750&rmt_tld=1&ipr=y",
+    "resource_type": "image",
+    "kind": "request",
+    "status": null
+  },
+  {
+    "url": "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/17523085727/?random=1793810630999&cv=11&fst=1793810630999&bg=ffffff&guid=ON&async=1&en=page_view&gtm=45be6b21v9235569778za200zb9223154500zd9223154500xecxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616986~115938466~115938469~118897920~118897930~120213116~120385422~120412528~120420416~120469145~120469153~121191155~121246026~121246034~123691370~123692834~123814946&u_w=1440&u_h=900&url=https%3A%2F%2Fqoder.com%2F&rcb=8&tiba=Qoder%20-%20AI%20Coding%20Assistant%20%7C%20Autonomous%20Development%20IDE&frm=0&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1857168879.1793810631&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B147.0.7727.55%7CNot.A%252FBrand%3B8.0.0.0%7CChromium%3B147.0.7727.55&uamb=0&uam=&uap=Windows&uapv=19.0.0&uaw=0&data=event%3Dpage_view%3Bpage_path%3D%2F&ept=9&rfmt=3&fmt=4",
+    "resource_type": "script",
+    "kind": "response",
+    "status": 200
+  },
+  {
+    "url": "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/17523085727/?random=1793810630999&cv=11&fst=1793810630999&bg=ffffff&guid=ON&async=1&en=page_view&gtm=45be6b21v9235569778za200zb9223154500zd9223154500xecxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616986~115938466~115938469~118897920~118897930~120213116~120385422~120412528~120420416~120469145~120469153~121191155~121246026~121246034~123691370~123692834~123814946&u_w=1440&u_h=900&url=https%3A%2F%2Fqoder.com%2F&rcb=8&tiba=Qoder%20-%20AI%20Coding%20Assistant%20%7C%20Autonomous%20Development%20IDE&frm=0&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1857168879.1793810631&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B147.0.7727.55%7CNot.A%252FBrand%3B8.0.0.0%7CChromium%3B147.0.7727.55&uamb=0&uam=&uap=Windows&uapv=19.0.0&uaw=0&data=event%3Dpage_view%3Bpage_path%3D%2F&ept=9&rfmt=3&fmt=4",
+    "resource_type": "script",
+    "kind": "request-finished",
+    "status": null
+  },
+  {
+    "url": "https://www.google.com/pagead/1p-user-list/17523085727/?random=1793810630999&cv=11&fst=1793808000000&bg=ffffff&guid=ON&async=1&en=page_view&gtm=45be6b21v9235569778za200zb9223154500zd9223154500xecxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616986~115938466~115938469~118897920~118897930~120213116~120385422~120412528~120420416~120469145~120469153~121191155~121246026~121246034~123691370~123692834~123814946&u_w=1440&u_h=900&url=https%3A%2F%2Fqoder.com%2F&rcb=8&tiba=Qoder%20-%20AI%20Coding%20Assistant%20%7C%20Autonomous%20Development%20IDE&frm=0&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1857168879.1793810631&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B147.0.7727.55%7CNot.A%252FBrand%3B8.0.0.0%7CChromium%3B147.0.7727.55&uamb=0&uam=&uap=Windows&uapv=19.0.0&uaw=0&data=event%3Dpage_view%3Bpage_path%3D%2F&ept=9&rfmt=3&fmt=3&is_vtc=1&cid=CAQS1AEAQM4h3ML_TdvyvUjjK4BaEZdl78-JHa1O7EKbhVX8XpnjrB1WfFgd4hvvb7f2TvZxtyf0CjkRh5EYMJuzLrQ4eyyR75Z9Z3MYd0VaKW56kKinCGxqdJJJnvymxeC1agzW6tFWdQ3dk21YlsyPilM9ZSXhuS4naLebKA_m-TkKj6Q9DirdfHbeb5MtLwod5gX1kbUSsfiJtgA5hSkeMHC1femvkpyArxaiNw6YHJuYVq8aCV9NW6d53LRt_lzISOzULh2copLUgbEvsBEDPSRi_V6qMQ&random=2890156193&rmt_tld=0&ipr=y",
+    "resource_type": "image",
+    "kind": "request",
+    "status": null
+  },
+  {
+    "url": "https://www.google.com.bd/pagead/1p-user-list/17523085727/?random=1793810630999&cv=11&fst=1793808000000&bg=ffffff&guid=ON&async=1&en=page_view&gtm=45be6b21v9235569778za200zb9223154500zd9223154500xecxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616986~115938466~115938469~118897920~118897930~120213116~120385422~120412528~120420416~120469145~120469153~121191155~121246026~121246034~123691370~123692834~123814946&u_w=1440&u_h=900&url=https%3A%2F%2Fqoder.com%2F&rcb=8&tiba=Qoder%20-%20AI%20Coding%20Assistant%20%7C%20Autonomous%20Development%20IDE&frm=0&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1857168879.1793810631&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B147.0.7727.55%7CNot.A%252FBrand%3B8.0.0.0%7CChromium%3B147.0.7727.55&uamb=0&uam=&uap=Windows&uapv=19.0.0&uaw=0&data=event%3Dpage_view%3Bpage_path%3D%2F&ept=9&rfmt=3&fmt=3&is_vtc=1&cid=CAQS1AEAQM4h3ML_TdvyvUjjK4BaEZdl78-JHa1O7EKbhVX8XpnjrB1WfFgd4hvvb7f2TvZxtyf0CjkRh5EYMJuzLrQ4eyyR75Z9Z3MYd0VaKW56kKinCGxqdJJJnvymxeC1agzW6tFWdQ3dk21YlsyPilM9ZSXhuS4naLebKA_m-TkKj6Q9DirdfHbeb5MtLwod5gX1kbUSsfiJtgA5hSkeMHC1femvkpyArxaiNw6YHJuYVq8aCV9NW6d53LRt_lzISOzULh2copLUgbEvsBEDPSRi_V6qMQ&random=2890156193&rmt_tld=1&ipr=y",
+    "resource_type": "image",
+    "kind": "request",
+    "status": null
+  },
+  {
+    "url": "https://bat.bing.com/action/0?ti=343278852&Ver=2&mid=985c2edf-2650-4bec-a2a6-27c9af43f548&bo=1&sid=ea165b00d86e11f19f4cf72b02e36b50&vid=ea170cb0d86e11f1b24639f5925be2da&vids=1&msclkid=N&uach=pv%3D19.0.0&pi=918639831&lg=en-US&sw=1440&sh=900&sc=24&nwd=1&tl=Qoder%20-%20AI%20Coding%20Assistant%20%7C%20Autonomous%20Development%20IDE&kw=Qoder,AI%20coding%20assistant,developer%20tools,AI%20code%20generation,agentic%20coding&p=https%3A%2F%2Fqoder.com%2F&r=&lt=2118&evt=pageLoad&sv=2&cdb=AQAQ&rn=974903",
+    "resource_type": "image",
+    "kind": "response",
+    "status": 204
+  },
+  {
+    "url": "https://bat.bing.com/action/0?ti=343278852&Ver=2&mid=985c2edf-2650-4bec-a2a6-27c9af43f548&bo=1&sid=ea165b00d86e11f19f4cf72b02e36b50&vid=ea170cb0d86e11f1b24639f5925be2da&vids=1&msclkid=N&uach=pv%3D19.0.0&pi=918639831&lg=en-US&sw=1440&sh=900&sc=24&nwd=1&tl=Qoder%20-%20AI%20Coding%20Assistant%20%7C%20Autonomous%20Development%20IDE&kw=Qoder,AI%20coding%20assistant,developer%20tools,AI%20code%20generation,agentic%20coding&p=https%3A%2F%2Fqoder.com%2F&r=&lt=2118&evt=pageLoad&sv=2&cdb=AQAQ&rn=974903",
+    "resource_type": "image",
+    "kind": "request-finished",
+    "status": null
+  },
+  {
+    "url": "https://www.google.com/ccm/collect?rcb=8&frm=0&apvc=0&auid=1857168879.1793810631&dt=Qoder%20-%20AI%20Coding%20Assistant%20%7C%20Autonomous%20Development%20IDE&tid=AW-17523085727&en=page_view&dl=https%3A%2F%2Fqoder.com%2F&scrsrc=www.googletagmanager.com&rnd=1055324392.1793810631&navt=n&npa=0&ep.page_path=%2F&gtm=45be6b21v9235569778za200zb9223154500zd9223154500xecxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616986~115938466~115938469~118897920~118897930~120213116~120385422~120412528~120420416~120469145~120469153~121191155~121246026~121246034~123691370~123692834~123814946&tft=1793810631030&tfd=3156&tids=AW-17523085727&fmt=8",
+    "resource_type": "fetch",
+    "kind": "response",
+    "status": 200
+  },
+  {
+    "url": "https://www.google.com/ccm/collect?rcb=8&frm=0&apvc=0&auid=1857168879.1793810631&dt=Qoder%20-%20AI%20Coding%20Assistant%20%7C%20Autonomous%20Development%20IDE&tid=AW-17523085727&en=page_view&dl=https%3A%2F%2Fqoder.com%2F&scrsrc=www.googletagmanager.com&rnd=1055324392.1793810631&navt=n&npa=0&ep.page_path=%2F&gtm=45be6b21v9235569778za200zb9223154500zd9223154500xecxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616986~115938466~115938469~118897920~118897930~120213116~120385422~120412528~120420416~120469145~120469153~121191155~121246026~121246034~123691370~123692834~123814946&tft=1793810631030&tfd=3156&tids=AW-17523085727&fmt=8",
+    "resource_type": "fetch",
+    "kind": "request-failed",
+    "status": null
+  },
+  {
+    "url": "https://www.google.com/ccm/collect?rcb=8&frm=0&apvc=1&auid=1857168879.1793810631&dt=Qoder%20-%20AI%20Coding%20Assistant%20%7C%20Autonomous%20Development%20IDE&tid=AW-17523085727&en=page_view&dl=https%3A%2F%2Fqoder.com%2F&scrsrc=www.googletagmanager.com&rnd=1055324392.1793810631&navt=n&npa=0&gtm=45be6b21v9235569778za208zb9223154500zd9223154500xecxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616986~115938466~115938469~118897920~118897930~120213116~120385422~120412528~120420416~120469145~120469153~121191155~121246026~121246034~123691370~123692834~123814946&tft=1793810631026&tfd=3152&tids=AW-17523085727&fmt=8",
+    "resource_type": "fetch",
+    "kind": "response",
+    "status": 200
+  },
+  {
+    "url": "https://www.google.com/ccm/collect?rcb=8&frm=0&apvc=1&auid=1857168879.1793810631&dt=Qoder%20-%20AI%20Coding%20Assistant%20%7C%20Autonomous%20Development%20IDE&tid=AW-17523085727&en=page_view&dl=https%3A%2F%2Fqoder.com%2F&scrsrc=www.googletagmanager.com&rnd=1055324392.1793810631&navt=n&npa=0&gtm=45be6b21v9235569778za208zb9223154500zd9223154500xecxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616986~115938466~115938469~118897920~118897930~120213116~120385422~120412528~120420416~120469145~120469153~121191155~121246026~121246034~123691370~123692834~123814946&tft=1793810631026&tfd=3152&tids=AW-17523085727&fmt=8",
+    "resource_type": "fetch",
+    "kind": "request-failed",
+    "status": null
+  },
+  {
+    "url": "https://ad.doubleclick.net/ccm/s/collect?auid=1857168879.1793810631&gtm=45be6b21v9235569778za208zb9223154500zd9223154500xecxf1&fmt=8",
+    "resource_type": "fetch",
+    "kind": "response",
+    "status": 204
+  },
+  {
+    "url": "https://ad.doubleclick.net/ccm/s/collect?auid=1857168879.1793810631&gtm=45be6b21v9235569778za208zb9223154500zd9223154500xecxf1&fmt=8",
+    "resource_type": "fetch",
+    "kind": "request-failed",
+    "status": null
+  },
+  {
+    "url": "https://www.google.com/pagead/1p-user-list/17523085727/?random=1793810630999&cv=11&fst=1793808000000&bg=ffffff&guid=ON&async=1&en=page_view&gtm=45be6b21v9235569778za200zb9223154500zd9223154500xecxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616986~115938466~115938469~118897920~118897930~120213116~120385422~120412528~120420416~120469145~120469153~121191155~121246026~121246034~123691370~123692834~123814946&u_w=1440&u_h=900&url=https%3A%2F%2Fqoder.com%2F&rcb=8&tiba=Qoder%20-%20AI%20Coding%20Assistant%20%7C%20Autonomous%20Development%20IDE&frm=0&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1857168879.1793810631&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B147.0.7727.55%7CNot.A%252FBrand%3B8.0.0.0%7CChromium%3B147.0.7727.55&uamb=0&uam=&uap=Windows&uapv=19.0.0&uaw=0&data=event%3Dpage_view%3Bpage_path%3D%2F&ept=9&rfmt=3&fmt=3&is_vtc=1&cid=CAQS1AEAQM4h3ML_TdvyvUjjK4BaEZdl78-JHa1O7EKbhVX8XpnjrB1WfFgd4hvvb7f2TvZxtyf0CjkRh5EYMJuzLrQ4eyyR75Z9Z3MYd0VaKW56kKinCGxqdJJJnvymxeC1agzW6tFWdQ3dk21YlsyPilM9ZSXhuS4naLebKA_m-TkKj6Q9DirdfHbeb5MtLwod5gX1kbUSsfiJtgA5hSkeMHC1femvkpyArxaiNw6YHJuYVq8aCV9NW6d53LRt_lzISOzULh2copLUgbEvsBEDPSRi_V6qMQ&random=2890156193&rmt_tld=0&ipr=y",
+    "resource_type": "image",
+    "kind": "response",
+    "status": 200
+  },
+  {
+    "url": "https://www.google.com/pagead/1p-user-list/17523085727/?random=1793810630999&cv=11&fst=1793808000000&bg=ffffff&guid=ON&async=1&en=page_view&gtm=45be6b21v9235569778za200zb9223154500zd9223154500xecxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616986~115938466~115938469~118897920~118897930~120213116~120385422~120412528~120420416~120469145~120469153~121191155~121246026~121246034~123691370~123692834~123814946&u_w=1440&u_h=900&url=https%3A%2F%2Fqoder.com%2F&rcb=8&tiba=Qoder%20-%20AI%20Coding%20Assistant%20%7C%20Autonomous%20Development%20IDE&frm=0&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1857168879.1793810631&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B147.0.7727.55%7CNot.A%252FBrand%3B8.0.0.0%7CChromium%3B147.0.7727.55&uamb=0&uam=&uap=Windows&uapv=19.0.0&uaw=0&data=event%3Dpage_view%3Bpage_path%3D%2F&ept=9&rfmt=3&fmt=3&is_vtc=1&cid=CAQS1AEAQM4h3ML_TdvyvUjjK4BaEZdl78-JHa1O7EKbhVX8XpnjrB1WfFgd4hvvb7f2TvZxtyf0CjkRh5EYMJuzLrQ4eyyR75Z9Z3MYd0VaKW56kKinCGxqdJJJnvymxeC1agzW6tFWdQ3dk21YlsyPilM9ZSXhuS4naLebKA_m-TkKj6Q9DirdfHbeb5MtLwod5gX1kbUSsfiJtgA5hSkeMHC1femvkpyArxaiNw6YHJuYVq8aCV9NW6d53LRt_lzISOzULh2copLUgbEvsBEDPSRi_V6qMQ&random=2890156193&rmt_tld=0&ipr=y",
+    "resource_type": "image",
+    "kind": "request-finished",
+    "status": null
+  },
+  {
+    "url": "https://www.google.com/pagead/1p-user-list/17523085727/?random=1793810630934&cv=11&fst=1793808000000&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be6b21v9235569778za208zb9223154500zd9223154500xecxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616986~115938466~115938469~118897920~118897930~120213116~120385422~120412528~120420416~120469145~120469153~121191155~121246026~121246034~123691370~123692834~123814946&u_w=1440&u_h=900&url=https%3A%2F%2Fqoder.com%2F&rcb=8&frm=0&tiba=Qoder%20-%20AI%20Coding%20Assistant%20%7C%20Autonomous%20Development%20IDE&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1857168879.1793810631&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B147.0.7727.55%7CNot.A%252FBrand%3B8.0.0.0%7CChromium%3B147.0.7727.55&uamb=0&uam=&uap=Windows&uapv=19.0.0&uaw=0&data=event%3Dgtag.config&ept=9&rfmt=3&fmt=3&is_vtc=1&cid=CAQS1AEAQM4h3G51ulj6a8GixagqztTzQaJOkJSDfNBZtFX0vcRwjnLGFlzmAIKH5S1tWh7NQ8Fa2aP_QToe2Vg4WgNimJdShM1trIAkSCzTLfDZOBtqB4d05zVdBZjVTDcJJBRj1-Tq-8Tq42Da-fCcQ5HFjsYZT3I9isUd298kARO-VeRajfAYfoJUNLPqSbmYmQhCM_g8wzdiBBhFfdGu_V_BU5GRXwoHkmOTon-ktd2KrcQ4WpDCtHBkuIGDOeYX4sXozUeuBCzd5z63rWaxEePBEUH37A&random=1028529750&rmt_tld=0&ipr=y",
+    "resource_type": "image",
+    "kind": "response",
+    "status": 200
+  },
+  {
+    "url": "https://www.google.com/pagead/1p-user-list/17523085727/?random=1793810630934&cv=11&fst=1793808000000&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be6b21v9235569778za208zb9223154500zd9223154500xecxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616986~115938466~115938469~118897920~118897930~120213116~120385422~120412528~120420416~120469145~120469153~121191155~121246026~121246034~123691370~123692834~123814946&u_w=1440&u_h=900&url=https%3A%2F%2Fqoder.com%2F&rcb=8&frm=0&tiba=Qoder%20-%20AI%20Coding%20Assistant%20%7C%20Autonomous%20Development%20IDE&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1857168879.1793810631&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B147.0.7727.55%7CNot.A%252FBrand%3B8.0.0.0%7CChromium%3B147.0.7727.55&uamb=0&uam=&uap=Windows&uapv=19.0.0&uaw=0&data=event%3Dgtag.config&ept=9&rfmt=3&fmt=3&is_vtc=1&cid=CAQS1AEAQM4h3G51ulj6a8GixagqztTzQaJOkJSDfNBZtFX0vcRwjnLGFlzmAIKH5S1tWh7NQ8Fa2aP_QToe2Vg4WgNimJdShM1trIAkSCzTLfDZOBtqB4d05zVdBZjVTDcJJBRj1-Tq-8Tq42Da-fCcQ5HFjsYZT3I9isUd298kARO-VeRajfAYfoJUNLPqSbmYmQhCM_g8wzdiBBhFfdGu_V_BU5GRXwoHkmOTon-ktd2KrcQ4WpDCtHBkuIGDOeYX4sXozUeuBCzd5z63rWaxEePBEUH37A&random=1028529750&rmt_tld=0&ipr=y",
+    "resource_type": "image",
+    "kind": "request-finished",
+    "status": null
+  },
+  {
+    "url": "https://www.google.com.bd/pagead/1p-user-list/17523085727/?random=1793810630934&cv=11&fst=1793808000000&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be6b21v9235569778za208zb9223154500zd9223154500xecxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616986~115938466~115938469~118897920~118897930~120213116~120385422~120412528~120420416~120469145~120469153~121191155~121246026~121246034~123691370~123692834~123814946&u_w=1440&u_h=900&url=https%3A%2F%2Fqoder.com%2F&rcb=8&frm=0&tiba=Qoder%20-%20AI%20Coding%20Assistant%20%7C%20Autonomous%20Development%20IDE&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1857168879.1793810631&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B147.0.7727.55%7CNot.A%252FBrand%3B8.0.0.0%7CChromium%3B147.0.7727.55&uamb=0&uam=&uap=Windows&uapv=19.0.0&uaw=0&data=event%3Dgtag.config&ept=9&rfmt=3&fmt=3&is_vtc=1&cid=CAQS1AEAQM4h3G51ulj6a8GixagqztTzQaJOkJSDfNBZtFX0vcRwjnLGFlzmAIKH5S1tWh7NQ8Fa2aP_QToe2Vg4WgNimJdShM1trIAkSCzTLfDZOBtqB4d05zVdBZjVTDcJJBRj1-Tq-8Tq42Da-fCcQ5HFjsYZT3I9isUd298kARO-VeRajfAYfoJUNLPqSbmYmQhCM_g8wzdiBBhFfdGu_V_BU5GRXwoHkmOTon-ktd2KrcQ4WpDCtHBkuIGDOeYX4sXozUeuBCzd5z63rWaxEePBEUH37A&random=1028529750&rmt_tld=1&ipr=y",
+    "resource_type": "image",
+    "kind": "response",
+    "status": 200
+  },
+  {
+    "url": "https://www.google.com.bd/pagead/1p-user-list/17523085727/?random=1793810630934&cv=11&fst=1793808000000&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be6b21v9235569778za208zb9223154500zd9223154500xecxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616986~115938466~115938469~118897920~118897930~120213116~120385422~120412528~120420416~120469145~120469153~121191155~121246026~121246034~123691370~123692834~123814946&u_w=1440&u_h=900&url=https%3A%2F%2Fqoder.com%2F&rcb=8&frm=0&tiba=Qoder%20-%20AI%20Coding%20Assistant%20%7C%20Autonomous%20Development%20IDE&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1857168879.1793810631&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B147.0.7727.55%7CNot.A%252FBrand%3B8.0.0.0%7CChromium%3B147.0.7727.55&uamb=0&uam=&uap=Windows&uapv=19.0.0&uaw=0&data=event%3Dgtag.config&ept=9&rfmt=3&fmt=3&is_vtc=1&cid=CAQS1AEAQM4h3G51ulj6a8GixagqztTzQaJOkJSDfNBZtFX0vcRwjnLGFlzmAIKH5S1tWh7NQ8Fa2aP_QToe2Vg4WgNimJdShM1trIAkSCzTLfDZOBtqB4d05zVdBZjVTDcJJBRj1-Tq-8Tq42Da-fCcQ5HFjsYZT3I9isUd298kARO-VeRajfAYfoJUNLPqSbmYmQhCM_g8wzdiBBhFfdGu_V_BU5GRXwoHkmOTon-ktd2KrcQ4WpDCtHBkuIGDOeYX4sXozUeuBCzd5z63rWaxEePBEUH37A&random=1028529750&rmt_tld=1&ipr=y",
+    "resource_type": "image",
+    "kind": "request-finished",
+    "status": null
+  },
+  {
+    "url": "https://www.google.com.bd/pagead/1p-user-list/17523085727/?random=1793810630999&cv=11&fst=1793808000000&bg=ffffff&guid=ON&async=1&en=page_view&gtm=45be6b21v9235569778za200zb9223154500zd9223154500xecxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616986~115938466~115938469~118897920~118897930~120213116~120385422~120412528~120420416~120469145~120469153~121191155~121246026~121246034~123691370~123692834~123814946&u_w=1440&u_h=900&url=https%3A%2F%2Fqoder.com%2F&rcb=8&tiba=Qoder%20-%20AI%20Coding%20Assistant%20%7C%20Autonomous%20Development%20IDE&frm=0&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1857168879.1793810631&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B147.0.7727.55%7CNot.A%252FBrand%3B8.0.0.0%7CChromium%3B147.0.7727.55&uamb=0&uam=&uap=Windows&uapv=19.0.0&uaw=0&data=event%3Dpage_view%3Bpage_path%3D%2F&ept=9&rfmt=3&fmt=3&is_vtc=1&cid=CAQS1AEAQM4h3ML_TdvyvUjjK4BaEZdl78-JHa1O7EKbhVX8XpnjrB1WfFgd4hvvb7f2TvZxtyf0CjkRh5EYMJuzLrQ4eyyR75Z9Z3MYd0VaKW56kKinCGxqdJJJnvymxeC1agzW6tFWdQ3dk21YlsyPilM9ZSXhuS4naLebKA_m-TkKj6Q9DirdfHbeb5MtLwod5gX1kbUSsfiJtgA5hSkeMHC1femvkpyArxaiNw6YHJuYVq8aCV9NW6d53LRt_lzISOzULh2copLUgbEvsBEDPSRi_V6qMQ&random=2890156193&rmt_tld=1&ipr=y",
+    "resource_type": "image",
+    "kind": "response",
+    "status": 200
+  },
+  {
+    "url": "https://www.google.com.bd/pagead/1p-user-list/17523085727/?random=1793810630999&cv=11&fst=1793808000000&bg=ffffff&guid=ON&async=1&en=page_view&gtm=45be6b21v9235569778za200zb9223154500zd9223154500xecxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616986~115938466~115938469~118897920~118897930~120213116~120385422~120412528~120420416~120469145~120469153~121191155~121246026~121246034~123691370~123692834~123814946&u_w=1440&u_h=900&url=https%3A%2F%2Fqoder.com%2F&rcb=8&tiba=Qoder%20-%20AI%20Coding%20Assistant%20%7C%20Autonomous%20Development%20IDE&frm=0&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1857168879.1793810631&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B147.0.7727.55%7CNot.A%252FBrand%3B8.0.0.0%7CChromium%3B147.0.7727.55&uamb=0&uam=&uap=Windows&uapv=19.0.0&uaw=0&data=event%3Dpage_view%3Bpage_path%3D%2F&ept=9&rfmt=3&fmt=3&is_vtc=1&cid=CAQS1AEAQM4h3ML_TdvyvUjjK4BaEZdl78-JHa1O7EKbhVX8XpnjrB1WfFgd4hvvb7f2TvZxtyf0CjkRh5EYMJuzLrQ4eyyR75Z9Z3MYd0VaKW56kKinCGxqdJJJnvymxeC1agzW6tFWdQ3dk21YlsyPilM9ZSXhuS4naLebKA_m-TkKj6Q9DirdfHbeb5MtLwod5gX1kbUSsfiJtgA5hSkeMHC1femvkpyArxaiNw6YHJuYVq8aCV9NW6d53LRt_lzISOzULh2copLUgbEvsBEDPSRi_V6qMQ&random=2890156193&rmt_tld=1&ipr=y",
+    "resource_type": "image",
+    "kind": "request-finished",
+    "status": null
+  },
+  {
+    "url": "https://www.clarity.ms/tag/uet/343278852",
+    "resource_type": "script",
+    "kind": "response",
+    "status": 200
+  },
+  {
+    "url": "https://www.clarity.ms/tag/uet/343278852",
+    "resource_type": "script",
+    "kind": "request-finished",
+    "status": null
+  },
+  {
+    "url": "https://scripts.clarity.ms/0.8.75/clarity.js",
+    "resource_type": "script",
+    "kind": "request",
+    "status": null
+  },
+  {
+    "url": "https://c.clarity.ms/c.gif",
+    "resource_type": "image",
+    "kind": "request",
+    "status": null
+  },
+  {
+    "url": "https://scripts.clarity.ms/0.8.75/clarity.js",
+    "resource_type": "script",
+    "kind": "response",
+    "status": 200
+  },
+  {
+    "url": "https://scripts.clarity.ms/0.8.75/clarity.js",
+    "resource_type": "script",
+    "kind": "request-finished",
+    "status": null
+  },
+  {
+    "url": "https://c.clarity.ms/c.gif",
+    "resource_type": "image",
+    "kind": "response",
+    "status": 302
+  },
+  {
+    "url": "https://c.clarity.ms/c.gif",
+    "resource_type": "image",
+    "kind": "request-finished",
+    "status": null
+  },
+  {
+    "url": "https://c.bing.com/c.gif?ctsa=mr&CtsSyncId=3D44649026AC4882A9EE74CEBDEFC70F&RedC=c.clarity.ms&MXFR=2A0FFED6DA6163E62686E6D1DE616DB1",
+    "resource_type": "image",
+    "kind": "request",
+    "status": null
+  },
+  {
+    "url": "https://n.clarity.ms/collect",
+    "resource_type": "xhr",
+    "kind": "request",
+    "status": null
+  },
+  {
+    "url": "https://c.bing.com/c.gif?ctsa=mr&CtsSyncId=3D44649026AC4882A9EE74CEBDEFC70F&RedC=c.clarity.ms&MXFR=2A0FFED6DA6163E62686E6D1DE616DB1",
+    "resource_type": "image",
+    "kind": "response",
+    "status": 302
+  },
+  {
+    "url": "https://c.bing.com/c.gif?ctsa=mr&CtsSyncId=3D44649026AC4882A9EE74CEBDEFC70F&RedC=c.clarity.ms&MXFR=2A0FFED6DA6163E62686E6D1DE616DB1",
+    "resource_type": "image",
+    "kind": "request-finished",
+    "status": null
+  },
+  {
+    "url": "https://c.clarity.ms/c.gif?ctsa=mr&CtsSyncId=3D44649026AC4882A9EE74CEBDEFC70F&MUID=164EF68524796CFA0807EE8225466D53",
+    "resource_type": "image",
+    "kind": "request",
+    "status": null
+  },
+  {
+    "url": "https://c.clarity.ms/c.gif?ctsa=mr&CtsSyncId=3D44649026AC4882A9EE74CEBDEFC70F&MUID=164EF68524796CFA0807EE8225466D53",
+    "resource_type": "image",
+    "kind": "response",
+    "status": 200
+  },
+  {
+    "url": "https://c.clarity.ms/c.gif?ctsa=mr&CtsSyncId=3D44649026AC4882A9EE74CEBDEFC70F&MUID=164EF68524796CFA0807EE8225466D53",
+    "resource_type": "image",
+    "kind": "request-finished",
+    "status": null
+  },
+  {
+    "url": "https://n.clarity.ms/collect",
+    "resource_type": "xhr",
+    "kind": "response",
+    "status": 204
+  },
+  {
+    "url": "https://n.clarity.ms/collect",
+    "resource_type": "xhr",
+    "kind": "request-finished",
+    "status": null
+  }
+]

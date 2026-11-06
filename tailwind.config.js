@@ -1,0 +1,130 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  darkMode: 'class',
+  theme: {
+    extend: {
+      fontFamily: {
+        sans: ['Inter', 'Plus Jakarta Sans', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
+        mono: ['JetBrains Mono', 'monospace'],
+      },
+      colors: {
+        // Linear Ultra-Premium OLED Dark Aesthetic
+        linear: {
+          bg: '#080809',
+          surface: '#0F0F12',
+          panel: '#141416',
+          card: '#121215',
+          cardHover: '#18181D',
+          border: 'rgba(255, 255, 255, 0.07)',
+          borderHover: 'rgba(255, 255, 255, 0.18)',
+          text: '#EDEDED',
+          secondary: '#A0A0A5',
+          muted: '#8A8F98',
+          accent: '#5E6AD2',
+          accentHover: '#6E7AE6',
+          yellow: '#F5A623',
+          yellowMuted: 'rgba(245, 166, 35, 0.15)',
+          emerald: '#10B981',
+          emeraldMuted: 'rgba(16, 185, 129, 0.15)',
+          pill: '#1A1A1E',
+          pillActive: '#26262C',
+        },
+        // NovaWeb Dark Aesthetic (Dribbble dark mode)
+        nova: {
+          bg: '#080809',
+          surface: '#0F0F12',
+          card: '#121215',
+          cardHover: '#18181D',
+          border: 'rgba(255, 255, 255, 0.07)',
+          borderHover: 'rgba(255, 255, 255, 0.18)',
+          accent: '#5E6AD2',
+          accentHover: '#6E7AE6',
+          accentLight: '#c4b5fd',
+          glow: 'rgba(94, 106, 210, 0.25)',
+          dock: 'rgba(15, 15, 18, 0.92)',
+          pill: '#1A1A1E',
+          pillActive: '#26262C',
+        },
+        // Soft Education App Light Aesthetic (Dribbble light mode)
+        soft: {
+          bg: '#f6f4fe',
+          surface: '#ffffff',
+          card: 'rgba(255, 255, 255, 0.85)',
+          cardHover: 'rgba(255, 255, 255, 0.98)',
+          border: 'rgba(196, 181, 253, 0.35)',
+          borderHover: 'rgba(167, 139, 250, 0.6)',
+          accent: '#8b5cf6',
+          accentHover: '#7c3aed',
+          lavender: '#ede9fe',
+          pink: '#fce7f3',
+          peach: '#ffedd5',
+          cream: '#faf5ff',
+          dock: 'rgba(255, 255, 255, 0.88)',
+          text: '#1e1b4b',
+          textMuted: '#6b7280',
+        },
+        mac: {
+          bg: '#0c0f17',
+          card: 'rgba(255, 255, 255, 0.05)',
+          cardHover: 'rgba(255, 255, 255, 0.09)',
+          border: 'rgba(255, 255, 255, 0.1)',
+          borderHover: 'rgba(255, 255, 255, 0.22)',
+          sidebar: 'rgba(15, 19, 32, 0.75)',
+          header: 'rgba(12, 15, 24, 0.8)',
+          accent: '#3b82f6',
+          accentGlow: 'rgba(59, 130, 246, 0.25)',
+          emerald: '#10b981',
+          rose: '#f43f5e',
+          amber: '#f59e0b',
+          purple: '#8b5cf6',
+          cyan: '#06b6d4',
+        }
+      },
+      borderRadius: {
+        'squircle': '22px',
+        'squircle-lg': '28px',
+        'squircle-sm': '16px',
+        'squircle-xs': '12px',
+      },
+      backdropBlur: {
+        'xs': '2px',
+        '2xl': '24px',
+        '3xl': '40px',
+      },
+      boxShadow: {
+        'glass': '0 8px 32px 0 rgba(0, 0, 0, 0.37)',
+        'glass-hover': '0 12px 40px 0 rgba(59, 130, 246, 0.2)',
+        'glass-card': '0 4px 20px -2px rgba(0, 0, 0, 0.5), inset 0 1px 1px 0 rgba(255, 255, 255, 0.15)',
+        'glow-blue': '0 0 25px -3px rgba(59, 130, 246, 0.5)',
+        'glow-purple': '0 0 25px -3px rgba(139, 92, 246, 0.5)',
+        'glow-emerald': '0 0 25px -3px rgba(16, 185, 129, 0.5)',
+        'glow-nova': '0 0 30px -4px rgba(157, 132, 246, 0.5)',
+        'nova-card': '0 10px 30px -5px rgba(0, 0, 0, 0.5), 0 0 15px 0 rgba(157, 132, 246, 0.1)',
+        'nova-dock': '0 20px 50px -10px rgba(0, 0, 0, 0.7), 0 0 25px 0 rgba(157, 132, 246, 0.25)',
+        'soft-card': '0 10px 30px -5px rgba(139, 92, 246, 0.08), 0 2px 8px -2px rgba(0, 0, 0, 0.04)',
+        'soft-card-hover': '0 20px 40px -5px rgba(139, 92, 246, 0.16), 0 4px 12px -2px rgba(0, 0, 0, 0.06)',
+        'soft-dock': '0 20px 50px -10px rgba(139, 92, 246, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.06)',
+      },
+      animation: {
+        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+        'glow': 'glow 2s ease-in-out infinite alternate',
+        'float': 'float 4s ease-in-out infinite',
+      },
+      keyframes: {
+        glow: {
+          '0%': { boxShadow: '0 0 10px rgba(157, 132, 246, 0.3)' },
+          '100%': { boxShadow: '0 0 25px rgba(157, 132, 246, 0.7)' },
+        },
+        float: {
+          '0%, 100%': { transform: 'translateY(0px)' },
+          '50%': { transform: 'translateY(-6px)' },
+        }
+      }
+    },
+  },
+  plugins: [],
+}

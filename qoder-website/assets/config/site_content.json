@@ -1,0 +1,327 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "last_updated": "2026-11-04T20:47:59.371Z",
+    "updated_by": "DEEDOX Live Admin"
+  },
+  "branding": {
+    "site_title": "AI Dev Workspace — Autonomous Coding & Server Orchestration | DEEDOX",
+    "meta_description": "DEEDOX AI Dev Workspace — Sovereign desktop environment with 7 animated 3D personas, Pulse dev process watching, and 1-click self-healing.",
+    "brand_name": "DEEDOX",
+    "brand_tagline": "AI Dev Workspace",
+    "logo_url": "assets/images/deedox-logo.png",
+    "favicon_url": "assets/images/deedox-logo.png",
+    "founder_avatar": "assets/images/deedox-ai-avatar.png",
+    "founder_name": "Rasel Ahmed",
+    "company_name": "DEEDOX Studio"
+  },
+  "contact": {
+    "email": "contact@deedoxstudio.com",
+    "support_email": "support@deedoxstudio.com",
+    "phone": "+880 1700-000000",
+    "website_url": "https://deedoxstudio.com",
+    "github_url": "https://github.com/deedoxstudio",
+    "discord_url": "https://discord.gg/deedox",
+    "twitter_url": "https://x.com/deedoxstudio"
+  },
+  "announcement": {
+    "enabled": false,
+    "text": "⚡ Qwen3.8-Flash: generous free daily quota, download AI Dev Workspace to start →",
+    "link": "download.html"
+  },
+  "hero": {
+    "tag": "⚡ Official v1.0.0 Release: Autonomous Multi-Agent Desktop Platform",
+    "title": "The New AI Dev Workspace: Autonomous Coding & Server Orchestration",
+    "description": "Bring your idea. AI Dev Workspace gets it done with 7 animated 3D agent personas, Pulse background process watching (:5173), and 1-click AST self-healing.",
+    "primary_btn_text": "Download Windows (.exe)",
+    "primary_btn_url": "downloads/AI%20Dev%20Workspace%20Setup%201.0.0.exe",
+    "secondary_btn_text": "Interactive Demo Sandbox",
+    "secondary_btn_url": "demo.html"
+  },
+  "build_your_way": {
+    "title": "Build Your Way",
+    "description": "The AI Dev Workspace product family supports every way of building, so individuals and teams can find the tools that fit their workflow.",
+    "modules": [
+      {
+        "id": "launcher",
+        "tab_id": "tab-launcher",
+        "tab_label": "Pulse Launcher",
+        "badge": "Process Watchdog • Auto Ports :5173 / :3000",
+        "title": "Pulse Dev Process Watchdog",
+        "subtitle": "Autonomous Port Collision Management & Live Server Telemetry",
+        "description": "Manage and orchestrate all local development servers with zero terminal friction. Pulse continuously monitors port occupancy, terminates orphaned processes, and boots your Vite, Next.js, and Node servers on demand with live health metrics.",
+        "image_url": "assets/images/software/software_launcher_light.png",
+        "points": [
+          "Auto Port Collision Detection: Identifies if port :5173, :3000, or :8080 is blocked and frees it instantly.",
+          "Real-time Telemetry: Instant visibility into memory consumption, CPU load, and server uptime.",
+          "Hot Reload Watchdog: Automatically detects fallen child processes and restarts them silently."
+        ]
+      },
+      {
+        "id": "roundtable",
+        "tab_id": "tab-roundtable",
+        "tab_label": "Multi-Agent Roundtable",
+        "badge": "Collaborative Consensus • 7 3D Miniatures",
+        "title": "Multi-Agent Roundtable Studio",
+        "subtitle": "7 Interactive 3D Avatars Collaborating for Flawless Architecture",
+        "description": "Assemble a council of specialized AI engineers directly inside your desktop workspace. The Lead Architect, Security Auditor, Frontend Engineer, and QA Testers collaborate in real-time with 3D miniature avatars to review code and plan features before implementation.",
+        "image_url": "assets/images/software/software_multiagent_dark.png",
+        "points": [
+          "Summon AI Council: Trigger multi-perspective debates across specialized personas for any complex problem.",
+          "Consensus Code Verification: Personas scrutinize security flaws, performance regressions, and clean architecture.",
+          "3D Miniature Feedback: Visual status cues indicate speaking, researching, compiling, and testing states."
+        ]
+      },
+      {
+        "id": "error-fixer",
+        "tab_id": "tab-fixer",
+        "tab_label": "1-Click Error Fixer",
+        "badge": "AST Diagnostic Engine • Instant Auto-Patch",
+        "title": "1-Click Autonomous Error Diagnostic",
+        "subtitle": "Deep AST Log Parsing, Root Cause Explanation & Self-Healing Patches",
+        "description": "Eliminate debugging fatigue. When terminal crashes, webpack bundle errors, or React runtime exceptions occur, AI Dev Workspace analyzes the stack trace, extracts the AST node, and provides a 1-click self-healing patch directly to disk.",
+        "image_url": "assets/images/software/software_error_diagnostic.png",
+        "points": [
+          "Live Terminal Interception: Automatically intercepts build errors, missing dependencies, and syntax failures.",
+          "AST Root Cause Breakdown: Explains the exact failure point in clear terms with highlighted diffs.",
+          "1-Click Auto Patch: Applies atomic file fixes to your repository with automated rollback safeguards."
+        ]
+      },
+      {
+        "id": "drive-scanner",
+        "tab_id": "tab-scanner",
+        "tab_label": "Drive AutoScan",
+        "badge": "Local Drive Indexer • Zero Cloud Upload",
+        "title": "Autonomous Drive AutoScan",
+        "subtitle": "Recursive Project Discovery across C:, D:, and E: Drives",
+        "description": "Instant visibility over all your codebases without tedious directory browsing. The sovereign drive scanner walks your storage drives in milliseconds, discovering Git repositories, package.json definitions, and framework configurations.",
+        "image_url": "assets/images/software/software_autoscan_captured.png",
+        "points": [
+          "1-Click Drive Sweep: Scans root drives C:, D:, and E: with zero network transmissions.",
+          "Framework Recognition: Detects Vite, Next.js, React, Electron, Python, and Rust setups.",
+          "Instant Switcher: Switch between hundreds of local repositories in under 100 milliseconds."
+        ]
+      },
+      {
+        "id": "pc-apps",
+        "tab_id": "tab-bridge",
+        "tab_label": "PC Apps Bridge",
+        "badge": "Native Bridge • VS Code, Figma & Chrome",
+        "title": "PC Apps & Environment Bridge",
+        "subtitle": "Unified Control Hub for Installed Development Applications",
+        "description": "Bridge your desktop IDEs, browsers, design tools, and terminal sessions into a single orchestrator. Launch VS Code with project context, mirror UI in Google Chrome, sync designs with Figma, and orchestrate Git workflows effortlessly.",
+        "image_url": "assets/images/software/software_pcapps.png",
+        "points": [
+          "App Auto-Discovery: Automatically detects installed editors, browsers, and terminal emulators.",
+          "Deep Project Launch: Launches target workspaces straight into VS Code, Cursor, or WebStorm.",
+          "Integrated Dev Flow: Jump from Figma design specs directly into code generation and browser viewports."
+        ]
+      }
+    ]
+  },
+  "downloads": {
+    "title": "Download AI Dev Workspace for Windows",
+    "subtitle": "Choose between the full Windows Installer Wizard or the zero-install Portable executable. Both binaries are cryptographically signed and SHA-256 verified.",
+    "setup": {
+      "name": "Windows Setup (.exe)",
+      "type": "Standard Desktop Installer Wizard • 64-bit",
+      "filename": "AI Dev Workspace Setup 1.0.0.exe",
+      "filesize": "88.7 MB",
+      "sha256": "BCF33E7E1BAE457F4E3745B9AF45D3B8EB7218C8EEC9EE4A88FBFC191F19C73D",
+      "url": "downloads/AI%20Dev%20Workspace%20Setup%201.0.0.exe",
+      "points": [
+        "Pulse Server Watchdog: Auto-manages ports :5173, :3000, :8080 and restarts fallen child processes.",
+        "7 Autonomous 3D Personas: Lead Architect, Security Auditor, Frontend & DevOps engineers roundtable.",
+        "1-Click AST Error Fixer: Real-time terminal log parsing with self-healing code diff patches.",
+        "Multi-Drive AutoScan: Scans C:, D:, and E: drives in milliseconds to discover local Git repositories.",
+        "PC Apps Hub: Integrated 1-click launcher for VS Code, Google Chrome, Discord, and Figma."
+      ]
+    },
+    "portable": {
+      "filename": "AI-Dev-Workspace-Portable-1.0.0.exe",
+      "filesize": "88.4 MB",
+      "sha256": "B5A801ED35D2EC5155B21817D2B23E90A954B7E884C272AE9378F19897460B01",
+      "url": "downloads/AI%20Dev%20Workspace%20Setup%201.0.0.exe",
+      "points": [
+        "Zero System Footprint: Zero registry writes, zero installation wizard, runs straight out of folder.",
+        "USB Drive Ready: Plug into any Windows 10/11 PC and launch your workspace immediately.",
+        "Full Offline Parity: Includes Pulse server watcher, 3D roundtable, and drive scanner built-in.",
+        "Local LLM Ready: Connects to local Ollama runtime without internet connection."
+      ]
+    }
+  },
+  "images": [
+    {
+      "id": "logo",
+      "category": "Brand",
+      "label": "Brand Logo",
+      "description": "Top navbar & footer brand logo mark",
+      "path": "assets/images/deedox-logo.png",
+      "default_path": "assets/images/deedox-logo.png"
+    },
+    {
+      "id": "founder",
+      "category": "Team",
+      "label": "Founder AI Avatar",
+      "description": "Rasel Ahmed profile avatar on about page",
+      "path": "assets/images/deedox-ai-avatar.png",
+      "default_path": "assets/images/deedox-ai-avatar.png"
+    },
+    {
+      "id": "byw_launcher",
+      "category": "Software",
+      "label": "Pulse Launcher Screenshot",
+      "description": "Build Your Way tab 1 interface screenshot",
+      "path": "assets/images/software/software_launcher_light.png",
+      "default_path": "assets/images/software/software_launcher_light.png"
+    },
+    {
+      "id": "byw_roundtable",
+      "category": "Software",
+      "label": "Multi-Agent Roundtable Screenshot",
+      "description": "Build Your Way tab 2 3D avatars screenshot",
+      "path": "assets/images/software/software_multiagent_dark.png",
+      "default_path": "assets/images/software/software_multiagent_dark.png"
+    },
+    {
+      "id": "byw_fixer",
+      "category": "Software",
+      "label": "1-Click Error Fixer Screenshot",
+      "description": "Build Your Way tab 3 diagnostic modal screenshot",
+      "path": "assets/images/software/software_error_diagnostic.png",
+      "default_path": "assets/images/software/software_error_diagnostic.png"
+    },
+    {
+      "id": "byw_scanner",
+      "category": "Software",
+      "label": "Drive AutoScan Screenshot",
+      "description": "Build Your Way tab 4 drive indexer screenshot",
+      "path": "assets/images/software/software_autoscan_captured.png",
+      "default_path": "assets/images/software/software_autoscan_captured.png"
+    },
+    {
+      "id": "byw_pcapps",
+      "category": "Software",
+      "label": "PC Apps Bridge Screenshot",
+      "description": "Build Your Way tab 5 integrations screenshot",
+      "path": "assets/images/software/software_pcapps.png",
+      "default_path": "assets/images/software/software_pcapps.png"
+    },
+    {
+      "id": "mobile_companion",
+      "category": "Software",
+      "label": "Mobile Companion Preview",
+      "description": "Mobile web companion preview graphic",
+      "path": "assets/images/software/software_mobile.png",
+      "default_path": "assets/images/software/software_mobile.png"
+    }
+  ],
+  "supabase": {
+    "enabled": false,
+    "project_url": "",
+    "anon_key": "",
+    "table_name": "site_content"
+  },
+  "mobile_preview": {
+    "animation_enabled": true,
+    "interval_ms": 3500,
+    "slides": [
+      {
+        "id": "pulse",
+        "badge": "⚡ Pulse Dev Watchdog (:5173)",
+        "light_image": "assets/images/software/software_launcher_light.png",
+        "dark_image": "assets/images/software/software_launcher_light.png"
+      },
+      {
+        "id": "roundtable",
+        "badge": "🤖 Multi-Agent 3D Studio",
+        "light_image": "assets/images/software/software_multiagent_light.png",
+        "dark_image": "assets/images/software/software_multiagent_dark.png"
+      },
+      {
+        "id": "fixer",
+        "badge": "🛠️ 1-Click AST Auto-Fixer",
+        "light_image": "assets/images/software/software_error_diagnostic.png",
+        "dark_image": "assets/images/software/software_error_diagnostic.png"
+      },
+      {
+        "id": "scanner",
+        "badge": "📂 Drive AutoScan Indexer",
+        "light_image": "assets/images/software/software_autoscan_captured.png",
+        "dark_image": "assets/images/software/software_autoscan_drives.png"
+      }
+    ]
+  },
+  "testimonials": [
+    {
+      "name": "@AlexRivera",
+      "author": "Alex Rivera",
+      "role": "Principal Systems Architect",
+      "avatar": "assets/images/testimonials/avatar_alex.svg",
+      "quote": "The Multi-Agent Roundtable is unlike anything in VS Code or Cursor. Having 7 specialized AI personas debate architecture and security before writing code saved our team weeks of refactoring."
+    },
+    {
+      "name": "@MarcusVance",
+      "author": "Marcus Vance",
+      "role": "Staff Full-Stack Engineer",
+      "avatar": "assets/images/testimonials/avatar_marcus.svg",
+      "quote": "Pulse dev server watchdog alone is worth gold. No more orphaned node processes or blocked :5173 ports. DEEDOX manages port occupancy and boots dev servers silently."
+    },
+    {
+      "name": "@ElenaRostova",
+      "author": "Elena Rostova",
+      "role": "Cyber Security Director",
+      "avatar": "assets/images/testimonials/avatar_elena.svg",
+      "quote": "The air-gapped sovereign privacy guarantee made DEEDOX our standard. Local model execution with Ollama and zero cloud leakage means our core proprietary IP is 100% safe."
+    },
+    {
+      "name": "@TariqDev",
+      "author": "Tariq Al-Mansoor",
+      "role": "Lead DevOps Engineer",
+      "avatar": "assets/images/testimonials/avatar_tariq.svg",
+      "quote": "1-Click AST Error Fixer caught a cryptic webpack and port crash that baffled our entire team. It diagnosed the root cause and patched the configuration in 20 seconds flat."
+    },
+    {
+      "name": "@SarahJenkins",
+      "author": "Sarah Jenkins",
+      "role": "Senior React & Next.js Engineer",
+      "avatar": "assets/images/testimonials/avatar_sarah.svg",
+      "quote": "I switched from Cursor and Windsurf to DEEDOX AI Dev Workspace. The desktop sandboxing and automated port recovery give me an uninterrupted development flow."
+    },
+    {
+      "name": "@KenjiCode",
+      "author": "Kenji Takahashi",
+      "role": "Open Source Maintainer",
+      "avatar": "assets/images/testimonials/avatar_kenji.svg",
+      "quote": "Drive AutoScan discovered 200+ micro-repos across our C: and D: drives in under 3 seconds. Instant repo switching without tedious workspace juggling is phenomenal."
+    },
+    {
+      "name": "@DavidSterling",
+      "author": "David Sterling",
+      "role": "VP of Engineering",
+      "avatar": "assets/images/testimonials/avatar_david.svg",
+      "quote": "DEEDOX transformed our engineering velocity. The collaborative agent personas act like senior pair-programmers directly on the local Windows desktop."
+    },
+    {
+      "name": "@PriyaSharma",
+      "author": "Priya Sharma",
+      "role": "AI Platform Engineer",
+      "avatar": "assets/images/testimonials/avatar_priya.svg",
+      "quote": "The sovereign desktop environment seamlessly bridges VS Code, local terminal, and browser preview. Everything feels native, fast, and remarkably robust."
+    },
+    {
+      "name": "@LucasMeyer",
+      "author": "Lucas Meyer",
+      "role": "Senior Backend Specialist",
+      "avatar": "assets/images/testimonials/avatar_lucas.svg",
+      "quote": "No more terminal crashes halting work. DEEDOX's AST diagnostic engine breaks down root cause stack traces with crystal clarity and provides atomic auto-patches."
+    },
+    {
+      "name": "@ChloeDubois",
+      "author": "Chloe Dubois",
+      "role": "Software Product Designer",
+      "avatar": "assets/images/testimonials/avatar_chloe.svg",
+      "quote": "The 3D miniature avatars in the Roundtable Studio make autonomous engineering intuitive and visually alive. DEEDOX feels like the future of developer tools."
+    }
+  ]
+}

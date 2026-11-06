@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Features & Architecture — AI Dev Workspace | Built by DEEDOX</title>
+  <meta name="description" content="Explore the sovereign architecture of AI Dev Workspace: Autonomous Multi-Agent Roundtable, Pulse server watchdog, 1-click AST self-healing, and end-to-end air-gapped security.">
+  <link rel="icon" type="image/png" href="assets/images/deedox-logo.png">
+  <link rel="apple-touch-icon" href="assets/images/deedox-logo.png">
+  
+  <!-- Qoder CSS Stylesheets -->
+  <link rel="stylesheet" href="assets/css/8f010e1b7757c007.css">
+  <link rel="stylesheet" href="assets/css/4b2ff5ff8ff5c412.css">
+  <link rel="stylesheet" href="assets/css/59c6159237633492.css">
+  <link rel="stylesheet" href="assets/css/824bda3407ddc3c6.css">
+  <link rel="stylesheet" href="assets/css/202d5a15b5b2857d.css">
+  <link rel="stylesheet" href="assets/css/6f903207c47c5f7e.css">
+  <link rel="stylesheet" href="assets/css/b9cdcdce1bc41622.css">
+  <link rel="stylesheet" href="assets/css/5426dc103ef002f7.css">
+  <link rel="stylesheet" href="assets/css/492b8b70b5396da1.css">
+  <link rel="stylesheet" href="assets/css/c0f7ee16ee978202.css">
+  <link rel="stylesheet" href="assets/css/custom.css">
+  
+  <!-- Instrument Sans & JetBrains Mono Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <script>
+    (function() {
+      var savedTheme = localStorage.getItem('devworkspace_site_theme') || 'light';
+      document.documentElement.setAttribute('data-theme', savedTheme);
+    })();
+  </script>
+</head>
+<body style="min-height:100vh;display:flex;flex-direction:column;justify-content:space-between;background:var(--q-bg, #F2F4F2);color:var(--q-text, #0F0D0C);margin:0;font-family:'Instrument Sans',-apple-system,sans-serif;">
+
+  <!-- ================= UNIFIED STICKY HEADER ================= -->
+  <header class="style_header__Zwktt full-top-nav">
+  <div class="FullHeader_fullHeader__ihlLC" data-full-header="true">
+    <div class="FullHeader_headerLeft__MWkEH">
+      <div class="Logo_logoWrapper__Fps6K">
+        <a href="index.html" class="style_qoderLink__nW4Yn style_qoderLinkNoUnderline__Hy01J Logo_logoLink__DmVep" style="display:flex;align-items:center;gap:10px;text-decoration:none;">
+          <img src="assets/images/deedox-logo.png" alt="DEEDOX Logo" data-img-id="site_logo" style="height:28px;width:auto;object-fit:contain;border-radius:4px;">
+          <div style="display:flex;flex-direction:column;line-height:1.15;">
+            <span class="brand-title" style="font-weight:800;font-size:17.5px;letter-spacing:-0.3px;color:var(--q-on-surface);">DEEDOX</span>
+            <span class="brand-tagline" style="font-size:10px;font-weight:600;letter-spacing:0.5px;text-transform:uppercase;opacity:0.65;color:var(--q-on-surface-subtle);">AI Dev Workspace</span>
+          </div>
+        </a>
+      </div>
+      <nav class="HeaderNav_headerNav__3vIYb">
+        <div class="QoderDropdown_dropdown__CACRn">
+          <div class="QoderDropdown_dropdownTrigger__TtQK8">
+            <span class="HeaderNav_navItem__CACiO">
+              <span class="HeaderNav_navItemWithTag__vURbX" data-i18n="nav_explore">Explore Pages<span class="HeaderNav_navItemDot__4hRJe"></span></span>
+              <svg class="HeaderNav_iconDown__8ynXw" fill="currentColor" height="1em" viewBox="0 0 24 24" width="1em"><path d="M11.9999 13.1714L16.9497 8.22168L18.3639 9.63589L11.9999 15.9999L5.63599 9.63589L7.0502 8.22168L11.9999 13.1714Z"></path></svg>
+            </span>
+          </div>
+          <div class="QoderDropdown_menu">
+            <a href="index.html" class="QoderDropdown_menuItem">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" style="margin-right:8px;"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+              <span data-i18n="menu_home">Home Hub</span>
+            </a>
+            <a href="demo.html" class="QoderDropdown_menuItem">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" style="margin-right:8px;"><rect width="20" height="14" x="2" y="3" rx="2"></rect><line x1="8" x2="16" y1="21" y2="21"></line><line x1="12" x2="12" y1="17" y2="21"></line></svg>
+              <span data-i18n="menu_sandbox">Interactive Demo Sandbox</span>
+            </a>
+            <a href="features.html" class="QoderDropdown_menuItem">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" style="margin-right:8px;"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+              <span data-i18n="menu_features">Features & Architecture</span>
+            </a>
+            <a href="download.html" class="QoderDropdown_menuItem">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" style="margin-right:8px;"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+              <span data-i18n="menu_download">Official Windows Downloads</span>
+            </a>
+            <a href="about.html" class="QoderDropdown_menuItem">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" style="margin-right:8px;"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+              <span data-i18n="menu_about">About DEEDOX & Founder</span>
+            </a>
+            <a href="admin.html" class="QoderDropdown_menuItem" style="border-top:1px solid var(--q-border, rgba(128,128,128,0.15));margin-top:4px;padding-top:8px;">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" style="margin-right:8px;"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+              <span data-i18n="menu_admin">Admin Console</span>
+            </a>
+          </div>
+        </div>
+        <a class="style_qoderLink__nW4Yn style_qoderLinkNoUnderline__Hy01J HeaderNav_navItem__CACiO" href="demo.html" target="_self"><span data-i18n="nav_sandbox">Live Sandbox</span></a>
+        <a class="style_qoderLink__nW4Yn style_qoderLinkNoUnderline__Hy01J HeaderNav_navItem__CACiO" href="index.html#launcher" target="_self"><span data-i18n="nav_launcher">Pulse Launcher</span></a>
+        <a class="style_qoderLink__nW4Yn style_qoderLinkNoUnderline__Hy01J HeaderNav_navItem__CACiO" href="index.html#roundtable" target="_self"><span data-i18n="nav_roundtable">Multi-Agent Studio</span></a>
+        <a class="style_qoderLink__nW4Yn style_qoderLinkNoUnderline__Hy01J HeaderNav_navItem__CACiO" href="index.html#error-fixer" target="_self"><span data-i18n="nav_fixer">1-Click Fixer</span></a>
+        <a class="style_qoderLink__nW4Yn style_qoderLinkNoUnderline__Hy01J HeaderNav_navItem__CACiO" href="index.html#drive-scanner" target="_self"><span data-i18n="nav_scanner">Drive AutoScan</span></a>
+        <a class="style_qoderLink__nW4Yn style_qoderLinkNoUnderline__Hy01J HeaderNav_navItem__CACiO" href="download.html" target="_self"><span data-i18n="nav_downloads">Downloads</span></a>
+        <a class="style_qoderLink__nW4Yn style_qoderLinkNoUnderline__Hy01J HeaderNav_navItem__CACiO" href="about.html" target="_self"><span data-i18n="nav_about">About DEEDOX</span></a>
+      </nav>
+    </div>
+    <div class="FullHeader_headerRight__Gc9Qc" style="display:flex;align-items:center;gap:10px;">
+      <!-- Language Dropdown Menu (English / Bengali selection) -->
+      <div id="langDropdownContainer" style="position:relative;">
+        <button id="langToggleBtn" type="button" aria-haspopup="true" aria-expanded="false" aria-label="Select Language" title="Select Language" style="background:var(--q-surface-subtle, rgba(0,0,0,0.04));border:1px solid var(--q-border, rgba(128,128,128,0.25));border-radius:24px;padding:6px 12px;font-size:12.5px;cursor:pointer;display:inline-flex;align-items:center;gap:6px;color:var(--q-on-surface);font-family:inherit;font-weight:600;transition:all 0.2s;">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"></circle>
+            <line x1="2" y1="12" x2="22" y2="12"></line>
+            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+          </svg>
+          <span id="langToggleLabel">English</span>
+          <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M6 9l6 6 6-6"></path></svg>
+        </button>
+        <div id="langDropdownMenu" style="display:none;position:absolute;top:calc(100% + 6px);right:0;background:var(--q-surface, #FFFFFF);border:1px solid var(--q-border, #E5E7EB);border-radius:8px;box-shadow:0 10px 25px rgba(0,0,0,0.12);padding:6px;min-width:130px;z-index:9999;">
+          <button type="button" class="lang-option-btn" data-lang="en" style="width:100%;text-align:left;background:transparent;border:none;padding:7px 12px;border-radius:6px;font-size:12.5px;font-weight:600;cursor:pointer;display:flex;align-items:center;gap:8px;color:var(--q-text, #111827);transition:background 0.15s;">
+            <span>🇬🇧</span> English
+          </button>
+          <button type="button" class="lang-option-btn" data-lang="bn" style="width:100%;text-align:left;background:transparent;border:none;padding:7px 12px;border-radius:6px;font-size:12.5px;font-weight:500;cursor:pointer;display:flex;align-items:center;gap:8px;color:var(--q-text, #111827);transition:background 0.15s;">
+            <span>🇧🇩</span> বাংলা
+          </button>
+        </div>
+      </div>
+
+      <!-- Day/Night Mode Switcher Button (Minimalist Sun/Moon Icon) -->
+      <button id="themeToggleBtn" aria-label="Toggle Dark/Light Mode" title="Toggle Theme (Day / Night)" style="background:var(--q-surface-subtle, rgba(0,0,0,0.04));border:1px solid var(--q-border, rgba(128,128,128,0.25));border-radius:24px;padding:6px 12px;font-size:12.5px;cursor:pointer;display:inline-flex;align-items:center;gap:6px;color:var(--q-on-surface);font-family:inherit;font-weight:600;transition:all 0.2s;">
+        <svg id="themeToggleIconSvg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+        <span id="themeToggleLabel">Night Mode</span>
+      </button>
+
+      <!-- Download Action Button -->
+      <a href="downloads/AI%20Dev%20Workspace%20Setup%201.0.0.exe" download="AI Dev Workspace Setup 1.0.0.exe" class="DownLoadButton_downloadBtn__CrIrC DownLoadButton_medium__bdUnV" style="background:#255A41;color:#FDFDFD;font-weight:600;padding:8px 18px;border-radius:32px;text-decoration:none;display:inline-flex;align-items:center;gap:6px;box-shadow:0 2px 8px rgba(37,90,65,0.25);">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+          <polyline points="7 10 12 15 17 10"></polyline>
+          <line x1="12" y1="15" x2="12" y2="3"></line>
+        </svg>
+        <span data-i18n="btn_download">Download</span>
+      </a>
+    </div>
+  </div>
+</header>
+
+  <main style="flex:1;">
+    <!-- ================= HERO SECTION ================= -->
+    <section class="subpage-hero" style="padding:60px 24px 40px 24px;text-align:center;max-width:1100px;margin:0 auto;">
+      <div class="subpage-badge" style="display:inline-flex;align-items:center;gap:6px;font-size:11.5px;font-weight:700;background:rgba(37,90,65,0.1);color:#255A41;padding:4px 14px;border-radius:20px;border:1px solid rgba(37,90,65,0.2);margin-bottom:14px;text-transform:uppercase;">
+        SYSTEM ARCHITECTURE &amp; CAPABILITIES
+      </div>
+      <h1 style="font-size:42px;font-weight:800;color:var(--q-text, #0F0D0C);letter-spacing:-1px;margin:0 0 16px 0;">
+        Autonomous Developer Intelligence
+      </h1>
+      <p style="font-size:17px;color:var(--q-text-muted, #6B7280);max-width:760px;margin:0 auto;line-height:1.65;">
+        Engineered from the ground up for sovereign offline execution, real-time background server orchestration, collaborative multi-agent decision making, and 1-click self-healing code fixes.
+      </p>
+    </section>
+
+    <!-- ================= SECTION 1: AI NATIVE WORKFLOW ================= -->
+    <section id="workflow" style="padding:40px 24px;max-width:1200px;margin:0 auto;">
+      <div class="bento-card" style="padding:36px;border-radius:12px;display:grid;grid-template-columns:1.1fr 1fr;gap:40px;align-items:center;">
+        <div>
+          <div style="display:inline-flex;align-items:center;gap:6px;font-size:11px;font-weight:700;background:rgba(37,90,65,0.1);color:#255A41;padding:4px 10px;border-radius:16px;margin-bottom:12px;text-transform:uppercase;">
+            PILLAR 01 • END-TO-END PIPELINE
+          </div>
+          <h2 style="font-size:28px;font-weight:700;color:var(--q-text, #0F0D0C);margin:0 0 10px 0;letter-spacing:-0.4px;">
+            AI Native Product Development Workflow
+          </h2>
+          <p style="font-size:14.5px;color:var(--q-text-muted, #4B5563);line-height:1.65;margin-bottom:20px;">
+            Seamlessly connects planning, development, testing, and delivery into a single unified workspace. Instead of context switching between Jira, IDEs, Docker, and CI logs, AI Dev Workspace unifies project discovery, code changes, and server watchdogs under one roof.
+          </p>
+          <ul style="margin:0;padding-left:18px;font-size:13.5px;color:var(--q-text-muted, #4B5563);line-height:1.7;">
+            <li><strong>Continuous Requirement Synthesis:</strong> Transforms project prompts into step-by-step verified engineering tasks.</li>
+            <li><strong>Atomic Diffs:</strong> Review line-by-line syntax patches with git-compatible diff views before committing.</li>
+            <li><strong>Instant Hot Reload:</strong> Vite (:5173) and Next.js (:3000) servers update instantly as code is patched.</li>
+          </ul>
+        </div>
+        <div class="feature-img-wrap" style="box-shadow:var(--q-card-shadow);border-radius:8px;overflow:hidden;border:1px solid var(--q-border);">
+          <img src="assets/images/software/software_full_app.png" alt="AI Native Workflow Overview" style="width:100%;height:auto;display:block;" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SECTION 2: END-TO-END SECURITY ================= -->
+    <section id="security" style="padding:40px 24px;max-width:1200px;margin:0 auto;">
+      <div class="bento-card" style="padding:36px;border-radius:12px;display:grid;grid-template-columns:1fr 1.1fr;gap:40px;align-items:center;">
+        <div class="feature-img-wrap" style="box-shadow:var(--q-card-shadow);border-radius:8px;overflow:hidden;border:1px solid var(--q-border);">
+          <img src="assets/images/software/software_autoscan_captured.png" alt="Security and Local Drive Isolation" style="width:100%;height:auto;display:block;" />
+        </div>
+        <div>
+          <div style="display:inline-flex;align-items:center;gap:6px;font-size:11px;font-weight:700;background:rgba(37,90,65,0.1);color:#255A41;padding:4px 10px;border-radius:16px;margin-bottom:12px;text-transform:uppercase;">
+            PILLAR 02 • SOVEREIGN PRIVACY
+          </div>
+          <h2 style="font-size:28px;font-weight:700;color:var(--q-text, #0F0D0C);margin:0 0 10px 0;letter-spacing:-0.4px;">
+            End-to-End Security &amp; Air-Gapped Isolation
+          </h2>
+          <p style="font-size:14.5px;color:var(--q-text-muted, #4B5563);line-height:1.65;margin-bottom:20px;">
+            Discovering and fixing risks from coding to delivery without risking intellectual property leaks. AI Dev Workspace executes locally on your Windows machine with full support for offline LLMs (Ollama) and sandboxed filesystem permissions.
+          </p>
+          <ul style="margin:0;padding-left:18px;font-size:13.5px;color:var(--q-text-muted, #4B5563);line-height:1.7;">
+            <li><strong>Zero Cloud Relays:</strong> Your source code, API keys, and database credentials never leave your local machine.</li>
+            <li><strong>Automated Secret Scrubbing:</strong> Prevents inadvertent commit of .env files, private keys, and auth tokens.</li>
+            <li><strong>AST Integrity Guard:</strong> Analyzes patch safety against AST rules to avoid malicious code injection.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SECTION 3: PERSONALIZED AI AGENTS & MODELS ================= -->
+    <section id="models" style="padding:40px 24px;max-width:1200px;margin:0 auto;">
+      <div class="bento-card" style="padding:36px;border-radius:12px;display:grid;grid-template-columns:1.1fr 1fr;gap:40px;align-items:center;">
+        <div>
+          <div style="display:inline-flex;align-items:center;gap:6px;font-size:11px;font-weight:700;background:rgba(37,90,65,0.1);color:#255A41;padding:4px 10px;border-radius:16px;margin-bottom:12px;text-transform:uppercase;">
+            PILLAR 03 • INTELLIGENCE MATRIX
+          </div>
+          <h2 style="font-size:28px;font-weight:700;color:var(--q-text, #0F0D0C);margin:0 0 10px 0;letter-spacing:-0.4px;">
+            Personalized AI Agents &amp; Open Model Matrix
+          </h2>
+          <p style="font-size:14.5px;color:var(--q-text-muted, #4B5563);line-height:1.65;margin-bottom:20px;">
+            Rapidly building AI platforms for different users and scenarios. Seamlessly configure the best LLM backend for each agent persona—from state-of-the-art cloud reasoning engines to 100% private local Ollama models.
+          </p>
+          <ul style="margin:0;padding-left:18px;font-size:13.5px;color:var(--q-text-muted, #4B5563);line-height:1.7;">
+            <li><strong>Multi-Provider Freedom:</strong> Native adapters for OpenRouter, Anthropic Claude, OpenAI GPT-4o, DeepSeek-R1, and Qwen.</li>
+            <li><strong>Role-Specific Specialization:</strong> Assign lightweight fast models to syntax checkers and deep reasoning models to Lead Architects.</li>
+            <li><strong>Local Ollama Integration:</strong> Zero-cost, air-gapped inference running straight on your local GPU/CPU.</li>
+          </ul>
+        </div>
+        <div class="feature-img-wrap" style="box-shadow:var(--q-card-shadow);border-radius:8px;overflow:hidden;border:1px solid var(--q-border);">
+          <img src="assets/images/software/software_multiagent_dark.png" alt="AI Agent Matrix" style="width:100%;height:auto;display:block;" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SECTION 4: ENTERPRISE AI PLATFORMS ================= -->
+    <section id="enterprise" style="padding:40px 24px;max-width:1200px;margin:0 auto;">
+      <div class="bento-card" style="padding:36px;border-radius:12px;display:grid;grid-template-columns:1fr 1.1fr;gap:40px;align-items:center;">
+        <div class="feature-img-wrap" style="box-shadow:var(--q-card-shadow);border-radius:8px;overflow:hidden;border:1px solid var(--q-border);">
+          <img src="assets/images/software/software_launcher_light.png" alt="Enterprise Platform Controls" style="width:100%;height:auto;display:block;" />
+        </div>
+        <div>
+          <div style="display:inline-flex;align-items:center;gap:6px;font-size:11px;font-weight:700;background:rgba(37,90,65,0.1);color:#255A41;padding:4px 10px;border-radius:16px;margin-bottom:12px;text-transform:uppercase;">
+            PILLAR 04 • ENTERPRISE READY
+          </div>
+          <h2 style="font-size:28px;font-weight:700;color:var(--q-text, #0F0D0C);margin:0 0 10px 0;letter-spacing:-0.4px;">
+            Enterprise AI Platforms &amp; Orchestration
+          </h2>
+          <p style="font-size:14.5px;color:var(--q-text-muted, #4B5563);line-height:1.65;margin-bottom:20px;">
+            Constructing a dedicated enterprise portal for product development, server stability, and team productivity. Unify local developer environments across Windows workstations while enforcing strict security standards.
+          </p>
+          <ul style="margin:0;padding-left:18px;font-size:13.5px;color:var(--q-text-muted, #4B5563);line-height:1.7;">
+            <li><strong>Standardized Workstation Templates:</strong> Deploy pre-configured dev environments with zero manual setup.</li>
+            <li><strong>Port &amp; Process Governance:</strong> Centralized monitoring of active ports, fallen services, and memory consumption.</li>
+            <li><strong>SOC 2 &amp; ISO27001 Alignment:</strong> Zero external telemetry, cryptographically signed binaries, and audit log generation.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SECTION 5: AI EMPLOYEES & ROUNDTABLE ================= -->
+    <section id="roundtable" style="padding:40px 24px;max-width:1200px;margin:0 auto;">
+      <div class="bento-card" style="padding:36px;border-radius:12px;display:grid;grid-template-columns:1.1fr 1fr;gap:40px;align-items:center;">
+        <div>
+          <div style="display:inline-flex;align-items:center;gap:6px;font-size:11px;font-weight:700;background:rgba(37,90,65,0.1);color:#255A41;padding:4px 10px;border-radius:16px;margin-bottom:12px;text-transform:uppercase;">
+            PILLAR 05 • MULTI-AGENT COUNCIL
+          </div>
+          <h2 style="font-size:28px;font-weight:700;color:var(--q-text, #0F0D0C);margin:0 0 10px 0;letter-spacing:-0.4px;">
+            AI Employees &amp; Autonomous Multi-Agent Council
+          </h2>
+          <p style="font-size:14.5px;color:var(--q-text-muted, #4B5563);line-height:1.65;margin-bottom:20px;">
+            Continuously handling product development and service tasks with collaborative intelligence. Seven specialized 3D animated miniature avatars sit at a virtual roundtable, debating solutions, checking code quality, and voting on consensus patches before applying them.
+          </p>
+          <ul style="margin:0;padding-left:18px;font-size:13.5px;color:var(--q-text-muted, #4B5563);line-height:1.7;">
+            <li><strong>Lead Architect:</strong> Decomposes user goals into system architecture and module dependencies.</li>
+            <li><strong>Security Auditor:</strong> Verifies SQL queries, authentication flows, and dependency vulnerabilities.</li>
+            <li><strong>Frontend &amp; UX Specialist:</strong> Crafts accessible, responsive interfaces using Tailwind CSS and React.</li>
+            <li><strong>QA &amp; Bug Hunter Pro:</strong> Generates unit tests, catches edge cases, and verifies error diagnostics.</li>
+          </ul>
+        </div>
+        <div class="feature-img-wrap" style="box-shadow:var(--q-card-shadow);border-radius:8px;overflow:hidden;border:1px solid var(--q-border);">
+          <img src="assets/images/software/software_multiagent_dark.png" alt="Multi-Agent Roundtable" style="width:100%;height:auto;display:block;" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= BOTTOM CTA ================= -->
+    <div class="pre-footer-cta" style="margin:40px auto 60px auto;">
+      <h2 style="font-size:32px;font-weight:700;color:var(--q-text, #0F0D0C);margin:0 0 12px 0;">
+        Ready to Experience Autonomous Development?
+      </h2>
+      <p style="font-size:15px;color:var(--q-text-muted, #6B7280);max-width:580px;margin:0 auto 24px auto;">
+        Download the Windows Setup package or try the interactive sandbox right in your web browser.
+      </p>
+      <div style="display:flex;justify-content:center;gap:14px;flex-wrap:wrap;">
+        <a href="downloads/AI%20Dev%20Workspace%20Setup%201.0.0.exe" download="AI Dev Workspace Setup 1.0.0.exe" class="DownLoadButton_downloadBtn__CrIrC" style="background:#255A41;color:#FFFFFF;font-weight:600;padding:12px 24px;border-radius:32px;text-decoration:none;display:inline-flex;align-items:center;gap:8px;font-size:14px;box-shadow:0 3px 10px rgba(37,90,65,0.25);">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+          <span>Download Windows Setup (88.7 MB)</span>
+        </a>
+        <a href="demo.html" style="background:transparent;color:var(--q-text, #0F0D0C);border:1px solid var(--q-border-strong, rgba(0,0,0,0.15));font-weight:600;padding:12px 22px;border-radius:32px;text-decoration:none;font-size:14px;">
+          <span>Test Interactive Sandbox &rarr;</span>
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <!-- ================= UNIFIED FOOTER ================= -->
+  <footer class="style_footer__z4X_A" style="background-color:transparent;border-top:1px solid var(--q-border, rgba(0,0,0,0.08));padding-top:40px;">
+  <div class="style_footerWrapper__Ok2_i">
+    <div class="style_footerTop___resP">
+      <div class="style_footerLeftTop__j18mk">
+        <div class="style_footerLogo__JJznv">
+          <a href="index.html" style="display:flex;align-items:center;gap:10px;text-decoration:none;">
+            <img src="assets/images/deedox-logo.png" alt="DEEDOX Logo" data-img-id="site_logo" style="width:32px;height:32px;border-radius:6px;" />
+            <div style="display:flex;flex-direction:column;line-height:1.15;">
+              <span style="font-size:16px;font-weight:800;color:var(--q-on-surface);">DEEDOX</span>
+              <span style="font-size:10px;font-weight:600;letter-spacing:0.5px;text-transform:uppercase;opacity:0.65;color:var(--q-on-surface-subtle);">AI Dev Workspace</span>
+            </div>
+          </a>
+        </div>
+        <div class="style_footerDesc__EJM9H" style="margin-top:12px;font-size:13.5px;line-height:1.6;color:var(--q-text-muted);">
+          Beyond coding. Create anything.<br>Built with precision by <strong>DEEDOX Studio</strong> (<a href="https://deedoxstudio.com" target="_blank" style="color:inherit;text-decoration:underline;">deedoxstudio.com</a>).<br>Founder &amp; CEO: <strong>Rasel Ahmed</strong>.
+        </div>
+      </div>
+      <div class="style_footerRightTop__QEqEW">
+        <div class="style_footerServices__tkrwM" style="grid-template-columns:repeat(4, 1fr);gap:32px;">
+          <div class="style_serviceItem__GXs6W">
+            <div class="style_serviceItemTitle__cLfMY" style="font-weight:700;margin-bottom:12px;font-size:13.5px;text-transform:uppercase;letter-spacing:0.5px;color:var(--q-text);">Core Features</div>
+            <a href="demo.html" class="style_qoderLink__nW4Yn style_qoderLinkNoUnderline__Hy01J style_serviceItemLink__aQgP_">Live Sandbox Demo</a>
+            <a href="index.html#launcher" class="style_qoderLink__nW4Yn style_qoderLinkNoUnderline__Hy01J style_serviceItemLink__aQgP_">Pulse Launcher</a>
+            <a href="index.html#roundtable" class="style_qoderLink__nW4Yn style_qoderLinkNoUnderline__Hy01J style_serviceItemLink__aQgP_">Multi-Agent Studio</a>
+            <a href="index.html#error-fixer" class="style_qoderLink__nW4Yn style_qoderLinkNoUnderline__Hy01J style_serviceItemLink__aQgP_">1-Click Error Fixer</a>
+            <a href="index.html#drive-scanner" class="style_qoderLink__nW4Yn style_qoderLinkNoUnderline__Hy01J style_serviceItemLink__aQgP_">Drive AutoScan</a>
+          </div>
+          <div class="style_serviceItem__GXs6W">
+            <div class="style_serviceItemTitle__cLfMY" style="font-weight:700;margin-bottom:12px;font-size:13.5px;text-transform:uppercase;letter-spacing:0.5px;color:var(--q-text);">Downloads</div>
+            <a href="downloads/AI%20Dev%20Workspace%20Setup%201.0.0.exe" download="AI Dev Workspace Setup 1.0.0.exe" class="style_qoderLink__nW4Yn style_qoderLinkNoUnderline__Hy01J style_serviceItemLink__aQgP_">Windows Setup (.exe)</a>
+            <a href="download.html" class="style_qoderLink__nW4Yn style_qoderLinkNoUnderline__Hy01J style_serviceItemLink__aQgP_">Release Notes v1.0.0</a>
+            <a href="download.html#requirements" class="style_qoderLink__nW4Yn style_qoderLinkNoUnderline__Hy01J style_serviceItemLink__aQgP_">System Requirements</a>
+            <a href="download.html#hash" class="style_qoderLink__nW4Yn style_qoderLinkNoUnderline__Hy01J style_serviceItemLink__aQgP_">SHA-256 Checksum</a>
+          </div>
+          <div class="style_serviceItem__GXs6W">
+            <div class="style_serviceItemTitle__cLfMY" style="font-weight:700;margin-bottom:12px;font-size:13.5px;text-transform:uppercase;letter-spacing:0.5px;color:var(--q-text);">Company &amp; Team</div>
+            <a href="about.html" class="style_qoderLink__nW4Yn style_qoderLinkNoUnderline__Hy01J style_serviceItemLink__aQgP_">About DEEDOX Studio</a>
+            <a href="about.html#founder" class="style_qoderLink__nW4Yn style_qoderLinkNoUnderline__Hy01J style_serviceItemLink__aQgP_">Founder: Rasel Ahmed</a>
+            <a href="features.html" class="style_qoderLink__nW4Yn style_qoderLinkNoUnderline__Hy01J style_serviceItemLink__aQgP_">Architecture Deep-Dive</a>
+            <a href="about.html#faq" class="style_qoderLink__nW4Yn style_qoderLinkNoUnderline__Hy01J style_serviceItemLink__aQgP_">FAQ &amp; Knowledge Base</a>
+            <a href="admin.html" class="style_qoderLink__nW4Yn style_qoderLinkNoUnderline__Hy01J style_serviceItemLink__aQgP_" style="display:inline-flex;align-items:center;gap:4px;opacity:0.85;">⚙️ Admin Control Panel</a>
+          </div>
+          <div class="style_serviceItem__GXs6W">
+            <div class="style_serviceItemTitle__cLfMY" style="font-weight:700;margin-bottom:12px;font-size:13.5px;text-transform:uppercase;letter-spacing:0.5px;color:var(--q-text);">Contact &amp; Legal</div>
+            <a href="mailto:contact@deedoxstudio.com" class="style_qoderLink__nW4Yn style_qoderLinkNoUnderline__Hy01J style_serviceItemLink__aQgP_">contact@deedoxstudio.com</a>
+            <a href="https://deedoxstudio.com" target="_blank" class="style_qoderLink__nW4Yn style_qoderLinkNoUnderline__Hy01J style_serviceItemLink__aQgP_">DEEDOX Studio Official</a>
+            <a href="about.html#privacy" class="style_qoderLink__nW4Yn style_qoderLinkNoUnderline__Hy01J style_serviceItemLink__aQgP_">Air-Gapped Privacy Guarantee</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="style_footerBottom__ygFCE" style="margin-top:36px;border-top:1px solid var(--q-border, rgba(0,0,0,0.06));padding-top:20px;">
+      <div class="style_footerBottomInfo__hGdjY">
+        <div class="style_copyright__3BgOj" style="font-size:13px;color:var(--q-text-muted);">
+          &copy; 2026 <a href="about.html" class="style_qoderLink__nW4Yn style_qoderLinkNoUnderline__Hy01J" style="font-weight:600;color:inherit;">DEEDOX STUDIO</a> &mdash; Founded &amp; Engineered by <strong>Rasel Ahmed</strong>. All rights reserved.
+        </div>
+        <div class="style_certifications__Zm0ob" style="font-size:12px;opacity:0.75;">Sovereign Local-First Architecture | Air-Gapped Privacy</div>
+      </div>
+      <div class="style_footerBottomContent__VSw56">
+        <button class="style_backToTop__OjsY7" onclick="window.scrollTo({top:0,behavior:'smooth'});" style="cursor:pointer;background:transparent;border:none;color:inherit;font-size:12.5px;display:inline-flex;align-items:center;gap:6px;">
+          <span>Back to Top</span>
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M13.0001 7.82843V20H11.0001V7.82843L5.63614 13.1924L4.22192 11.7782L12.0001 4L19.7783 11.7782L18.3641 13.1924L13.0001 7.82843Z"></path></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

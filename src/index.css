@@ -1,0 +1,224 @@
+@import './components/AgentMiniature.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base Font & Smooth Transitions */
+@layer base {
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    letter-spacing: -0.012em;
+    background-color: #080809;
+    color: #EDEDED;
+  }
+}
+
+/* Linear OLED Dark Theme (Default) */
+:root,
+.theme-nova-dark {
+  --app-bg: #080809;
+  --app-bg-radial: #080809;
+  --sidebar-bg: #0d0d0f;
+  --panel-bg: #141416;
+  --card-bg: #121215;
+  --card-hover-bg: #18181D;
+  --card-border: rgba(255, 255, 255, 0.07);
+  --card-border-hover: rgba(255, 255, 255, 0.18);
+  --card-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.7);
+  --text-primary: #EDEDED;
+  --text-secondary: #A0A0A5;
+  --text-muted: #686870;
+  --dock-bg: rgba(20, 20, 22, 0.94);
+  --dock-border: rgba(255, 255, 255, 0.1);
+  --dock-active: #26262C;
+  --dock-active-text: #FFFFFF;
+  --accent-color: #5E6AD2;
+  --accent-glow: rgba(94, 106, 210, 0.25);
+  --pill-bg: #1A1A1E;
+  --pill-active-bg: #26262C;
+  --pill-active-text: #FFFFFF;
+  --input-bg: #141416;
+  --input-border: rgba(255, 255, 255, 0.1);
+}
+
+/* Soft Education App Light Theme */
+.theme-soft-light {
+  --app-bg: #f8f8fa;
+  --app-bg-radial: radial-gradient(circle at 50% 0%, #ffffff 0%, #f4f4f7 90%);
+  --sidebar-bg: #f2f2f5;
+  --panel-bg: #ffffff;
+  --card-bg: #ffffff;
+  --card-hover-bg: #f8f8fa;
+  --card-border: rgba(0, 0, 0, 0.08);
+  --card-border-hover: rgba(0, 0, 0, 0.16);
+  --card-shadow: 0 4px 16px -2px rgba(0, 0, 0, 0.05);
+  --text-primary: #18181B;
+  --text-secondary: #52525B;
+  --text-muted: #71717A;
+  --dock-bg: rgba(255, 255, 255, 0.96);
+  --dock-border: rgba(0, 0, 0, 0.1);
+  --dock-active: #e4e4e7;
+  --dock-active-text: #18181B;
+  --accent-color: #5E6AD2;
+  --accent-glow: rgba(94, 106, 210, 0.15);
+  --pill-bg: rgba(0, 0, 0, 0.04);
+  --pill-active-bg: #e4e4e7;
+  --pill-active-text: #18181B;
+  --input-bg: #ffffff;
+  --input-border: rgba(0, 0, 0, 0.12);
+}
+
+/* Linear Surface and Glass Utilities */
+.glass-panel {
+  background: var(--card-bg);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid var(--card-border);
+}
+
+.glass-card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-card:hover {
+  background: var(--card-hover-bg);
+  border-color: var(--card-border-hover);
+}
+
+/* Linear Specific Cards & Floating Windows */
+.linear-card {
+  background: #121215;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 14px;
+  transition: all 0.2s ease;
+}
+
+.linear-card:hover {
+  background: #18181D;
+  border-color: rgba(255, 255, 255, 0.18);
+}
+
+.linear-floating-window {
+  background: #141416;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 18px;
+  box-shadow: 0 25px 60px -15px rgba(0, 0, 0, 0.8), 0 0 0 1px rgba(255, 255, 255, 0.06);
+}
+
+.theme-soft-light .linear-floating-window,
+.is-light .linear-floating-window {
+  background: #ffffff !important;
+  border: 1px solid rgba(0, 0, 0, 0.08) !important;
+  box-shadow: 0 16px 40px -10px rgba(0, 0, 0, 0.08), 0 0 0 1px rgba(0, 0, 0, 0.04) !important;
+}
+
+.linear-code-badge {
+  background: rgba(255, 255, 255, 0.06);
+  color: #D1D5DB;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  padding: 2px 6px;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Floating Dock Navigation */
+.floating-dock {
+  background: var(--dock-bg);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid var(--dock-border);
+  box-shadow: 0 20px 50px -10px rgba(0, 0, 0, 0.8);
+}
+
+.theme-soft-light .floating-dock {
+  box-shadow: 0 20px 60px -10px rgba(139, 92, 246, 0.22), 0 4px 20px 0 rgba(0, 0, 0, 0.05);
+}
+
+/* Floating Action Button (+) */
+.fab-button {
+  background: var(--accent-color);
+  color: var(--dock-active-text);
+  box-shadow: 0 10px 30px -4px var(--accent-glow);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.fab-button:hover {
+  transform: scale(1.08) rotate(90deg);
+  box-shadow: 0 14px 40px -4px var(--accent-glow);
+}
+
+/* Glass Buttons and Inputs */
+.glass-button {
+  background: var(--pill-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--card-border);
+  transition: all 0.2s ease;
+}
+
+.glass-button:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: var(--card-border-hover);
+}
+
+.glass-input {
+  background: var(--input-bg);
+  border: 1px solid var(--input-border);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  color: var(--text-primary);
+  transition: all 0.2s ease;
+}
+
+.glass-input:focus {
+  border-color: var(--accent-color);
+  box-shadow: 0 0 15px var(--accent-glow);
+  outline: none;
+}
+
+/* Custom Sleek Scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.24);
+}
+
+/* Electron titlebar drag regions */
+.titlebar-drag {
+  -webkit-app-region: drag;
+}
+
+.titlebar-no-drag {
+  -webkit-app-region: no-drag;
+}
+
+/* Status Glowing Animations */
+@keyframes pulseGlow {
+  0%, 100% {
+    opacity: 0.85;
+    filter: drop-shadow(0 0 8px rgba(16, 185, 129, 0.7));
+  }
+  50% {
+    opacity: 1;
+    filter: drop-shadow(0 0 18px rgba(16, 185, 129, 1));
+  }
+}
+
+.status-running-glow {
+  animation: pulseGlow 2s infinite ease-in-out;
+}

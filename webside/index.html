@@ -1,0 +1,1038 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Qoder — AI Coding Assistant | Autonomous Development IDE & Desktop Workspace | Built by DEEDOX</title>
+  <meta name="description" content="The all-new AI Dev Workspace, powered by agentic coding. Bring your idea. DevWorkspace gets it done. Built with the Qoder design system by DEEDOX and Founder Rasel Ahmed.">
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+  
+  <!-- Instrument Sans Font from Google Fonts (Qoder Design System) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+  <!-- ================= Header / Navigation (Qoder Navbar) ================= -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-combo">
+        <img src="assets/logo.png" alt="DevWorkspace Logo" class="brand-logo">
+        <div class="brand-texts">
+          <span class="brand-title">
+            AI Dev Workspace
+            <span class="badge-tag" style="font-size:9.5px;padding:1px 6px;">v1.0.0</span>
+          </span>
+          <span class="brand-byline">Built by <span>DEEDOX</span> • Rasel Ahmed</span>
+        </div>
+      </a>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#build-your-way" class="nav-link">Build Your Way</a></li>
+          <li><a href="#integration" class="nav-link">Agent SDK</a></li>
+          <li><a href="#wakers" class="nav-link">AI Employees</a></li>
+          <li><a href="#enterprise" class="nav-link">Enterprise</a></li>
+          <li><a href="download.html" class="nav-link">All Downloads</a></li>
+          <li><a href="about.html" class="nav-link">About DEEDOX</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <!-- Persistent Theme Switcher -->
+        <button class="theme-toggle-switch" id="globalThemeToggleBtn" title="Toggle Theme (Qoder Light / Nova Dark)" aria-label="Toggle theme">
+          <span class="theme-icon-indicator" style="font-size:14px;">🌙</span>
+        </button>
+
+        <!-- Secondary Download Button (Exact Qoder button-secondary: #255A41 fill, 32px radius, 36px height) -->
+        <a href="download.html" class="btn-secondary">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+          Download
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= Hero Section (Qoder Hero with "Everything starts from here...") ================= -->
+  <section class="hero-section">
+    <div class="container">
+      <div class="hero-pill" style="margin-bottom:16px;">
+        <span class="pulse-green-dot"></span>
+        <span>The New DevWorkspace: An Agentic Coding Platform for Everyone</span>
+      </div>
+
+      <h1 class="hero-title" style="font-size:40px;line-height:1.2;">
+        The New DevWorkspace: An Agentic Coding Platform<br>
+        <span class="highlight-accent">for Everyone</span>
+      </h1>
+
+      <p class="hero-subtitle">
+        The all-new AI Dev Workspace, powered by agentic coding & desktop orchestration.<br>
+        Bring your idea. DevWorkspace gets it done.
+      </p>
+
+      <!-- Qoder Iconic Prompt Box ("Everything starts from here...") -->
+      <div class="qoder-prompt-box">
+        <div class="prompt-box-inner">
+          <span class="prompt-sparkle">✨</span>
+          <input type="text" class="prompt-input" id="heroPromptInput" placeholder="Everything starts from here... e.g. Launch NeuroFlow server or run Claude 3.7 agent" />
+          <button class="btn-secondary prompt-action-btn" id="heroPromptSubmitBtn">
+            <span>Run</span>
+            <span class="prompt-enter-key">↵</span>
+          </button>
+        </div>
+        <div class="prompt-suggested-tags">
+          <span class="prompt-tag-label">Try:</span>
+          <button class="prompt-pill-tag" data-action="run-neuroflow">Launch NeuroFlow :5173</button>
+          <button class="prompt-pill-tag" data-action="fix-error">1-Click AI Fix Port :3000</button>
+          <button class="prompt-pill-tag" data-action="scan-drives">Scan C:, D:, E: Drives</button>
+          <button class="prompt-pill-tag" data-action="open-roundtable">Roundtable AI Council</button>
+        </div>
+      </div>
+
+      <!-- Action Buttons Row -->
+      <div class="hero-cta-group">
+        <a href="downloads/AI%20Dev%20Workspace%20Setup%201.0.0.exe" class="btn-secondary" download>
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+          Download for Windows (.exe — 88.7 MB)
+        </a>
+
+        <a href="downloads/AI-Dev-Workspace-Portable-1.0.0.exe" class="btn-outline" download>
+          All Downloads
+        </a>
+
+        <a href="#demo" class="btn-ghost">
+          Try Live Demo Below ↓
+        </a>
+      </div>
+
+      <!-- Ecosystem Meta Row -->
+      <div class="hero-meta-row">
+        <div class="hero-meta-item">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#255A41" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+          Desktop
+        </div>
+        <div class="hero-meta-item">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#255A41" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+          Mobile
+        </div>
+        <div class="hero-meta-item">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#255A41" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+          IDE
+        </div>
+        <div class="hero-meta-item">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#255A41" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+          JetBrains Plugin
+        </div>
+        <div class="hero-meta-item">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#255A41" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+          CLI
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= LIVE INTERACTIVE PRODUCT REPLICA (Centerpiece) ================= -->
+  <section class="demo-section" id="demo">
+    <div class="container">
+      <div class="demo-header-intro">
+        <span class="demo-sub-tag">LIVE INTERACTIVE PRODUCT PREVIEW</span>
+        <h2 class="headline-md" style="margin-bottom:6px;">Experience AI Dev Workspace Right in Your Browser</h2>
+        <p class="section-desc" style="max-width:720px;margin:0 auto 18px auto;">
+          Click <strong>Run</strong> to launch background servers, inspect live ports, trigger the <strong>1-Click AI Error Fixer</strong>, consult the <strong>7 AI Specialists</strong>, and simulate recursive drive scanning.
+        </p>
+      </div>
+
+      <!-- Simulated Desktop App Window -->
+      <div class="demo-window" id="demoWindow">
+        <!-- Window Title Bar -->
+        <div class="demo-titlebar">
+          <div class="window-dots">
+            <span class="window-dot dot-red" title="Close Window">✕</span>
+            <span class="window-dot dot-yellow" title="Minimize Window">−</span>
+            <span class="window-dot dot-green" title="Maximize Window">+</span>
+          </div>
+
+          <!-- Browser-style TitleBar Tabs -->
+          <div class="titlebar-tabs">
+            <div class="titlebar-tab active" data-tab="launcher">
+              <span>🚀</span>
+              <span>App Launcher</span>
+            </div>
+            <div class="titlebar-tab" data-tab="agents">
+              <span>🤖</span>
+              <span>AI Studio</span>
+              <span class="tab-tag-ai" style="font-size:9px;background:#5E6AD2;color:#FFF;padding:1px 5px;border-radius:3px;">AI MODES</span>
+            </div>
+            <div class="titlebar-tab" data-tab="miniapps">
+              <span>🌐</span>
+              <span>Web Mini-Apps</span>
+            </div>
+            <div class="titlebar-tab" data-tab="pcapps">
+              <span>💻</span>
+              <span>PC Apps</span>
+            </div>
+            <div class="titlebar-tab" data-tab="inapp">
+              <span class="pulse-green-dot"></span>
+              <span>:5173 (In-App Tab)</span>
+            </div>
+          </div>
+
+          <!-- TitleBar Right Controls -->
+          <div class="titlebar-right">
+            <div class="running-badge-pill">
+              <span class="pulse-green-dot"></span>
+              <span id="runningServerCount">1 Running</span>
+            </div>
+
+            <button class="titlebar-tab" id="openScanModalBtn" title="Auto-Scan Drives C:, D:, E:">
+              <span style="color:#80C776;">⚡</span>
+              <span>Scan Drives</span>
+            </button>
+
+            <button class="titlebar-tab" id="openSettingsBtn" title="Settings & OpenRouter Models">
+              <span>⚙️</span>
+              <span>Settings</span>
+            </button>
+
+            <button class="titlebar-tab" id="themeToggleBtn" title="Toggle Demo Theme">
+              <span class="theme-icon-indicator">🌙</span>
+              <span id="themeToggleText">Nova Dark</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Main Body: Sidebar + Stage -->
+        <div class="demo-body">
+          <!-- 1. Authentic Left Sidebar (Sidebar.tsx) -->
+          <aside class="demo-sidebar">
+            <div>
+              <!-- Workspace Switcher Header -->
+              <div class="sidebar-header">
+                <div style="display:flex;align-items:center;gap:8px;">
+                  <img src="assets/logo.png" alt="logo" style="width:18px;height:18px;border-radius:4px;">
+                  <span style="font-size:12px;font-weight:600;color:#FFF;">AI Workspace</span>
+                  <span style="font-size:9.5px;color:#8A8F98;">v1.0</span>
+                </div>
+                <div style="display:flex;gap:4px;">
+                  <button class="circle-action-btn" style="width:20px;height:20px;font-size:10px;" title="Search">🔍</button>
+                  <button class="circle-action-btn" style="width:20px;height:20px;font-size:10px;" title="Scan">⚡</button>
+                </div>
+              </div>
+
+              <!-- Primary Nav Buttons -->
+              <ul class="sidebar-menu-list">
+                <li>
+                  <button class="sidebar-btn active" data-view="launcher">
+                    <span style="display:flex;align-items:center;gap:8px;">
+                      <span style="color:#F5A623;">⚡</span>
+                      <span>Pulse / Launcher</span>
+                    </span>
+                    <span class="badge-tag" style="padding:1px 6px;font-size:9px;background:rgba(16,185,129,0.15);color:#34D399;border:none;">1 ACTIVE</span>
+                  </button>
+                </li>
+                <li>
+                  <button class="sidebar-btn" data-view="agents">
+                    <span style="display:flex;align-items:center;gap:8px;">
+                      <span class="dock-miniature-sphere" style="width:14px;height:14px;"></span>
+                      <span>Agent Copilot</span>
+                    </span>
+                    <span class="pulse-green-dot"></span>
+                  </button>
+                </li>
+                <li>
+                  <button class="sidebar-btn" data-view="trending">
+                    <span style="display:flex;align-items:center;gap:8px;">
+                      <span>📈</span>
+                      <span>Trending</span>
+                    </span>
+                  </button>
+                </li>
+                <li>
+                  <button class="sidebar-btn" data-view="news">
+                    <span style="display:flex;align-items:center;gap:8px;">
+                      <span>📰</span>
+                      <span>Feed & News</span>
+                    </span>
+                    <span style="font-size:8.5px;padding:1px 4px;border-radius:3px;background:rgba(255,255,255,0.08);color:#8A8F98;font-family:var(--font-mono);">LIVE</span>
+                  </button>
+                </li>
+                <li>
+                  <button class="sidebar-btn" data-view="pcapps">
+                    <span style="display:flex;align-items:center;gap:8px;">
+                      <span>💻</span>
+                      <span>Installed PC Apps</span>
+                    </span>
+                    <span style="font-size:10px;color:#8A8F98;font-family:var(--font-mono);">6</span>
+                  </button>
+                </li>
+              </ul>
+
+              <!-- Categories Section -->
+              <div style="padding:4px 12px;font-size:10px;font-weight:600;letter-spacing:0.06em;color:#686870;text-transform:uppercase;">Categories</div>
+              <ul class="sidebar-menu-list" style="padding-top:2px;">
+                <li><button class="sidebar-btn" data-sidebar-cat="all"><span>📁 All Projects</span></button></li>
+                <li><button class="sidebar-btn" data-sidebar-cat="websites"><span>🌐 Websites & Apps</span></button></li>
+                <li><button class="sidebar-btn" data-sidebar-cat="apis"><span>⚙️ APIs & Services</span></button></li>
+                <li><button class="sidebar-btn" data-sidebar-cat="ai-agents"><span>🤖 AI Agents</span></button></li>
+                <li><button class="sidebar-btn" data-sidebar-cat="tools"><span>🔧 Tools & Utilities</span></button></li>
+              </ul>
+            </div>
+
+            <!-- Sidebar Bottom Info -->
+            <div style="padding:10px 12px;border-top:1px solid rgba(255,255,255,0.06);font-size:11px;">
+              <div style="display:flex;align-items:center;gap:6px;color:#34D399;">
+                <span class="pulse-green-dot"></span>
+                <span>Active: NeuroFlow :5173</span>
+              </div>
+            </div>
+          </aside>
+
+          <!-- 2. Main Stage -->
+          <div class="demo-main">
+            <!-- Stage Status Bar (AppDrawer.tsx) -->
+            <div class="demo-stage-statusbar">
+              <div style="display:flex;align-items:center;gap:6px;">
+                <img src="assets/logo.png" alt="logo" style="width:14px;height:14px;border-radius:3px;">
+                <span style="color:#FFF;font-weight:500;">AI Workspace</span>
+                <span>/</span>
+                <span id="stageBreadcrumb" style="color:#FFF;">All Projects</span>
+                <span style="color:#F5A623;cursor:pointer;">★</span>
+              </div>
+
+              <div style="display:flex;align-items:center;gap:12px;font-size:11px;">
+                <span style="color:#34D399;display:flex;align-items:center;gap:4px;">
+                  <span class="pulse-green-dot"></span>
+                  <span id="stageRunningCount">1 running</span>
+                </span>
+                <span id="stageReposCount" style="font-family:var(--font-mono);color:#8A8F98;">6 repos · 6 apps</span>
+                <div style="display:flex;gap:4px;color:#8A8F98;">
+                  <span style="cursor:pointer;" title="Sort">↑↓</span>
+                  <span style="cursor:pointer;" title="Copy">📋</span>
+                  <span style="cursor:pointer;" title="Fork">🔱</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Dynamic Content Area (Squircle Grid, AI Studio, etc.) -->
+            <div class="stage-scroll-area" id="stageScrollArea">
+              <!-- Dynamically populated via app.js -->
+            </div>
+
+            <!-- 3. Real Floating Bottom Dock (FloatingNavBar.tsx) -->
+            <div class="floating-dock-wrap">
+              <div class="floating-dock">
+                <button class="dock-item-btn active" data-dock="launcher" title="App Launcher">🚀</button>
+                <button class="dock-item-btn" data-dock="pcapps" title="Installed PC Apps">💻</button>
+                <button class="dock-item-btn" data-dock="agents" title="AI Copilot & Roundtable">
+                  <div class="dock-miniature-sphere"></div>
+                </button>
+                <button class="dock-item-btn" data-dock="trending" title="GitHub Trending">📈</button>
+                <button class="dock-item-btn" data-dock="news" title="Tech & AI News">📰</button>
+                <button class="dock-item-btn" data-dock="download" title="Download Manager">⬇️</button>
+                <button class="dock-item-btn" data-dock="scan" title="Scan Local Drives">⚡</button>
+                <button class="dock-item-btn" data-dock="settings" title="Settings">⚙️</button>
+              </div>
+            </div>
+
+            <!-- Integrated Terminal Drawer -->
+            <div class="demo-terminal-drawer collapsed" id="demoTerminalDrawer">
+              <div class="terminal-topbar">
+                <div style="display:flex;align-items:center;gap:8px;">
+                  <span>⚡ Terminal:</span>
+                  <span id="terminalProjectName" style="color:#80C776;font-family:var(--font-mono);">NeuroFlow Studio (npm run dev)</span>
+                </div>
+                <div style="display:flex;align-items:center;gap:8px;">
+                  <button class="circle-action-btn" id="clearTerminalBtn" style="width:20px;height:20px;font-size:10px;" title="Clear">✕</button>
+                  <button class="circle-action-btn" id="toggleTerminalBtn" style="width:20px;height:20px;font-size:10px;" title="Collapse">_</button>
+                </div>
+              </div>
+              <div class="terminal-output" id="terminalLogContent"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- AI Diagnostic Modal inside Demo -->
+        <div class="demo-modal-overlay" id="demoDiagnosticModal">
+          <div class="demo-modal-card">
+            <div class="modal-header-row">
+              <div class="modal-title">
+                <span style="color:#EF4444;font-size:18px;">⚠️</span>
+                <span>OpenRouter AI Error Diagnostic</span>
+                <span style="font-size:10px;padding:2px 8px;border-radius:9999px;background:#7C3AED;color:#FFF;">98% Confidence</span>
+              </div>
+              <button class="btn-icon-subtle" id="closeDiagnosticBtn">✕</button>
+            </div>
+
+            <div class="diagnostic-box">
+              <strong style="color:#F87171;">Detected Issue:</strong> <code>listen EADDRINUSE :::3000</code><br>
+              <span style="color:#A1A1AA;font-size:12px;">Port 3000 is occupied by a dangling zombie Node.js process from a previous crashed run.</span>
+            </div>
+
+            <div class="diagnostic-box" style="border-left:3px solid #80C776;">
+              <strong style="color:#80C776;">AI Solution Plan:</strong>
+              <ul style="margin-left:18px;margin-top:6px;font-size:12px;color:#D4D4D8;line-height:1.6;">
+                <li>Identify and terminate PID occupying socket TCP 0.0.0.0:3000</li>
+                <li>Clear dangling lockfiles and restart microservice</li>
+              </ul>
+              <div class="diagnostic-fix-cmd">
+                <span>$ npx kill-port 3000 && npm start</span>
+                <button class="btn-secondary" id="runFixBtn" style="padding:4px 10px;font-size:11px;height:28px;">1-Click Fix & Run</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Drive Scanner Modal inside Demo -->
+        <div class="demo-modal-overlay" id="scanModalOverlay">
+          <div class="demo-modal-card">
+            <div class="modal-header-row">
+              <div class="modal-title">
+                <span style="color:#80C776;font-size:18px;">⚡</span>
+                <span>Recursive Drive Scanner (C:\, D:\, E:\)</span>
+              </div>
+              <button class="btn-icon-subtle" id="closeScanModalBtn">✕</button>
+            </div>
+
+            <div class="diagnostic-box">
+              <div style="font-size:12px;color:#A1A1AA;margin-bottom:8px;">
+                Recursively scans drives for <code>package.json</code>, <code>requirements.txt</code>, <code>Cargo.toml</code>, and <code>go.mod</code>.
+              </div>
+              <div style="display:flex;gap:8px;font-size:11px;color:#D4D4D8;">
+                <span class="badge-tag">C:\ System</span>
+                <span class="badge-tag">D:\ Work Repos</span>
+                <span class="badge-tag">E:\ Storage</span>
+              </div>
+            </div>
+
+            <div id="scanProgressArea" style="min-height:90px;padding:12px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:4px;font-family:var(--font-mono);font-size:11.5px;margin-bottom:12px;">
+              <span style="color:#71717A;">Click "Start Recursive Scan" to discover untracked dev repositories...</span>
+            </div>
+
+            <div style="display:flex;align-items:center;justify-content:space-between;">
+              <button class="btn-secondary" id="runScanBtn" style="padding:6px 14px;height:32px;">⚡ Start Recursive Scan</button>
+              <button class="btn-secondary" id="importScannedBtn" style="display:none;height:32px;font-size:12px;padding:0 14px;">Import All to App Drawer</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Settings Modal inside Demo -->
+        <div class="demo-modal-overlay" id="settingsModalOverlay">
+          <div class="demo-modal-card">
+            <div class="modal-header-row">
+              <div class="modal-title">
+                <span style="color:#80C776;font-size:18px;">⚙️</span>
+                <span>DevWorkspace Settings & AI Model Switcher</span>
+              </div>
+              <button class="btn-icon-subtle" id="closeSettingsBtn">✕</button>
+            </div>
+
+            <div style="display:flex;flex-direction:column;gap:12px;font-size:13px;">
+              <div>
+                <label style="font-weight:600;font-size:12px;color:#D4D4D8;display:block;margin-bottom:6px;">Active AI Model (OpenRouter Router)</label>
+                <select id="openRouterModelSelect" class="demo-search-input" style="height:36px;width:100%;padding:0 10px;cursor:pointer;">
+                  <option value="openrouter/free" selected>openrouter/free (Universal Free AI Router - Zero Cost)</option>
+                  <option value="anthropic/claude-3.5-sonnet">Anthropic Claude 3.5 Sonnet (State of the Art Code Architecture)</option>
+                  <option value="anthropic/claude-3.7-sonnet">Anthropic Claude 3.7 Sonnet (Hybrid Reasoning + Code)</option>
+                  <option value="deepseek/deepseek-r1:free">DeepSeek R1 Reasoning Free (Open Weights Leader)</option>
+                  <option value="openai/gpt-4o">OpenAI GPT-4o Omni</option>
+                  <option value="google/gemini-2.5-pro">Google Gemini 2.5 Pro</option>
+                </select>
+              </div>
+
+              <div>
+                <label style="font-weight:600;font-size:12px;color:#D4D4D8;display:block;margin-bottom:6px;">OpenRouter API Key (Dynamic Key Management)</label>
+                <div style="display:flex;gap:8px;">
+                  <input type="password" value="sk-or-v1-••••••••••••••••••••••••••••••••" class="demo-search-input" style="height:36px;flex:1;padding-left:12px;" readonly>
+                  <button class="btn-secondary" id="testApiKeyBtn" style="padding:0 14px;white-space:nowrap;height:36px;">Test Connection</button>
+                </div>
+              </div>
+
+              <div class="diagnostic-box" style="margin-top:4px;">
+                <span style="font-size:11px;color:#A1A1AA;">
+                  DevWorkspace stores your keys in local encrypted vault (<code>devworkspace_store.json</code>). Zero keys or code are ever logged to third-party tracking servers.
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- In-App Floating Toast Notification -->
+        <div class="demo-toast" id="demoToast">
+          <span>⚡</span>
+          <span id="toastMessage">Action triggered!</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SECTION 1: BUILD YOUR WAY (Qoder Signature 5-Tabs) ================= -->
+  <section class="product-showcase-section" id="build-your-way">
+    <div class="container">
+      <div class="section-head">
+        <h2 class="section-title">Build Your Way</h2>
+        <p class="section-desc">
+          The DevWorkspace product family supports every way of building, so individuals and teams can find the tools that fit their workflow.
+        </p>
+      </div>
+
+      <!-- 5 Interactive Tabs matching Qoder ProductTabs -->
+      <div class="product-tabs-wrapper">
+        <button class="product-tab-btn active" data-showcase="desktop">Desktop</button>
+        <button class="product-tab-btn" data-showcase="mobile">Mobile</button>
+        <button class="product-tab-btn" data-showcase="ide">IDE</button>
+        <button class="product-tab-btn" data-showcase="jetbrains">JetBrains Plugin</button>
+        <button class="product-tab-btn" data-showcase="cli">CLI</button>
+      </div>
+
+      <!-- Active Showcase Card -->
+      <div class="product-card-container">
+        <div>
+          <span class="metric-pill" id="showcasePill">Made for Everyone</span>
+          <h3 class="headline-md" id="showcaseTitle" style="margin-bottom:8px;">Desktop App & Squircle Workspace</h3>
+          <p class="body-lg" id="showcaseSubtitle" style="color:var(--color-secondary);font-weight:500;margin-bottom:12px;">
+            The all-new AI Dev Workspace — your native desktop coding platform.
+          </p>
+          <p class="body-md" id="showcaseDesc" style="margin-bottom:20px;">
+            Concurrently launch local dev servers with sub-second port sniffing, manage background processes, and run terminal commands with zero tab clutter.
+          </p>
+          <div style="display:flex;gap:12px;align-items:center;">
+            <a href="downloads/AI%20Dev%20Workspace%20Setup%201.0.0.exe" class="btn-secondary" download>Download</a>
+            <a href="download.html" class="btn-outline">All Downloads</a>
+          </div>
+        </div>
+
+        <div class="bento-visual-preview">
+          <div style="font-size:11px;font-weight:600;color:var(--color-on-surface-muted);text-transform:uppercase;margin-bottom:8px;">
+            Interactive Telemetry Stream
+          </div>
+          <pre class="code-preview-pane" id="showcaseCode">// DevWorkspace Native Process Engine
+const server = await workspace.launch("neuroflow-studio");
+=> { status: "running", port: 5173, elapsed: "02:14" }</pre>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SECTION 2: AGENT INTEGRATION (Qoder SDK & Cloud) ================= -->
+  <section class="agent-integration-section" id="integration">
+    <div class="container">
+      <div class="section-head">
+        <h2 class="section-title">Integrate DevWorkspace Agent into your products and systems</h2>
+        <p class="section-desc">
+          Build product experiences with the Agent SDK, or create product services with Cloud Agents APIs.
+        </p>
+      </div>
+
+      <div class="integration-grid">
+        <!-- SDK Card -->
+        <div class="integration-card">
+          <div>
+            <h3 class="headline-sm" style="margin-bottom:8px;">DevWorkspace Agent SDK</h3>
+            <p class="body-md">
+              The agent capabilities that power DevWorkspace products — proven through long-term real-world use — are now available via an open TypeScript & Python SDK. Embed autonomous server orchestration and automated error repair into your internal workflows.
+            </p>
+          </div>
+          <div class="code-preview-pane">
+import { AgentRunner } from "@deedox/devworkspace-sdk";
+
+const runner = new AgentRunner({ model: "claude-3.7-sonnet" });
+await runner.supervise({ port: 5173, autoHeal: true });
+          </div>
+        </div>
+
+        <!-- Cloud Agents Card -->
+        <div class="integration-card">
+          <div>
+            <h3 class="headline-sm" style="margin-bottom:8px;">OpenRouter & Cloud Agents</h3>
+            <p class="body-md">
+              Fully managed agent platform in the cloud. Connect to Claude 3.7, DeepSeek R1, GPT-4o, and Gemini 2.5 Pro with dynamic key management. Subscribe to SSE event streams to receive Agent reasoning and 1-click execution commands in real time.
+            </p>
+          </div>
+          <div class="code-preview-pane">
+// OpenRouter Event Stream
+const stream = await openRouter.chatStream({
+  model: "deepseek/deepseek-r1:free",
+  prompt: "Diagnose listen EADDRINUSE :::3000"
+});
+=> Event: "kill PID 19842 && restart server"
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SECTION 3: WAKER SECTION (Autonomous AI Employees) ================= -->
+  <section class="waker-section" id="wakers">
+    <div class="container">
+      <div class="section-head">
+        <h2 class="section-title">DevWorkspace Wake: Autonomous AI Employees on the Job</h2>
+        <p class="section-desc">
+          Powered by DevWorkspace Agent across multiple runtimes, AI specialists handle real-world tasks 24/7 — taking human-agent collaboration into its next generation.
+        </p>
+      </div>
+
+      <div class="waker-cards-grid">
+        <!-- Waker 1 -->
+        <div class="waker-card">
+          <div class="waker-avatar-circle">🌐</div>
+          <h4 class="waker-title">DEEDOX Master AI</h4>
+          <div class="waker-role">Core Orchestrator & Master Waker</div>
+          <p class="waker-desc">Coordinates multi-agent councils, plans end-to-end task breakdowns, and supervises background servers across local workspaces.</p>
+        </div>
+
+        <!-- Waker 2 -->
+        <div class="waker-card">
+          <div class="waker-avatar-circle">🎨</div>
+          <h4 class="waker-title">Frontend UI Architect</h4>
+          <div class="waker-role">React, Tailwind & Design System Waker</div>
+          <p class="waker-desc">Specializes in responsive glassmorphic layouts, component hierarchy, accessibility, and modern React 18 / Next.js interfaces.</p>
+        </div>
+
+        <!-- Waker 3 -->
+        <div class="waker-card">
+          <div class="waker-avatar-circle">⚙️</div>
+          <h4 class="waker-title">Backend & API Engineer</h4>
+          <div class="waker-role">FastAPI, WebSockets & Server Waker</div>
+          <p class="waker-desc">Specializes in high-throughput API endpoints, database schema migrations, WebSocket communication, and server state synchronization.</p>
+        </div>
+
+        <!-- Waker 4 -->
+        <div class="waker-card">
+          <div class="waker-avatar-circle">🐳</div>
+          <h4 class="waker-title">DevOps & Cloud Waker</h4>
+          <div class="waker-role">Docker, CI/CD & Deployments</div>
+          <p class="waker-desc">Generates multi-stage Dockerfiles, docker-compose networks, reverse proxy configurations, and automated CI/CD pipelines.</p>
+        </div>
+
+        <!-- Waker 5 -->
+        <div class="waker-card">
+          <div class="waker-avatar-circle">🛡️</div>
+          <h4 class="waker-title">Cyber Security Auditor</h4>
+          <div class="waker-role">Zero-Trust & Secrets Waker</div>
+          <p class="waker-desc">Audits codebases for hardcoded API keys, SQL injections, CSRF vulnerabilities, and dependency CVEs with zero cloud leaks.</p>
+        </div>
+
+        <!-- Waker 6 -->
+        <div class="waker-card">
+          <div class="waker-avatar-circle">🔬</div>
+          <h4 class="waker-title">Bug Hunter & Diagnostic Pro</h4>
+          <div class="waker-role">Crash Stack-Trace & Root-Cause Waker</div>
+          <p class="waker-desc">Monitors runtime stderr streams, diagnoses EADDRINUSE port conflicts in 14ms, and produces surgical 1-click terminal fix commands.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SECTION 4: ENTERPRISE SECTION ================= -->
+  <section class="enterprise-section" id="enterprise">
+    <div class="container">
+      <div class="section-head">
+        <h2 class="section-title">DevWorkspace Enterprise: Secure, Controllable AI for Teams</h2>
+        <p class="section-desc">
+          Unify the engineering team's server management and integrate agentic capabilities into products, platforms, and R&D processes.
+        </p>
+      </div>
+
+      <div class="enterprise-pillars-grid">
+        <div class="enterprise-pillar-card">
+          <h4>AI Native Workflow</h4>
+          <p>Shift from manual task triage to autonomous server orchestration and background health monitoring.</p>
+        </div>
+
+        <div class="enterprise-pillar-card">
+          <h4>End-to-End Security</h4>
+          <p>100% local-first computation. Your source code, git credentials, and environment variables never leave your workstation.</p>
+        </div>
+
+        <div class="enterprise-pillar-card">
+          <h4>Personalized Agents</h4>
+          <p>Customize agent system prompts and operational permissions tailored to your enterprise repository rules.</p>
+        </div>
+
+        <div class="enterprise-pillar-card">
+          <h4>Drive Scanner</h4>
+          <p>Sub-3-second discovery of thousands of repositories across enterprise workstation drives C:, D:, and E:.</p>
+        </div>
+
+        <div class="enterprise-pillar-card">
+          <h4>Roundtable Council</h4>
+          <p>Multi-agent deliberation arena where specialized personas debate architectural trade-offs before code commits.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SECTION 5: CREATOR & PARENT INSTITUTE (DEEDOX & Rasel Ahmed) ================= -->
+  <section class="founder-spotlight-section" id="founder">
+    <div class="container">
+      <div class="card founder-bento-box">
+        <!-- Founder Portrait Column -->
+        <div class="founder-portrait-column">
+          <div class="founder-avatar-frame">
+            <img src="assets/deedox-ai-avatar.png" alt="Rasel Ahmed — Founder & Lead Architect" class="founder-avatar-img">
+          </div>
+          <h3 class="founder-name-title">Rasel Ahmed</h3>
+          <div class="founder-role-badge">Founder & CEO, DEEDOX • Lead Architect</div>
+          <div class="founder-links-row">
+            <a href="https://deedox.site" target="_blank" rel="noopener" class="badge-tag" style="background:var(--color-surface-container-low);color:var(--color-secondary);border-color:var(--color-outline);">
+              deedox.site ↗
+            </a>
+            <a href="https://deedoxstudio.com" target="_blank" rel="noopener" class="badge-tag" style="background:var(--color-surface-container-low);color:var(--color-secondary);border-color:var(--color-outline);">
+              deedoxstudio.com ↗
+            </a>
+          </div>
+        </div>
+
+        <!-- Founder Narrative Column -->
+        <div class="founder-narrative-column">
+          <span class="section-tag" style="text-align:left;">ABOUT THE CREATOR & PARENT INSTITUTE</span>
+          <h2 class="section-title" style="text-align:left;font-size:26px;margin-bottom:4px;">
+            What have they accomplished with DevWorkspace?
+          </h2>
+
+          <p class="founder-quote">
+            “At <strong>DEEDOX</strong>, we believe modern developers spend far too much cognitive bandwidth wrestling with port collisions, terminal clutter, and disjointed AI tools. We built <strong>AI Dev Workspace</strong> to serve as your single, unified, local-first developer cockpit.”
+          </p>
+
+          <p style="font-size:14px;color:var(--color-on-surface-variant);line-height:1.6;">
+            <strong>DEEDOX</strong> is Bangladesh’s premier AI Startup Institute and Digital Agency, specializing in high-performance SaaS development, custom agentic AI systems, modern web and mobile applications, and enterprise automation.
+          </p>
+
+          <!-- Ecosystem Stats Strip -->
+          <div class="deedox-ecosystem-strip">
+            <div class="deedox-stat-card">
+              <div class="deedox-stat-number">50+</div>
+              <div class="deedox-stat-label">SaaS & AI Deployments</div>
+            </div>
+            <div class="deedox-stat-card">
+              <div class="deedox-stat-number">100%</div>
+              <div class="deedox-stat-label">Local-First Privacy</div>
+            </div>
+            <div class="deedox-stat-card">
+              <div class="deedox-stat-number">5x</div>
+              <div class="deedox-stat-label">Faster Dev Launch Time</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SECTION 6: ALL DOWNLOADS & RELEASES ================= -->
+  <section class="download-section" id="download">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-tag">OFFICIAL RELEASES</span>
+        <h2 class="section-title">Download AI Dev Workspace for Windows</h2>
+        <p class="section-desc">
+          Packaged, verified, and ready to run. Choose between the official Windows installer or the standalone portable executable.
+        </p>
+      </div>
+
+      <div class="download-cards-wrapper">
+        <!-- Setup Installer Card -->
+        <div class="card download-card primary-installer" style="border-color:var(--color-outline);">
+          <div>
+            <div class="dl-card-badge" style="background:var(--color-surface-container-low);color:var(--color-secondary);">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              RECOMMENDED FOR DESKTOP
+            </div>
+            <h3 class="dl-card-title">Setup Installer (.exe)</h3>
+            <p class="dl-card-meta">
+              Official NSIS installer for 64-bit Windows. Sets up Start Menu shortcuts, desktop launcher, tray menu, and auto-updater.
+            </p>
+
+            <ul class="dl-specs-list">
+              <li>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#255A41" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>File: <code>AI Dev Workspace Setup 1.0.0.exe</code></span>
+              </li>
+              <li>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#255A41" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Size: <strong>88.7 MB</strong></span>
+              </li>
+              <li>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#255A41" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Target: Windows 10 & 11 (64-bit x64)</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="dl-btn-wrap">
+            <a href="downloads/AI%20Dev%20Workspace%20Setup%201.0.0.exe" class="btn-secondary" style="width:100%;" download>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+              Download Setup (88.7 MB)
+            </a>
+          </div>
+        </div>
+
+        <!-- Portable Card -->
+        <div class="card download-card">
+          <div>
+            <div class="dl-card-badge" style="background:var(--color-surface-container);color:var(--color-on-surface-muted);">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              ZERO INSTALLATION
+            </div>
+            <h3 class="dl-card-title">Portable Edition (.exe)</h3>
+            <p class="dl-card-meta">
+              Single self-contained executable. Keep it on a USB flash drive or any folder and run immediately without administrator privileges.
+            </p>
+
+            <ul class="dl-specs-list">
+              <li>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#255A41" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>File: <code>AI-Dev-Workspace-Portable-1.0.0.exe</code></span>
+              </li>
+              <li>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#255A41" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Size: <strong>88.3 MB</strong></span>
+              </li>
+              <li>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#255A41" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Target: Windows 10 & 11 (64-bit x64)</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="dl-btn-wrap">
+            <a href="downloads/AI-Dev-Workspace-Portable-1.0.0.exe" class="btn-outline" style="width:100%;" download>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+              Download Portable (88.3 MB)
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- SHA-256 Checksums Table -->
+      <div class="card" id="specs" style="padding:24px;margin-top:24px;">
+        <div style="font-size:14px;font-weight:600;margin-bottom:12px;color:var(--color-on-surface);">
+          Artifact Verification & Cryptographic Hashes (SHA-256)
+        </div>
+        <div style="overflow-x:auto;">
+          <table class="specs-table">
+            <thead>
+              <tr>
+                <th>Artifact</th>
+                <th>Format</th>
+                <th>File Size</th>
+                <th>SHA-256 Checksum</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>AI Dev Workspace Setup 1.0.0.exe</strong></td>
+                <td>NSIS Installer</td>
+                <td>88.7 MB</td>
+                <td><code style="font-size:11px;color:#255A41;">BCF33E7E1BAE457F4E3745B9AF45D3B8EB7218C8EEC9EE4A88FBFC191F19C73D</code></td>
+              </tr>
+              <tr>
+                <td><strong>AI-Dev-Workspace-Portable-1.0.0.exe</strong></td>
+                <td>Standalone Exe</td>
+                <td>88.3 MB</td>
+                <td><code style="font-size:11px;color:#255A41;">B5A801ED35D2EC5155B21817D2B23E90A954B7E884C272AE9378F19897460B01</code></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SECTION 7: FAQ (Qoder Style) ================= -->
+  <section class="faq-section" id="faq">
+    <div class="container">
+      <div class="section-head">
+        <h2 class="section-title">Frequently asked questions</h2>
+        <p class="section-desc">Get answers to commonly asked questions about DevWorkspace.</p>
+      </div>
+
+      <div class="faq-list">
+        <div class="faq-item active">
+          <button class="faq-question">
+            <span>How do I get started?</span>
+            <span class="faq-toggle-icon">▼</span>
+          </button>
+          <div class="faq-answer">
+            Download the Setup Installer or Portable executable, launch it on Windows 10/11, and click "Scan Drives" to instantly auto-discover all your Git repositories across C:, D:, and E: drives.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>What programming languages does DevWorkspace support?</span>
+            <span class="faq-toggle-icon">▼</span>
+          </button>
+          <div class="faq-answer">
+            DevWorkspace natively recognizes React, Next.js, Vite, Vue, Node.js (Express, Nest), Python (FastAPI, Flask, Django), Rust (Cargo), Go (go.mod), Docker containers, and custom command CLIs.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Which AI models power DevWorkspace?</span>
+            <span class="faq-toggle-icon">▼</span>
+          </button>
+          <div class="faq-answer">
+            DevWorkspace connects directly to OpenRouter, giving you instant access to Claude 3.7 Sonnet, DeepSeek R1 Reasoning Free, GPT-4o Omni, Gemini 2.5 Pro, Qwen 3.5 Max, and universal zero-cost free routers.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>How does the NovaWeb persistent partition work?</span>
+            <span class="faq-toggle-icon">▼</span>
+          </button>
+          <div class="faq-answer">
+            DevWorkspace uses Electron's isolated partition storage <code>partition="persist:devworkspace_webapps"</code>. All session cookies, auth tokens, cache, and localStorage are saved to disk, so you stay logged in to ChatGPT, Claude, GitHub, and Notion even after quitting the application.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Need help or have feedback?</span>
+            <span class="faq-toggle-icon">▼</span>
+          </button>
+          <div class="faq-answer">
+            Connect with the DEEDOX team at <a href="https://deedox.site" target="_blank" rel="noopener" style="color:var(--color-secondary);font-weight:600;">deedox.site</a> or email our engineering studio at <a href="https://deedoxstudio.com" target="_blank" rel="noopener" style="color:var(--color-secondary);font-weight:600;">deedoxstudio.com</a>.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SECTION 8: PRE-FOOTER CTA ================= -->
+  <section class="pre-footer-cta">
+    <div class="container">
+      <div class="pre-footer-card">
+        <h2 class="cta-title">Upgrade Your Developer Workflow Today</h2>
+        <p class="cta-subtext">
+          Stop juggling multiple terminal tabs and conflicting ports. Download AI Dev Workspace for Windows and experience seamless, multi-project development powered by agentic AI.
+        </p>
+
+        <div class="hero-cta-group" style="margin-bottom:16px;">
+          <a href="downloads/AI%20Dev%20Workspace%20Setup%201.0.0.exe" class="btn-secondary" download>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="7 10 12 15 17 10"></polyline>
+              <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
+            Download Windows Setup (.exe — 88.7 MB)
+          </a>
+
+          <a href="downloads/AI-Dev-Workspace-Portable-1.0.0.exe" class="btn-outline" download>
+            Portable Standalone (.exe — 88.3 MB)
+          </a>
+        </div>
+
+        <div style="font-size:12px;color:var(--color-on-surface-muted);">
+          Compatible with Windows 10 & 11 (64-bit) • 100% Free & MIT Licensed • Verified Clean Executables
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= STRUCTURED 5-COLUMN QODER FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-columns-grid">
+        <!-- Col 1: Brand & Byline -->
+        <div>
+          <div class="brand-combo" style="margin-bottom:12px;">
+            <img src="assets/logo.png" alt="Logo" class="brand-logo" style="width:28px;height:28px;">
+            <span class="brand-title" style="font-size:14px;">AI Dev Workspace</span>
+          </div>
+          <p style="font-size:13px;line-height:1.5;color:var(--color-on-surface-muted);margin-bottom:12px;">
+            The next-generation desktop developer cockpit. Run concurrent background servers, turn web tools into persistent desktop mini-apps, and resolve errors with AI.
+          </p>
+          <div style="font-size:12px;color:var(--color-on-surface-variant);">
+            Crafted with passion by <a href="https://deedox.site" target="_blank" rel="noopener" style="color:var(--color-secondary);font-weight:600;">DEEDOX</a>
+          </div>
+        </div>
+
+        <!-- Col 2: Navigation -->
+        <div>
+          <div class="footer-col-title">Navigation</div>
+          <ul class="footer-nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#build-your-way">Build Your Way</a></li>
+            <li><a href="#integration">Agent SDK</a></li>
+            <li><a href="#wakers">AI Employees</a></li>
+            <li><a href="#enterprise">Enterprise</a></li>
+            <li><a href="download.html">Download Center</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Downloads -->
+        <div>
+          <div class="footer-col-title">Releases</div>
+          <ul class="footer-nav-list">
+            <li><a href="downloads/AI%20Dev%20Workspace%20Setup%201.0.0.exe" download>Windows Setup (.exe)</a></li>
+            <li><a href="downloads/AI-Dev-Workspace-Portable-1.0.0.exe" download>Portable Edition (.exe)</a></li>
+            <li><a href="download.html#checksums">SHA256 Checksums</a></li>
+            <li><a href="download.html#requirements">System Requirements</a></li>
+            <li><a href="download.html#faq">Installation FAQ</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Capabilities -->
+        <div>
+          <div class="footer-col-title">Capabilities</div>
+          <ul class="footer-nav-list">
+            <li><a href="#build-your-way">Desktop Squircle Drawer</a></li>
+            <li><a href="#build-your-way">NovaWeb Persistent Sessions</a></li>
+            <li><a href="#demo">Recursive Drive Scanner</a></li>
+            <li><a href="#demo">xterm.js Terminal & Fixer</a></li>
+            <li><a href="#wakers">Multi-Agent Roundtable</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 5: Parent Institute -->
+        <div>
+          <div class="footer-col-title">DEEDOX Institute</div>
+          <ul class="footer-nav-list">
+            <li><a href="https://deedox.site" target="_blank" rel="noopener">DEEDOX Official Portal ↗</a></li>
+            <li><a href="https://deedoxstudio.com" target="_blank" rel="noopener">DEEDOX Digital Studio ↗</a></li>
+            <li><a href="about.html">Founder Rasel Ahmed</a></li>
+            <li><a href="about.html#services">Custom AI Development</a></li>
+            <li><a href="about.html#contact">Inquiries & Partnerships</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <div>
+          © 2026 <strong>AI Dev Workspace</strong>. Released under the MIT License by <strong>DEEDOX</strong>.
+        </div>
+        <div style="display:flex;align-items:center;gap:14px;">
+          <span>Designed with the <strong>Qoder Design System</strong> • Instrument Sans</span>
+          <span>•</span>
+          <a href="https://deedox.site" target="_blank" rel="noopener" style="color:var(--color-secondary);">deedox.site</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Software Replication Engine -->
+  <script src="assets/app.js"></script>
+</body>
+</html>

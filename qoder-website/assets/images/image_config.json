@@ -1,0 +1,22 @@
+{
+  "system": "AI Dev Workspace - Visual Asset Configuration",
+  "last_updated": "2026-11-05",
+  "author": "DEEDOX Studio (deedoxstudio.com)",
+  "founder": "Rasel Ahmed",
+  "images": {
+    "brand_logo": "assets/images/deedox-logo.png",
+    "founder_avatar": "assets/images/deedox-ai-avatar.png",
+    "favicon": "assets/images/deedox-logo.png",
+    "build_your_way": {
+      "desktop_showcase": "assets/images/software/software_launcher_light.png",
+      "mobile_showcase": "assets/images/software/software_mobile.png",
+      "ide_showcase": "assets/images/software/software_multiagent_dark.png",
+      "jetbrains_showcase": "assets/images/software/software_multiagent_light.png",
+      "cli_showcase": "assets/images/software/software_autoscan_drives.png"
+    },
+    "agent_sdk_banner": "assets/images/software/software_multiagent_dark.png",
+    "pc_apps_banner": "assets/images/software/software_pcapps.png",
+    "drive_scanner_banner": "assets/images/software/software_autoscan_drives.png"
+  }
+}
+
