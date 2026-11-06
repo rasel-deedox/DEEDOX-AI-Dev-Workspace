@@ -8,9 +8,19 @@ DEEDOX AI Dev Workspace is an advanced desktop platform built for developers, AI
 
 ## 🎥 Official Submission Demo Video
 
-The comprehensive demonstration video for this project submission is hosted directly in this repository:
-- **Direct Video File:** [video/lv_0_20261014223141.mp4](video/lv_0_20261014223141.mp4)
-- *Click the link above to stream or download the video directly on GitHub.*
+Watch the complete live walkthrough and feature demonstration of **DEEDOX AI Dev Workspace**:
+
+[![DEEDOX AI Dev Workspace — Official Demo Walkthrough](https://img.youtube.com/vi/SsyNbw1Czk0/maxresdefault.jpg)](https://youtu.be/SsyNbw1Czk0)
+
+▶️ **[Click to Watch Full Video on YouTube: https://youtu.be/SsyNbw1Czk0](https://youtu.be/SsyNbw1Czk0)**
+
+> **Key Capabilities Demonstrated in the Video:**
+> - **Sovereign Desktop UI & Launcher:** Apple Liquid Glass design, instant app launching, and dock integration.
+> - **Pulse Background Process Watchdog:** Real-time port monitoring (`:5173`, `:3000`) and automatic collision termination.
+> - **Multi-Agent Roundtable Studio:** 7 collaborative 3D animated agent personas debating architecture and code generation.
+> - **1-Click AST Autonomous Error Fixer:** Live stack trace parsing, root cause analysis, and self-healing atomic patches.
+> - **Recursive Drive Scanner:** Scans entire drives in seconds to discover and batch-import 200+ projects.
+> - **Web to Mini-App Isolation:** Converting web portals into desktop mini-apps with persistent session containers.
 
 ---
 

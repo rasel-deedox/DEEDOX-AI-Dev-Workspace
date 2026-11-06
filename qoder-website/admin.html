@@ -630,6 +630,17 @@
               <input type="url" id="twitterUrl" class="form-input" />
             </div>
           </div>
+
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:20px;margin-bottom:0;">
+            <div class="form-group">
+              <label class="form-label">YouTube Demo URL</label>
+              <input type="url" id="youtubeUrl" class="form-input" placeholder="https://youtu.be/..." />
+            </div>
+            <div class="form-group">
+              <label class="form-label">Hero Video Button Text</label>
+              <input type="text" id="heroVideoBtnText" class="form-input" placeholder="Watch Video Demo" />
+            </div>
+          </div>
         </div>
       </section>
 
@@ -868,6 +879,8 @@
         document.getElementById('heroPrimaryBtnUrl').value = data.hero.primary_btn_url || '';
         document.getElementById('heroSecondaryBtnText').value = data.hero.secondary_btn_text || '';
         document.getElementById('heroSecondaryBtnUrl').value = data.hero.secondary_btn_url || '';
+        const heroVid = document.getElementById('heroVideoBtnText');
+        if (heroVid) heroVid.value = data.hero.video_btn_text || '';
       }
 
       // Downloads
@@ -903,6 +916,8 @@
         document.getElementById('githubUrl').value = data.contact.github_url || '';
         document.getElementById('discordUrl').value = data.contact.discord_url || '';
         document.getElementById('twitterUrl').value = data.contact.twitter_url || '';
+        const ytInput = document.getElementById('youtubeUrl');
+        if (ytInput) ytInput.value = data.contact.youtube_url || '';
       }
 
       // Supabase
@@ -1137,7 +1152,9 @@
           primary_btn_text: document.getElementById('heroPrimaryBtnText').value,
           primary_btn_url: document.getElementById('heroPrimaryBtnUrl').value,
           secondary_btn_text: document.getElementById('heroSecondaryBtnText').value,
-          secondary_btn_url: document.getElementById('heroSecondaryBtnUrl').value
+          secondary_btn_url: document.getElementById('heroSecondaryBtnUrl').value,
+          video_btn_text: document.getElementById('heroVideoBtnText') ? document.getElementById('heroVideoBtnText').value : 'Watch Video Demo',
+          video_url: document.getElementById('youtubeUrl') ? document.getElementById('youtubeUrl').value : 'https://youtu.be/SsyNbw1Czk0'
         };
 
         // Build Your Way Modules
@@ -1194,7 +1211,8 @@
           website_url: document.getElementById('websiteUrl').value,
           github_url: document.getElementById('githubUrl').value,
           discord_url: document.getElementById('discordUrl').value,
-          twitter_url: document.getElementById('twitterUrl').value
+          twitter_url: document.getElementById('twitterUrl').value,
+          youtube_url: document.getElementById('youtubeUrl') ? document.getElementById('youtubeUrl').value : 'https://youtu.be/SsyNbw1Czk0'
         };
 
         // Supabase

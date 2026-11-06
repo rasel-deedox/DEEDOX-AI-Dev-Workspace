@@ -22,7 +22,8 @@
     "website_url": "https://deedoxstudio.com",
     "github_url": "https://github.com/deedoxstudio",
     "discord_url": "https://discord.gg/deedox",
-    "twitter_url": "https://x.com/deedoxstudio"
+    "twitter_url": "https://x.com/deedoxstudio",
+    "youtube_url": "https://youtu.be/SsyNbw1Czk0"
   },
   "announcement": {
     "enabled": false,
@@ -36,7 +37,9 @@
     "primary_btn_text": "Download Windows (.exe)",
     "primary_btn_url": "downloads/AI%20Dev%20Workspace%20Setup%201.0.0.exe",
     "secondary_btn_text": "Interactive Demo Sandbox",
-    "secondary_btn_url": "demo.html"
+    "secondary_btn_url": "demo.html",
+    "video_btn_text": "Watch Video Demo",
+    "video_url": "https://youtu.be/SsyNbw1Czk0"
   },
   "build_your_way": {
     "title": "Build Your Way",
