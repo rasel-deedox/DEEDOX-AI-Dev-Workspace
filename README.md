@@ -10,7 +10,7 @@ DEEDOX AI Dev Workspace is an advanced desktop platform built for developers, AI
 
 Watch the complete live walkthrough and feature demonstration of **DEEDOX AI Dev Workspace**:
 
-<iframe width="1053" height="592" src="https://www.youtube.com/embed/SsyNbw1Czk0" title="Ai Dev Workspace" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 
 [![DEEDOX AI Dev Workspace — Official Demo Walkthrough](https://img.youtube.com/vi/SsyNbw1Czk0/maxresdefault.jpg)](https://youtu.be/SsyNbw1Czk0)
 
