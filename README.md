@@ -6,7 +6,7 @@ DEEDOX AI Dev Workspace is an advanced desktop platform built for developers, AI
 
 ---
 
-## 🎥 Official Submission Demo Video
+## 🎥 Official  Demo Video
 
 Watch the complete live walkthrough and feature demonstration of **DEEDOX AI Dev Workspace**:
 
