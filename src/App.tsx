@@ -113,6 +113,29 @@ export const App: React.FC = () => {
     }
   }, [currentTheme]);
 
+  // Listen for cross-origin postMessage controller events from parent landing page
+  useEffect(() => {
+    const handleParentMessage = (event: MessageEvent) => {
+      if (!event.data || typeof event.data !== 'object') return;
+      if (event.data.type === 'SET_VIEW') {
+        const view = event.data.view;
+        if (['launcher', 'ai-agent', 'pc-apps', 'trending', 'news'].includes(view)) {
+          setActiveView(view as any);
+          setActiveTabId('home');
+        }
+      } else if (event.data.type === 'SET_THEME') {
+        const theme = event.data.theme;
+        if (theme === 'soft-light' || theme === 'light') {
+          setCurrentTheme('soft-light');
+        } else if (theme === 'nova-dark' || theme === 'dark') {
+          setCurrentTheme('nova-dark');
+        }
+      }
+    };
+    window.addEventListener('message', handleParentMessage);
+    return () => window.removeEventListener('message', handleParentMessage);
+  }, []);
+
   // Navigation & Category state
   const [activeCategoryId, setActiveCategoryId] = useState<string>('all');
   const [activeView, setActiveView] = useState<'launcher' | 'trending' | 'news' | 'ai-agent' | 'pc-apps'>('launcher');

@@ -16,6 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
   handleUrlHashTab();
   initDynamicContentSync();
   initMobilePreviewSlider();
+  initMobileNavigation();
 });
 
 /**
@@ -315,6 +316,7 @@ function initThemeToggle() {
     syncThemeToIframe(isDark ? 'nova-dark' : 'soft-light');
     if (window.renderMobileSlide) window.renderMobileSlide();
   }
+  window.applySiteTheme = applyTheme;
 }
 
 /**
@@ -602,6 +604,7 @@ function initLanguageToggle() {
       }
     });
   }
+  window.applySiteLanguage = applyLanguage;
 }
 
 /**
@@ -685,6 +688,9 @@ function initLiveDemoController() {
   });
 
   function switchIframeView(target) {
+    if (iframe.contentWindow) {
+      iframe.contentWindow.postMessage({ type: 'SET_VIEW', view: target }, '*');
+    }
     try {
       const doc = iframe.contentDocument || iframe.contentWindow.document;
       if (!doc) return;
@@ -702,9 +708,7 @@ function initLiveDemoController() {
           Array.from(doc.querySelectorAll('button')).find(b => b.textContent && b.textContent.includes('PC Apps'));
         if (pcBtn) pcBtn.click();
       }
-    } catch (err) {
-      console.log('Iframe cross-view notice:', err);
-    }
+    } catch (_) {}
   }
 }
 
@@ -1012,4 +1016,209 @@ function initMobilePreviewSlider() {
     }, 120);
   }, { passive: true });
 })();
+
+/**
+ * Mobile Navigation Drawer & Hamburger Menu
+ */
+function initMobileNavigation() {
+  const headerRight = document.querySelector('.FullHeader_headerRight__Gc9Qc');
+  if (!headerRight) return;
+
+  // 1. Inject Hamburger button if not present
+  let menuBtn = document.getElementById('mobileNavToggleBtn');
+  if (!menuBtn) {
+    menuBtn = document.createElement('button');
+    menuBtn.id = 'mobileNavToggleBtn';
+    menuBtn.className = 'mobile-nav-toggle-btn';
+    menuBtn.setAttribute('aria-label', 'Open Navigation Menu');
+    menuBtn.setAttribute('aria-expanded', 'false');
+    menuBtn.innerHTML = `
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+    `;
+    headerRight.appendChild(menuBtn);
+  }
+
+  // 2. Inject Mobile Drawer if not present
+  let drawer = document.getElementById('mobileNavDrawer');
+  if (!drawer) {
+    drawer = document.createElement('div');
+    drawer.id = 'mobileNavDrawer';
+    drawer.className = 'mobile-nav-drawer';
+    drawer.setAttribute('aria-hidden', 'true');
+    drawer.innerHTML = `
+      <div class="mobile-nav-backdrop" id="mobileNavBackdrop"></div>
+      <div class="mobile-nav-panel">
+        <div class="mobile-nav-header">
+          <a href="index.html" class="mobile-nav-brand">
+            <img src="assets/images/deedox-logo.png" alt="DEEDOX" />
+            <div class="mobile-nav-brand-text">
+              <span class="brand-title">DEEDOX</span>
+              <span class="brand-tagline">AI Dev Workspace</span>
+            </div>
+          </a>
+          <button id="mobileNavCloseBtn" class="mobile-nav-close-btn" aria-label="Close Navigation Menu">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+          </button>
+        </div>
+
+        <div class="mobile-nav-body">
+          <a href="downloads/AI%20Dev%20Workspace%20Setup%201.0.0.exe" download="AI Dev Workspace Setup 1.0.0.exe" class="mobile-nav-download-btn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+            <span data-i18n="btn_download">Download Windows (.exe)</span>
+          </a>
+
+          <nav class="mobile-nav-links">
+            <div class="mobile-nav-section-title">Navigation</div>
+            <a href="index.html" class="mobile-nav-item">
+              <span class="mobile-nav-icon">🏠</span>
+              <span data-i18n="menu_home">Home Hub</span>
+            </a>
+            <a href="demo.html" class="mobile-nav-item">
+              <span class="mobile-nav-icon">💻</span>
+              <span data-i18n="menu_sandbox">Interactive Demo Sandbox</span>
+              <span class="mobile-nav-badge">LIVE</span>
+            </a>
+            <a href="download.html" class="mobile-nav-item">
+              <span class="mobile-nav-icon">📥</span>
+              <span data-i18n="menu_download">Official Windows Downloads</span>
+            </a>
+            <a href="features.html" class="mobile-nav-item">
+              <span class="mobile-nav-icon">⚙️</span>
+              <span data-i18n="menu_features">Features &amp; Architecture</span>
+            </a>
+            <a href="about.html" class="mobile-nav-item">
+              <span class="mobile-nav-icon">👥</span>
+              <span data-i18n="menu_about">About DEEDOX &amp; Founder</span>
+            </a>
+
+            <div class="mobile-nav-section-title">Core Capabilities</div>
+            <a href="index.html#launcher" class="mobile-nav-item">
+              <span class="mobile-nav-icon">⚡</span>
+              <span data-i18n="nav_launcher">Pulse Dev Watchdog (:5173)</span>
+            </a>
+            <a href="index.html#roundtable" class="mobile-nav-item">
+              <span class="mobile-nav-icon">🤖</span>
+              <span data-i18n="nav_roundtable">Multi-Agent Roundtable</span>
+            </a>
+            <a href="index.html#error-fixer" class="mobile-nav-item">
+              <span class="mobile-nav-icon">🛠️</span>
+              <span data-i18n="nav_fixer">1-Click AST Error Fixer</span>
+            </a>
+            <a href="index.html#drive-scanner" class="mobile-nav-item">
+              <span class="mobile-nav-icon">🔍</span>
+              <span data-i18n="nav_scanner">Multi-Drive AutoScan</span>
+            </a>
+          </nav>
+
+          <div class="mobile-nav-footer-controls">
+            <div class="mobile-ctrl-row">
+              <span class="mobile-ctrl-label">Language:</span>
+              <div class="mobile-lang-group">
+                <button type="button" class="mobile-lang-chip" data-mobile-lang="en">🇬🇧 English</button>
+                <button type="button" class="mobile-lang-chip" data-mobile-lang="bn">🇧🇩 বাংলা</button>
+              </div>
+            </div>
+            <div class="mobile-ctrl-row">
+              <span class="mobile-ctrl-label">Theme Mode:</span>
+              <button type="button" id="mobileDrawerThemeToggle" class="mobile-drawer-theme-btn">
+                <span id="mobileDrawerThemeIcon">☀️</span>
+                <span id="mobileDrawerThemeText">Day Mode</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    `;
+    document.body.appendChild(drawer);
+  }
+
+  // Event handlers
+  function openMobileMenu() {
+    drawer.classList.add('open');
+    drawer.setAttribute('aria-hidden', 'false');
+    menuBtn.classList.add('active');
+    menuBtn.setAttribute('aria-expanded', 'true');
+    document.body.style.overflow = 'hidden';
+    updateDrawerUI();
+  }
+
+  function closeMobileMenu() {
+    drawer.classList.remove('open');
+    drawer.setAttribute('aria-hidden', 'true');
+    menuBtn.classList.remove('active');
+    menuBtn.setAttribute('aria-expanded', 'false');
+    document.body.style.overflow = '';
+  }
+
+  menuBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    if (drawer.classList.contains('open')) {
+      closeMobileMenu();
+    } else {
+      openMobileMenu();
+    }
+  });
+
+  const closeBtn = document.getElementById('mobileNavCloseBtn');
+  if (closeBtn) closeBtn.addEventListener('click', closeMobileMenu);
+
+  const backdrop = document.getElementById('mobileNavBackdrop');
+  if (backdrop) backdrop.addEventListener('click', closeMobileMenu);
+
+  // Close when clicking any nav item link
+  drawer.querySelectorAll('.mobile-nav-item, .mobile-nav-download-btn').forEach(link => {
+    link.addEventListener('click', () => {
+      closeMobileMenu();
+    });
+  });
+
+  // ESC key closes drawer
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && drawer.classList.contains('open')) {
+      closeMobileMenu();
+    }
+  });
+
+  // Mobile language chips
+  drawer.querySelectorAll('.mobile-lang-chip').forEach(chip => {
+    chip.addEventListener('click', () => {
+      const targetLang = chip.getAttribute('data-mobile-lang');
+      if (window.applySiteLanguage) {
+        window.applySiteLanguage(targetLang);
+      }
+      updateDrawerUI();
+    });
+  });
+
+  // Mobile drawer theme button
+  const drawerThemeBtn = document.getElementById('mobileDrawerThemeToggle');
+  if (drawerThemeBtn) {
+    drawerThemeBtn.addEventListener('click', () => {
+      const current = document.documentElement.getAttribute('data-theme') || 'light';
+      const next = current === 'dark' ? 'light' : 'dark';
+      if (window.applySiteTheme) {
+        window.applySiteTheme(next);
+      }
+      updateDrawerUI();
+    });
+  }
+
+  function updateDrawerUI() {
+    const curTheme = document.documentElement.getAttribute('data-theme') || 'light';
+    const curLang = localStorage.getItem('devworkspace_site_lang') || 'en';
+    const isDark = (curTheme === 'dark');
+
+    const themeIcon = document.getElementById('mobileDrawerThemeIcon');
+    const themeText = document.getElementById('mobileDrawerThemeText');
+    if (themeIcon) themeIcon.textContent = isDark ? '🌙' : '☀️';
+    if (themeText) themeText.textContent = isDark ? 'Night Mode' : 'Day Mode';
+
+    drawer.querySelectorAll('.mobile-lang-chip').forEach(chip => {
+      const lang = chip.getAttribute('data-mobile-lang');
+      chip.classList.toggle('active', lang === curLang);
+    });
+  }
+}
 
