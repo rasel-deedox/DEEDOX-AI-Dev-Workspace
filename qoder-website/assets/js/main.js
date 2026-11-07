@@ -1000,3 +1000,16 @@ function initMobilePreviewSlider() {
   });
   observer.observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
 }
+
+// High-performance scroll lock for iframes: prevents mouse-wheel trapping & lag
+(function() {
+  let isScrollingTimer;
+  window.addEventListener('scroll', function() {
+    document.body.classList.add('is-scrolling');
+    clearTimeout(isScrollingTimer);
+    isScrollingTimer = setTimeout(function() {
+      document.body.classList.remove('is-scrolling');
+    }, 120);
+  }, { passive: true });
+})();
+

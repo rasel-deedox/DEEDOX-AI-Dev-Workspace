@@ -332,5 +332,10 @@
     "mask_in_demo": true,
     "status": "active",
     "proxy_enabled": true
+  },
+  "supabase": {
+    "project_url": "https://zyhxtmbxdfdddazcyawu.supabase.co",
+    "anon_key": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inp5aHh0bWJ4ZGZkZGRhemN5YXd1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTQwMjY3NzUsImV4cCI6MjEwOTYwMjc3NX0.2Yflufo0D2Pc_iDdZAgCjsJEwFUaNP4mprGJAIFfQTI",
+    "table_name": "app_releases"
   }
 }

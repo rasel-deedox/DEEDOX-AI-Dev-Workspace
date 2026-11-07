@@ -39,3 +39,5 @@ Thumbs.db
 # Scratch & temporary verification files
 scratch/
 
+
+.vercel

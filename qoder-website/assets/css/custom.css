@@ -1008,3 +1008,120 @@ html[data-theme="dark"] #themeToggleBtn {
     flex-wrap: nowrap !important;
   }
 }
+
+/* ==========================================================================
+   HEADER RESPONSIVENESS & DOWNLOAD BUTTON OVERFLOW FIX
+   ========================================================================== */
+.FullHeader_fullHeader__ihlLC {
+  max-width: 100vw !important;
+  box-sizing: border-box !important;
+  padding-left: clamp(16px, 2.5vw, 48px) !important;
+  padding-right: clamp(16px, 2.5vw, 48px) !important;
+  overflow: visible !important;
+}
+
+.FullHeader_headerLeft__MWkEH {
+  display: flex !important;
+  align-items: center !important;
+  gap: clamp(10px, 1.5vw, 24px) !important;
+  min-width: 0 !important;
+  flex: 1 1 auto !important;
+}
+
+.HeaderNav_headerNav__3vIYb {
+  display: flex !important;
+  align-items: center !important;
+  gap: clamp(10px, 1.2vw, 18px) !important;
+  flex-shrink: 1 !important;
+  min-width: 0 !important;
+  white-space: nowrap !important;
+}
+
+.HeaderNav_navItem__CACiO {
+  font-size: 13px !important;
+  padding: 4px 6px !important;
+}
+
+.FullHeader_headerRight__Gc9Qc {
+  display: flex !important;
+  align-items: center !important;
+  gap: clamp(6px, 0.8vw, 10px) !important;
+  flex-shrink: 0 !important;
+  margin-right: 0 !important;
+  padding-right: 8px !important;
+}
+
+@media (max-width: 1536px) {
+  .HeaderNav_headerNav__3vIYb {
+    gap: 12px !important;
+  }
+  .HeaderNav_navItem__CACiO {
+    font-size: 12.5px !important;
+    padding: 3px 5px !important;
+  }
+  .FullHeader_headerRight__Gc9Qc {
+    gap: 8px !important;
+    padding-right: 12px !important;
+  }
+}
+
+@media (max-width: 1366px) {
+  .HeaderNav_headerNav__3vIYb {
+    gap: 8px !important;
+  }
+  .HeaderNav_navItem__CACiO {
+    font-size: 12px !important;
+    padding: 2px 4px !important;
+  }
+}
+
+/* ==========================================================================
+   SCROLL SMOOTHNESS, FLICKER-FREE & GPU LAYER OPTIMIZATION (Zero UI Alteration)
+   ========================================================================== */
+/* 1. Prevent scroll-wheel collision and jitter */
+html {
+  scroll-behavior: auto !important;
+}
+
+/* 2. Prevent 6350px full-content wrapper GPU blowout and opacity: 0 reset */
+.Animated_animated__NzqPb {
+  animation: none !important;
+  opacity: 1 !important;
+  transform: none !important;
+  will-change: auto !important;
+}
+
+/* 3. Lean compositor: hardware-accelerate main sections without layer bloat */
+section {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+/* 4. Remove unnecessary card layers to prevent GPU memory bus saturation */
+.bento-card, .ProductCard_card__rcHEz, .AgentIntegration_card__3x2yo {
+  transform: none !important;
+}
+
+/* 5. Isolate interactive iframe and disable pointer events during scroll to eliminate wheel trap */
+iframe {
+  transform: translateZ(0);
+  contain: layout paint;
+}
+body.is-scrolling iframe {
+  pointer-events: none !important;
+}
+
+/* 6. Eliminate sticky header subpixel jitter */
+.FullHeader_fullHeader__ihlLC, header {
+  transform: none !important;
+  will-change: auto !important;
+}
+
+/* 7. Solid backing store color matching exact page background (eliminates white flashing) */
+html, body {
+  background-color: #F2F4F2 !important;
+}
+[data-theme="dark"] html, [data-theme="dark"] body {
+  background-color: #0A0D0B !important;
+}
