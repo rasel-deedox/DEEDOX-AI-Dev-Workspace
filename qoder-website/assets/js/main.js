@@ -898,16 +898,16 @@ function initMobilePreviewSlider() {
 
   const defaultSlides = [
     {
+      id: "agent_copilot",
+      badge: "🤖 Agent Copilot & 3D Multi-Agent Studio",
+      light_image: "assets/images/software/software_multiagent_light.png",
+      dark_image: "assets/images/software/software_multiagent_dark.png"
+    },
+    {
       id: "pulse",
       badge: "⚡ Pulse Dev Watchdog (:5173)",
       light_image: "assets/images/software/software_launcher_light.png",
       dark_image: "assets/images/software/software_launcher_light.png"
-    },
-    {
-      id: "roundtable",
-      badge: "🤖 Multi-Agent 3D Studio",
-      light_image: "assets/images/software/software_multiagent_light.png",
-      dark_image: "assets/images/software/software_multiagent_dark.png"
     },
     {
       id: "fixer",

@@ -723,17 +723,29 @@ html[data-theme="dark"] #themeToggleBtn {
 }
 
 /* ==========================================================================
-   Home Page Demo Sandbox: Always 100% Interactive Live Frame (PC & Mobile)
+   Home Page Demo Showcase: Desktop Interactive Frame vs Mobile Screenshot Showcase
    ========================================================================== */
 .demo-window-frame {
-  display: block !important;
   width: 100% !important;
 }
-.demo-desktop-only {
-  display: block !important;
+
+@media (max-width: 768px) {
+  .demo-desktop-only {
+    display: none !important;
+  }
+  .demo-mobile-showcase {
+    display: block !important;
+    width: 100% !important;
+  }
 }
-.demo-mobile-showcase {
-  display: none !important;
+
+@media (min-width: 769px) {
+  .demo-desktop-only {
+    display: block !important;
+  }
+  .demo-mobile-showcase {
+    display: none !important;
+  }
 }
 
 
